@@ -15,6 +15,6 @@ $( document ).ready(function() {
 		$(this).tab('show');
 	});
 
-	$('#scroll-fix-bar')
+	//$('#scroll-fix-bar')
 
 });
