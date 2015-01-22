@@ -67,6 +67,7 @@ body{
 }
 .logo a{
 	color: #202020;
+	display: inline-block;
 }
 .logo a:hover{
 	color:#23527c;
