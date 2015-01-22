@@ -116,6 +116,10 @@ body{
 	left: 0px;
 	right: 0px;
 }
+.text-danger{
+	color: #A94442 !important;
+	border-color: #A94442 #A94442 #A94442 #A94442;
+}
 /*====================== banner images ============================*/
 #sal-img-size-380-256{
 	width: 380px;
