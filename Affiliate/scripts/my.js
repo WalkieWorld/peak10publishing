@@ -27,4 +27,9 @@ $( document ).ready(function() {
 		}
 	});
 
+	$('#signUpModal').on('hidden.bs.modal', function (e) {
+		$('#inf_field_Email').removeClass('text-danger');
+		$('#inf_field_Email').val('');
+	});
+
 });
