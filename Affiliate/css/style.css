@@ -120,6 +120,18 @@ body{
 	color: #A94442 !important;
 	border-color: #A94442 #A94442 #A94442 #A94442;
 }
+/*====================== dynamic style by scrolling window ========*/
+.fixed-cbTab{
+	position: fixed;
+	top: 52px;
+	z-index: 1;
+}
+.fixed-cbTab-right-tab-content{
+	margin: 0px 0px 0px 149px !important;
+	border-left: 1px solid rgb(221, 221, 221);
+	position: relative;
+}
+/*================== end dynamic style by scrolling window ========*/
 /*====================== banner images ============================*/
 #sal-img-size-380-256{
 	width: 380px;
