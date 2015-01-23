@@ -55,38 +55,79 @@ $( document ).ready(function() {
 	*	When their position are back, restore their original style.
 	*/
 	$(window).scroll(function(){
-		
-		var winTop = $(window).scrollTop();
+		if($(window).width() >= 992){
+			var winTop = $(window).scrollTop();
 
-		// calculate navigation position then keep it at the top
-		if ((winTop - navTop) > 0){
+			// calculate navigation position then keep it at the top
+			if ((winTop - navTop) > 0){
 
-			$('#header-nav').addClass('navbar-fixed-top');
-			$('#header-nav-container').addClass('container');
-			$('#header-nav-container').css('margin-bottom', '0px');
-		}
-		// when user scroll to the top, recover its position.
-		else{
+				$('#logo').addClass('logo-margin');
+				$('#header-nav').addClass('navbar-fixed-top');
+				$('#header-nav-container').addClass('container');
+				$('#header-nav-container').css('margin-bottom', '0px');
+			}
+			// when user scroll to the top, recover its position.
+			else{
 
-			$('#header-nav').removeClass('navbar-fixed-top');
-			$('#header-nav-container').removeClass('container');
-			$('#header-nav-container').removeAttr( 'style' );
-		}
+				$('#logo').removeClass('logo-margin');
+				$('#header-nav').removeClass('navbar-fixed-top');
+				$('#header-nav-container').removeClass('container');
+				$('#header-nav-container').removeAttr( 'style' );
+			}
 
-		//calculate ClickBank tab position then keep it at the top
-		if(winTop - cbTabTop > -115){
+			//calculate ClickBank tab position then keep it at the top
+			if(winTop - cbTabTop > -115){
 
-			$('#clickBankTab').addClass('fixed-cbTab');
-			$('#clickBankTabContent').addClass('fixed-cbTab-right-tab-content');
-		}else{
+				$('#clickBankTab').addClass('fixed-cbTab');
+				$('#clickBankTabContent').addClass('fixed-cbTab-right-tab-content');
+			}else{
 
-			$('#clickBankTab').removeClass('fixed-cbTab');
-			$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
+				$('#clickBankTab').removeClass('fixed-cbTab');
+				$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
+			}
 		}
 	});
+
+	$( window ).resize(function() {
+
+		dynamicStyle();
+	});
+
+	var tabletStyle = function(){
+		$('#header-nav').removeClass('navbar-fixed-top');
+		$('#header-nav-container').removeClass('container');
+		$('#header-nav-container').removeAttr( 'style' );
+		$('#clickBankTab').removeClass('fixed-cbTab');
+		$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
+	}
+
+	var phoneStyle = function(){
+		$('#clickBankTab').removeClass('left-tabs');
+		$('#left-tabpanel').removeClass('left-tabpanel');
+	}
+
+	var dynamicStyle = function(){
+
+		if($(window).width() <= 639){
+
+			phoneStyle();
+		}else{
+
+			$('#clickBankTab').addClass('left-tabs');
+			$('#left-tabpanel').addClass('left-tabpanel');
+
+			if($(window).width() < 992){
+
+				tabletStyle();
+			}
+		}
+	}
 
 	/**
 	*	Run functions initially.
 	*/
+
+	// detect current size of window for using the right style
+	dynamicStyle();
 
 });

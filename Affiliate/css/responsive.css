@@ -1,0 +1,29 @@
+@media screen and (max-width: 991px){
+	.banner-info{
+		display: block;
+	}
+	.banner-info .pic-des{
+		margin-bottom: 10px;
+		position: relative;
+		bottom: 0px;
+	}
+	.banner-info figure{
+		margin: 0px 0px 10px 0px;
+	}
+	.banner-info pre{
+		position: relative;
+	}
+}
+@media screen and (max-width: 767px){
+	.left-tabs{
+		min-width: 80px;
+	}
+	.page-footer{
+		position: relative;
+	}
+}
+@media screen and (max-height: 539px){
+	.page-footer{
+		position: relative;
+	}
+}

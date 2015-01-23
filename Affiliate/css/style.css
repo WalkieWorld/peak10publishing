@@ -131,7 +131,15 @@ body{
 	border-left: 1px solid rgb(221, 221, 221);
 	position: relative;
 }
+.logo-margin{
+	margin-bottom: 52px;
+}
 /*================== end dynamic style by scrolling window ========*/
+/*====================== dynamic style by resize window ========*/
+.survival-frog-article{
+	position: relative;
+}
+/*================== end dynamic style by resize window ========*/
 /*====================== banner images ============================*/
 #sal-img-size-380-256{
 	width: 380px;
