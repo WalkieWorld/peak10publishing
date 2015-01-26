@@ -127,7 +127,7 @@ body{
 	display: flex;
 }
 .logo .logo-aside p{
-	font-family: 'Order Light', sans-serif;
+	font-family: 'Order', sans-serif;
 	font-weight: 400 !important;
 	font-size: 28px;
 	margin: -10px 0px 0px 0px;
