@@ -76,7 +76,7 @@ $( document ).ready(function() {
 			}
 
 			//calculate ClickBank tab position then keep it at the top
-			if(winTop - cbTabTop > -115){
+			if(winTop - cbTabTop > -68){
 
 				$('#clickBankTab').addClass('fixed-cbTab');
 				$('#clickBankTabContent').addClass('fixed-cbTab-right-tab-content');

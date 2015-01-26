@@ -21,6 +21,10 @@
 	.page-footer{
 		position: relative;
 	}
+	#sal-img-size-380-256 {
+	    width: auto;
+	    height: auto;
+	}
 }
 @media screen and (max-height: 539px){
 	.page-footer{
