@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 
 	var 
-		navTop = $('#header-nav').offset().top 		// get the top position of #header-nav
+		navTop = $('#header-nav').offset().top, 		// get the top position of #header-nav
 		cbTabTop = $('#clickBankTab').offset().top;
 	
 	$('#clickBankTab a').click(function (e) {

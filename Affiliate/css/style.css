@@ -36,6 +36,12 @@ html{
 body{
 	min-height: 100%;
 	position: relative;
+	background-color: #E0E0E0;
+	
+}
+.container{
+	background-color: #fff;
+	box-shadow: -7px 3px 12px 0px #5E5A56, 7px 3px 12px -3px;
 }
 .page-footer{
 	position: absolute;
@@ -43,7 +49,10 @@ body{
 	left: 0px;
 	width: 100%;
 	margin-bottom: 0px;
-	background-color: #556
+	background-color: #556 !important;
+}
+.page-footer .container{
+	background-color: #556 !important;
 }
 .page-footer section.container{
 	border-top: 1px solid #A0A0A0;
@@ -80,6 +89,21 @@ body{
 .left-tabs > li > a{
 	border-radius: 4px 0px 0px 4px;
 }
+.navbar-default .navbar-nav > .active > p{
+	color: #555;
+	background-color: #E7E7E7;
+	margin: 0px;
+}
+.navbar-text {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .left-tabs > li.active > a,
 .left-tabs > li.active > a:focus,
 .left-tabs > li.active > a:hover {
@@ -110,6 +134,20 @@ body{
 .big-header{
 	border-bottom: 1px solid #ddd;
 }
+.big-header .logo{
+	display: flex;
+}
+.logo{
+	display: inline-block;
+}
+.logo h1{
+	margin: 45px 0px 0px 20px;
+	font-size: 40px;
+	font-weight: 600;
+}
+.logo img{
+	padding: 15px 0px 0px 0px;
+}
 .logo a{
 	color: #202020;
 	display: inline-block;
@@ -122,19 +160,22 @@ body{
 	font-family: 'Order Bold', sans-serif;
 	font-weight: 600 !important;
 	font-size: 36px;
+	margin-top: 5px;
 }
 .logo .logo-aside{
 	display: flex;
+	margin: -5px 0px 0px;
 }
 .logo .logo-aside p{
 	font-family: 'Order', sans-serif;
 	font-weight: 400 !important;
 	font-size: 28px;
 	margin: -10px 0px 0px 0px;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
 }
 .logo .logo-aside img{
 	margin: -10px 0px 10px 20px;
+	padding: 0px;
 }
 .page-header{
 	border-bottom: 1px solid #EEE;
@@ -182,6 +223,33 @@ body{
 .text-danger{
 	color: #A94442 !important;
 	border-color: #A94442 #A94442 #A94442 #A94442;
+}
+.sub-header{
+	display: flex;
+}
+#modalLabel{
+	padding: 50px 0px 0px 15px;
+}
+.content{
+	margin: 0px 0px 100px 0px;
+}
+.content .title{
+	margin: 0 auto;
+	position: relative;
+	width: 309px;
+	height: 66px;
+}
+.content .title h5{
+	right: 0px;
+	position: absolute;
+	margin: -5px 0px 0px 0px;
+}
+.content .paragraph{
+	margin: 20px 0px;
+}
+.content .paragraph address{
+	width: 450px;
+	margin: 10px auto;
 }
 /*====================== dynamic style by scrolling window ========*/
 .fixed-cbTab{

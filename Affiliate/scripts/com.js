@@ -1,5 +1,64 @@
 $( document ).ready(function() {
 	
+	var 
+		navTop = $('#header-nav').offset().top; 		// get the top position of #header-nav
+
+	/**
+	*	Keep navigation and left tab at the top.
+	*	When their position are back, restore their original style.
+	*/
+	$(window).scroll(function(){
+		if($(window).width() >= 992){
+			var winTop = $(window).scrollTop();
+
+			// calculate navigation position then keep it at the top
+			if ((winTop - navTop) > 0){
+
+				$('#logo').addClass('logo-margin');
+				$('#header-nav').addClass('navbar-fixed-top');
+				$('#header-nav-container').addClass('container');
+				$('#header-nav-container').css('margin-bottom', '0px');
+			}
+			// when user scroll to the top, recover its position.
+			else{
+
+				$('#logo').removeClass('logo-margin');
+				$('#header-nav').removeClass('navbar-fixed-top');
+				$('#header-nav-container').removeClass('container');
+				$('#header-nav-container').removeAttr( 'style' );
+			}
+		}
+	});
+
+	$( window ).resize(function() {
+
+		dynamicStyle();
+	});
+
+	var tabletStyle = function(){
+		$('#header-nav').removeClass('navbar-fixed-top');
+		$('#header-nav-container').removeClass('container');
+		$('#header-nav-container').removeAttr( 'style' );
+	}
+
+	var dynamicStyle = function(){
+
+		if($(window).width() > 639){
+			
+			if($(window).width() < 992){
+
+				tabletStyle();
+			}
+		}
+	}
+
+	/**
+	*	Run functions initially.
+	*/
+	// detect current size of window for using the right style
+	dynamicStyle();
+
+
 	/**
 	*	Verify the email address of the form, #signUpModel, when it submit.
 	*/
@@ -17,6 +76,14 @@ $( document ).ready(function() {
 	});
 	
 	/**
+	*	Adjust the position when navigation is fixed
+	*/
+	$('#signUpModal').on('show.bs.modal', function (e) {
+
+		$(".navbar-fixed-top").css("left", "-16px");
+	});
+
+	/**
 	*	Empty only email text content when the dialog hides.
 	*/
 	$('#signUpModal').on('hidden.bs.modal', function (e) {
@@ -26,6 +93,8 @@ $( document ).ready(function() {
 			$('#inf_field_Email').removeClass('text-danger');
 			$('#inf_field_Email').val('');
 		}
+
+		$(".navbar-fixed-top").css("left", "0px");
 	});
 
 	/**
