@@ -136,6 +136,7 @@ body{
 }
 .big-header .logo{
 	display: flex;
+	margin-bottom: 10px; 
 }
 .logo{
 	display: inline-block;
@@ -263,7 +264,7 @@ body{
 	position: relative;
 }
 .logo-margin{
-	margin-bottom: 52px;
+	margin-bottom: 82px !important;
 }
 /*================== end dynamic style by scrolling window ========*/
 /*====================== dynamic style by resize window ========*/

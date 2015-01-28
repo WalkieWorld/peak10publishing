@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	
-	var 
+	var isDyn = false,
 		navTop = $('#header-nav').offset().top; 		// get the top position of #header-nav
 
 	/**

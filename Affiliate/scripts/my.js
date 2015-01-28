@@ -2,6 +2,7 @@ $( document ).ready(function() {
 
 
 	var 
+		isDyn = false,
 		navTop = $('#header-nav').offset().top, 		// get the top position of #header-nav
 		cbTabTop = $('#clickBankTab').offset().top;
 	
@@ -34,19 +35,24 @@ $( document ).ready(function() {
 
 			// calculate navigation position then keep it at the top
 			if ((winTop - navTop) > 0){
-
-				$('#logo').addClass('logo-margin');
-				$('#header-nav').addClass('navbar-fixed-top');
-				$('#header-nav-container').addClass('container');
-				$('#header-nav-container').css('margin-bottom', '0px');
+				if(isDyn === false){
+					$('#logo').addClass('logo-margin');
+					$('#header-nav').addClass('navbar-fixed-top');
+					$('#header-nav-container').addClass('container');
+					$('#header-nav-container').css('margin-bottom', '0px');
+					isDyn = true;
+				}
 			}
 			// when user scroll to the top, recover its position.
 			else{
 
-				$('#logo').removeClass('logo-margin');
-				$('#header-nav').removeClass('navbar-fixed-top');
-				$('#header-nav-container').removeClass('container');
-				$('#header-nav-container').removeAttr( 'style' );
+				if(isDyn === true){
+					$('#logo').removeClass('logo-margin');
+					$('#header-nav').removeClass('navbar-fixed-top');
+					$('#header-nav-container').removeClass('container');
+					$('#header-nav-container').removeAttr( 'style' );
+					isDyn = false;
+				}
 			}
 
 			//calculate ClickBank tab position then keep it at the top
