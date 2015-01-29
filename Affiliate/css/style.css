@@ -89,6 +89,11 @@ body{
 .left-tabs > li > a{
 	border-radius: 4px 0px 0px 4px;
 }
+.navbar-header .active{
+	color: #555;
+	background-color: #E7E7E7;
+	margin: 0px;
+}
 .navbar-default .navbar-nav > .active > p{
 	color: #555;
 	background-color: #E7E7E7;
@@ -251,6 +256,12 @@ body{
 .content .paragraph address{
 	width: 450px;
 	margin: 10px auto;
+}
+.signup-form{
+	margin-bottom: 60px;
+}
+.signup-form .modal-dialog{
+	margin: 0px;
 }
 /*====================== dynamic style by scrolling window ========*/
 .fixed-cbTab{
