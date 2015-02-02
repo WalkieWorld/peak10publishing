@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta content="" name="description">
 	<meta content="Hao Zhang" name="author">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet"></link>
 	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"></link>
@@ -87,6 +88,7 @@
 								<li role="presentation" class="active"><a href="#salDescription" aria-controls="salDescription" role="tab" data-toggle="tab">Commission</a></li>
 								<li role="presentation"><a href="#salBanners" aria-controls="salBanners" role="tab" data-toggle="tab">Banners</a></li>
 								<li role="presentation"><a href="#salEmail" aria-controls="salEmail" role="tab" data-toggle="tab">Email</a></li>
+								<li role="presentation"><a href="#salGenLink" aria-controls="salGenLink" role="tab" data-toggle="tab">Generate Link</a></li>
 							</ul>
 							<section class="tab-content">
 								<article role="tabpanel" class="tab-pane fade in active" id="salDescription">
@@ -130,6 +132,8 @@
 									Don't miss out ...</p>
 									<a href="#">Grab yours today.-Hyperlink</a>
 								</article>
+								<article role="tabpanel" class="tab-pane fade in" id="salGenLink">
+								</article>
 							</section>
 						</section>
 					</article>
@@ -143,6 +147,7 @@
 								<li role="presentation" class="active"><a href="#grenadeDescription" aria-controls="grenadeDescription" role="tab" data-toggle="tab">Commission</a></li>
 								<li role="presentation"><a href="#grenadeBanners" aria-controls="grenadeBanners" role="tab" data-toggle="tab">Banners</a></li>
 								<li role="presentation"><a href="#grenadeEmail" aria-controls="grenadeEmail" role="tab" data-toggle="tab">Email</a></li>
+								<li role="presentation"><a href="#grenadeGenerateLink" aria-controls="grenadeGenerateLink" role="tab" data-toggle="tab">Generate Link</a></li>
 							</ul>
 							<section class="tab-content">
 								<article role="tabpanel" class="tab-pane fade in active" id="grenadeDescription">
@@ -185,6 +190,8 @@
 									because they're going to be gone in a flash!!
 									Don't miss out ...</p>
 									<a href="#">Grab yours today.-Hyperlink</a>
+								</article>
+								<article role="tabpanel" class="tab-pane fade in" id="grenadeGenerateLink">
 								</article>
 							</section>
 						</section>
@@ -276,10 +283,64 @@
 		Because your browser does not support HTML5, some elements are simulated using JScript.
 		Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
 	</noscript>
+	<!-- role="tabpanel" class="tab-pane fade" -->
+	<article id="generateLiknForm" class="form-size hidden">
+		<section class="form-horizontal">
+			<section class="form-group">
+				<label class="col-xs-2 control-label">Your Link:</label>
+			    <section class="col-sm-5">
+			      <input id="generatedLink" data-toggle="tooltip" data-placement="top" type="text" title="" class="form-control" readonly>
+			    </section>
+			</section>
+			<section class="form-group">
+				<span id="requiredCBID" class="fa fa-asterisk"></span>
+				<label for="cbid" class="col-xs-2 control-label">ClickBank Affiliate ID:</label>
+			    <section class="col-sm-5">
+			      <input type="text" class="form-control" id="cbid" placeholder="ClickBank Affiliate ID">
+			    </section>
+			</section>
+			<section class="form-group">
+			    <label for="tid" class="col-xs-2 control-label">ClickBank Tracking ID</label>
+			    <section class="col-sm-5">
+			      <input type="text" class="form-control" id="tid" placeholder="ClickBank Tracking ID">
+			    </section>
+			</section>
+			<section class="form-group">
+			    <label for="pTarget" class="col-xs-2 control-label">Products:</label>
+			    <section class="col-sm-5">
+					<select id="pTarget" class="form-control">
+						<option value="">Solar Air Lantern</option>
+						<option value="grn">Grenade</option>
+					</select>
+			    </section>
+			</section>
+			<section class="form-group">
+			    <label for="inputCbID" class="col-xs-2 control-label">Pop Up Another Offer:</label>
+			    <section class="col-sm-5">
+					<div class="radio">
+						<label class="radio-inline">
+							<input type="radio" name="onoff" id="onPop" value="" checked> On
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="onoff" id="offPop" value="ep=n"> Off
+						</label>
+					</div>
+			    </section>
+			</section>
+			<sectionm class="form-group">
+				<section class="col-sm-2">
+				</section>
+				<section class="col-sm-5 form-btn-control">
+					<button id="genBtn" type="button" class="btn btn-default">Generate Link</button>
+				</section>
+			</section>
+		</section>
+	</article>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="scripts/com.js"></script>
 	<script src="scripts/my.js"></script>
+	<script src="scripts/com.js"></script>
 	<script src="https://ts970.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=f7ce9c537fb005f19ad603e982beacf3"></script>
 </body>
 </html>
