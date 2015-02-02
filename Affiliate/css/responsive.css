@@ -1,3 +1,11 @@
+@media screen and (max-width: 1199px){
+	#generateLiknForm .col-sm-5 {
+	    width: 70%;
+	}
+	.col-xs-2 {
+	    width: 25%;
+	}
+}
 @media screen and (max-width: 991px){
 	.banner-info{
 		display: block;
@@ -13,6 +21,12 @@
 	.banner-info pre{
 		position: relative;
 	}
+	#generateLiknForm .col-sm-5 {
+	    width: 60%;
+	}
+	.col-xs-2 {
+	    width: 33%;
+	}
 }
 @media screen and (max-width: 767px){
 	.left-tabs{
@@ -24,6 +38,15 @@
 	#sal-img-size-380-256 {
 	    width: auto;
 	    height: auto;
+	}
+	#generateLiknForm .col-sm-5 {
+	    width: 100%;
+	}
+	.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{
+		float: none;
+	}
+	.col-xs-2 {
+	    width: 100%;
 	}
 }
 @media screen and (max-height: 539px){
