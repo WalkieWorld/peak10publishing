@@ -186,12 +186,30 @@ $(document).ready(function() {
 		document.getElementById('onPop').checked = true;
 		$('[data-toggle="tooltip"]').tooltip('destroy');
 	};
+
+	var alertRequired = function(handle, classArray){
+
+		classArray.forEach(function(curVal, index, arr){
+
+			handle.classList.add(curVal);
+		});
+	}
+
+	var clearAlert = function(handle, classArray){
+
+		classArray.forEach(function(curVal, index, arr){
+
+			handle.classList.remove(curVal);
+		});
+	}
 	// Generate Button event
 	genBtn.addEventListener("click", function(){
 
 		MM_validateForm('cbid','','R');
 
 		if(document.MM_returnValue){
+
+			clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
 
 			var cbid = document.getElementById('cbid').value.trim(),
 			tid = document.getElementById('tid').value.trim(),
@@ -265,17 +283,22 @@ $(document).ready(function() {
 				
 				document.getElementsByClassName("tooltip-inner")[0].textContent = generatedLink;
 			});
+		}else{
+
+			alertRequired(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
 		}
 	});
 
 	$('[aria-controls="salGenLink"]').on('click', function(){
 
+		clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
 		clearGeneratLinkForm();
 		appearSAL();
 	});
 
 	$('[aria-controls="grenadeGenerateLink"]').on('click', function(){
 
+		clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
 		clearGeneratLinkForm();
 		appearGrenade();
 	});
@@ -284,6 +307,7 @@ $(document).ready(function() {
 
 		if(document.getElementById('salGenLink').className.indexOf('active') !== -1){
 
+			clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
 			clearGeneratLinkForm();
 			appearSAL();
 		}
@@ -293,6 +317,7 @@ $(document).ready(function() {
 
 		if(document.getElementById('grenadeGenerateLink').className.indexOf("active") !== -1){
 
+			clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
 			clearGeneratLinkForm();
 			appearGrenade();
 		}

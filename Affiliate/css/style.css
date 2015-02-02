@@ -284,6 +284,10 @@ body{
 .col-xs-2{
 	width: 20%;
 }
+.my-alert{
+	padding: 0px 0px 0px 10px;
+	margin-bottom: 0px;
+}
 /*====================== dynamic style by scrolling window ========*/
 .fixed-cbTab{
 	position: fixed;
