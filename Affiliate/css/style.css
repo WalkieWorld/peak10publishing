@@ -60,7 +60,7 @@ body{
 .page-footer section .wrap{
 	margin: 0 auto;
 }
-.page-footer section label a{
+.page-footer section label, .page-footer section label a{
 	color: #ddd !important;
 }
 .page-footer section .wrap span{

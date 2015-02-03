@@ -1,7 +1,15 @@
 $( document ).ready(function() {
 	
 	var isDyn = false,
-		navTop = $('#header-nav').offset().top; 		// get the top position of #header-nav
+		navTop = $('#header-nav').offset().top,	// get the top position of #header-nav
+		spanArr = (function(){ 
+			var s = [];
+			$('.page-footer .wrap span').each(function(index, curVal){
+
+				s.push(curVal.clientWidth);
+			});
+			return s;
+		})();		
 
 	/**
 	*	Keep navigation and left tab at the top.
@@ -128,19 +136,33 @@ $( document ).ready(function() {
 	*/
 	var footerWrap = function(){
 		
-		var spanArr = $('.page-footer .wrap span');
 		var labelArr = $('.page-footer .wrap label');
-		
 		var footerWidth = (function(){
 
 			var wrapWidth = 0;
 			var halfWrapWidth = 0;
+			var oneWrapWidth = 0;
+			var fw = document.getElementsByClassName('page-footer')[0].clientWidth;
+			if(document.querySelector('.page-footer section .wrap span').clientWidth){
+				spanArr = (function(){ 
+					var s = [];
+					$('.page-footer .wrap span').each(function(index, curVal){
+
+						s.push(curVal.clientWidth);
+					});
+					return s;
+				})();	
+			}
 
 			$.each(spanArr, function(index, val){
 
-				var span = (spanArr[index].clientWidth + 4);
+				var span = (spanArr[index] + 4);
 				
-				if(index < Math.ceil(spanArr.length / 2)) {
+				if(index === 0) {
+
+					oneWrapWidth += span;
+				}
+				if(index < Math.floor(spanArr.length / 2)) {
 
 					halfWrapWidth += span;
 				}
@@ -150,24 +172,52 @@ $( document ).ready(function() {
 				
 				var label = (labelArr[index].clientWidth + 4);
 				
-				if(index < Math.ceil(labelArr.length / 2)) {
+				if(index === 0) {
+
+					oneWrapWidth += label;
+				}
+				if(index < Math.floor(labelArr.length / 2)) {
 
 					halfWrapWidth += label;
 				}
 				wrapWidth += label;
 			});
 
-			if(document.getElementsByClassName('page-footer')[0].clientWidth <= 566){
+			if(	halfWrapWidth >= (fw - (spanArr.length - 1) * 4)
+				&& fw >= window.innerWidth){
+
+				$('.page-footer section .wrap span').css("display", "none");
+				return oneWrapWidth;
+			}
+			else if(wrapWidth 
+				>= document.getElementsByClassName('container')[0].clientWidth){
 			
+				var spanList = document.querySelectorAll('.page-footer section .wrap span');
+				Array.prototype.slice.call(spanList).forEach(function(cur, index, arr){
+
+					cur.removeAttribute('style');
+				});
+				
 				return halfWrapWidth;
 			}else{
-			
+				
+				var spanList = document.querySelectorAll('.page-footer section .wrap span');
+				Array.prototype.slice.call(spanList).forEach(function(cur, index, arr){
+
+					cur.removeAttribute('style');
+				});
+
 				return wrapWidth;
 			}
 		})();
-console.log(document.getElementsByClassName('page-footer')[0].clientWidth);
+
 		$('.page-footer section .wrap').css("width", footerWidth + "px");
 	};
+
+	$( window ).resize(function() {
+
+		footerWrap();
+	});
 
 	/**
 	*	Run functions initially.
