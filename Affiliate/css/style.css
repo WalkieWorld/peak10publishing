@@ -73,6 +73,9 @@ body{
 	display: flex;
 	margin-bottom: 100px; 
 }
+.top-tabpanel{
+	margin-bottom: 100px; 
+}
 .left-tabs{
 	min-width: 150px;
 	width: auto;

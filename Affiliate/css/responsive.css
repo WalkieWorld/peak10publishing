@@ -32,9 +32,9 @@
 	.left-tabs{
 		min-width: 80px;
 	}
-	.page-footer{
+	/*.page-footer{
 		position: relative;
-	}
+	}*/
 	#sal-img-size-380-256 {
 	    width: auto;
 	    height: auto;
@@ -48,15 +48,39 @@
 	.col-xs-2 {
 	    width: 100%;
 	}
+	.logo h1 {
+		margin: 52px 0px 0px 20px;
+		font-size: 36px;
+		font-weight: 500;
+	}
 }
-@media screen and (max-height: 539px){
-	.page-footer{
+@media screen and (max-width: 639px){
+	html{
+		min-height: 100%;
 		position: relative;
 	}
-	.content{
-		margin: 0px 0px 50px 0px;
+}
+@media screen and (max-width: 566px){
+	.page-footer section .wrap span {
+		padding: 0px 2px 0px 20px;
 	}
-	.signup-form{
-		margin-bottom: 0px;
+}
+@media screen and (max-width: 484px){
+	.logo h1 {
+		margin: 58px 0px 0px 20px;
+		font-size: 30px;
+		font-weight: 500;
+	}
+}
+@media screen and (max-width: 447px){
+	.logo h1 {
+		margin: 62px 0px 0px 20px;
+		font-size: 26px;
+		font-weight: 500;
+	}
+}
+@media screen and (max-width: 422px){
+	.logo h1 {
+		display: none;
 	}
 }

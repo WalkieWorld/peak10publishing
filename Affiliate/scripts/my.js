@@ -84,6 +84,7 @@ $(document).ready(function() {
 	var phoneStyle = function(){
 		$('#clickBankTab').removeClass('left-tabs');
 		$('#left-tabpanel').removeClass('left-tabpanel');
+		$('#left-tabpanel').addClass('top-tabpanel');
 	}
 
 	var dynamicStyle = function(){
@@ -95,6 +96,7 @@ $(document).ready(function() {
 
 			$('#clickBankTab').addClass('left-tabs');
 			$('#left-tabpanel').addClass('left-tabpanel');
+			$('#left-tabpanel').removeClass('top-tabpanel');
 
 			if($(window).width() < 992){
 

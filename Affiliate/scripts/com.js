@@ -134,19 +134,38 @@ $( document ).ready(function() {
 		var footerWidth = (function(){
 
 			var wrapWidth = 0;
+			var halfWrapWidth = 0;
 
 			$.each(spanArr, function(index, val){
 
-				wrapWidth += (spanArr[index].clientWidth + 4);
+				var span = (spanArr[index].clientWidth + 4);
+				
+				if(index < Math.ceil(spanArr.length / 2)) {
+
+					halfWrapWidth += span;
+				}
+				wrapWidth += span;
 			});
 			$.each(labelArr, function(index, val){
-		
-				wrapWidth += (labelArr[index].clientWidth + 4);
+				
+				var label = (labelArr[index].clientWidth + 4);
+				
+				if(index < Math.ceil(labelArr.length / 2)) {
+
+					halfWrapWidth += label;
+				}
+				wrapWidth += label;
 			});
 
-			return wrapWidth;
+			if(document.getElementsByClassName('page-footer')[0].clientWidth <= 566){
+			
+				return halfWrapWidth;
+			}else{
+			
+				return wrapWidth;
+			}
 		})();
-
+console.log(document.getElementsByClassName('page-footer')[0].clientWidth);
 		$('.page-footer section .wrap').css("width", footerWidth + "px");
 	};
 
