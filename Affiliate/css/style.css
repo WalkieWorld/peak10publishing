@@ -303,12 +303,35 @@ body{
 .content h4{
 	margin: 15px 0px 5px 0px;
 }
-.content em{
+.container em{
 	font-weight: 600;
 	font-style: normal;
 }
+em.red{
+	color: #FA3031;
+}
 #generatedLink{
 	cursor: text;
+}
+.description .logo img{
+	width: 100%;
+}
+.description dt{
+	margin: 10px 0px 15px 0px;
+}
+.description dd{
+	margin: 5px 0px 15px 0px;
+}
+.description dt img{
+	margin: 0px 0px 15px 0px;
+}
+.banner-info pre{
+	display: -webkit-flex;
+	display: flex;
+}
+.template{
+	display: -webkit-flex;
+	display: flex;
 }
 /*
 *============================== style color rewrite =====================
@@ -388,6 +411,11 @@ body{
 	border-color: #fff #932AB6 #932AB6 #fff;
 	box-shadow: 3px 5px 5px -2px #333;
 }
+.right-tab-content .nav-tabs > li.active > a:hover{
+	color: #333 !important;
+	background-color: #fff;
+	text-decoration: none;
+}
 /*.tab-content.right-tab-content {
     background-color: #FA3031;
     color: #FFF !important;
@@ -422,12 +450,8 @@ body{
 }
 /*================== end dynamic style by resize window ========*/
 /*====================== banner images ============================*/
-#sal-img-size-380-256{
-	width: 380px;
-	height: 256px;
-}
-#sal-img-size-180-121{
-	width: 180px;
-	height: 121px;
+.sal-img-size-300-250{
+	width: 300px;
+	height: 250px;
 }
 /*================== end banner images ============================*/
