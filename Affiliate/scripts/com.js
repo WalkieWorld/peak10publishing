@@ -15,23 +15,26 @@ $( document ).ready(function() {
 
 	var resetStyleCB = function(windowScrollTop){
 		
-		var winTop = windowScrollTop;
+		if($(window).width() >= 992){
+		
+			var winTop = windowScrollTop;
 
-		// calculate navigation position then keep it at the top
-		if ((winTop - navTop) > 0){
+			// calculate navigation position then keep it at the top
+			if ((winTop - navTop) > 0){
 
-			$('#logo').addClass('logo-margin');
-			$('#header-nav').addClass('navbar-fixed-top');
-			$('#header-nav-container').addClass('container');
-			$('#header-nav-container').css('margin-bottom', '0px');
-		}
-		// when user scroll to the top, recover its position.
-		else{
+				$('#logo').addClass('logo-margin');
+				$('#header-nav').addClass('navbar-fixed-top');
+				$('#header-nav-container').addClass('container');
+				$('#header-nav-container').css('margin-bottom', '0px');
+			}
+			// when user scroll to the top, recover its position.
+			else{
 
-			$('#logo').removeClass('logo-margin');
-			$('#header-nav').removeClass('navbar-fixed-top');
-			$('#header-nav-container').removeClass('container');
-			$('#header-nav-container').removeAttr( 'style' );
+				$('#logo').removeClass('logo-margin');
+				$('#header-nav').removeClass('navbar-fixed-top');
+				$('#header-nav-container').removeClass('container');
+				$('#header-nav-container').removeAttr( 'style' );
+			}
 		}
 
 		return true;
@@ -41,10 +44,8 @@ $( document ).ready(function() {
 	*	When their position are back, restore their original style.
 	*/
 	$(window).scroll(function(){
-		if($(window).width() >= 992){
-			
+		
 		isDyn = resetStyleCB($(window).scrollTop());
-		}
 	});
 
 	$( window ).resize(function() {

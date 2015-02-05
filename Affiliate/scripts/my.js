@@ -25,40 +25,40 @@ $(document).ready(function() {
 	// Reset the style of ClickBank tabs and panels.
 	var resetStyleCB = function(windowScrollTop){
 		
-		var winTop = windowScrollTop;
+		if($(window).width() >= 992){
 
-		// if isDyn === true, 
-		// that means that this part has already implemented by com.js
-		if(!isDyn){
-			// calculate navigation position then keep it at the top
-			if ((winTop - navTop) > 0){
-				
-				$('#logo').addClass('logo-margin');
-				$('#header-nav').addClass('navbar-fixed-top');
-				$('#header-nav-container').addClass('container');
+			var winTop = windowScrollTop;
+			// if isDyn === true, 
+			// that means that this part has already implemented by com.js
+			if(!isDyn){
+				// calculate navigation position then keep it at the top
+				if ((winTop - navTop) > 0){
+					
+					$('#logo').addClass('logo-margin');
+					$('#header-nav').addClass('navbar-fixed-top');
+					$('#header-nav-container').addClass('container');
+				}
+				// when user scroll to the top, recover its position.
+				else{
+
+					$('#logo').removeClass('logo-margin');
+					$('#header-nav').removeClass('navbar-fixed-top');
+					$('#header-nav-container').removeClass('container');
+					$('#header-nav-container').removeAttr( 'style' );
+				}
 			}
-			// when user scroll to the top, recover its position.
-			else{
 
-				$('#logo').removeClass('logo-margin');
-				$('#header-nav').removeClass('navbar-fixed-top');
-				$('#header-nav-container').removeClass('container');
-				$('#header-nav-container').removeAttr( 'style' );
+			//calculate ClickBank tab position then keep it at the top
+			if(winTop - cbTabTop > -52){
+
+				$('#clickBankTab').addClass('fixed-cbTab');
+				$('#clickBankTabContent').addClass('fixed-cbTab-right-tab-content');
+			}else{
+
+				$('#clickBankTab').removeClass('fixed-cbTab');
+				$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
 			}
 		}
-
-		//calculate ClickBank tab position then keep it at the top
-		if(winTop - cbTabTop > -52){
-
-			$('#clickBankTab').addClass('fixed-cbTab');
-			$('#clickBankTabContent').addClass('fixed-cbTab-right-tab-content');
-		}else{
-
-			$('#clickBankTab').removeClass('fixed-cbTab');
-			$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
-		}
-
-		return true;
 	}
 
 	/**
@@ -66,10 +66,8 @@ $(document).ready(function() {
 	*	When their position are back, restore their original style.
 	*/
 	$(window).scroll(function(){
-		if($(window).width() >= 992){
-			
-			resetStyleCB($(window).scrollTop());
-		}
+
+		resetStyleCB($(window).scrollTop());
 	});
 
 	$( window ).resize(function() {
@@ -116,7 +114,7 @@ $(document).ready(function() {
 	*	Run functions initially.
 	*/
 	// detect current size of window for using the right style
-	isDyn = resetStyleCB($(window).scrollTop());
+	resetStyleCB($(window).scrollTop());
 	dynamicStyle();
 
 	// Verify the required content helper

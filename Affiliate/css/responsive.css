@@ -5,6 +5,9 @@
 	.col-xs-2 {
 	    width: 25%;
 	}
+	.home-page{
+		width: 100%;
+	}
 }
 @media screen and (max-width: 991px){
 	.banner-info{
@@ -16,16 +19,33 @@
 		bottom: 0px;
 	}
 	.banner-info figure{
-		margin: 0px 0px 10px 0px;
+		margin: 0px 0px 60px 0px;
 	}
-	.banner-info pre{
+	/*.banner-info pre{
 		position: relative;
-	}
+	}*/
 	#generateLiknForm .col-sm-5 {
 	    width: 60%;
 	}
 	.col-xs-2 {
 	    width: 33%;
+	}
+	.product-albums{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+
+		flex-flow: row wrap;
+		justify-content: center ;
+		align-items: center ;
+	}
+	.product-albums figure{
+		width: auto;
+		height: 100%;
+		margin: 0px 5px 15px 0px;
+	}
+	.logo-margin{
+		margin-bottom: 10px !important;
 	}
 }
 @media screen and (max-width: 767px){
@@ -53,11 +73,19 @@
 		font-size: 36px;
 		font-weight: 500;
 	}
+	.product-albums figure img{
+		width: 80%;
+		height: 80%;
+	}
 }
 @media screen and (max-width: 639px){
 	html{
 		min-height: 100%;
 		position: relative;
+	}
+	.product-albums figure img{
+		width: 100%;
+		height: 100%;
 	}
 }
 @media screen and (max-width: 566px){

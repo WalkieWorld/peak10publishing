@@ -291,7 +291,7 @@ body{
 	display: flex;
 	justify-content: -webkit-flex-end;
 	justify-content: flex-end;
-	margin: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
 }
 .col-xs-2{
 	width: 20%;
@@ -332,6 +332,28 @@ em.red{
 .template{
 	display: -webkit-flex;
 	display: flex;
+}
+.home-page{
+	width: 75%;
+}
+.product-albums{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: -webkit-flex-start;
+	align-items: -webkit-flex-start;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.product-albums figure{
+	width: 250px;
+	height: 200px;
+	margin: 0px 20px 15px 0px;
+}
+.product-albums figure img{
+	width: auto;
+	height: auto;
 }
 /*
 *============================== style color rewrite =====================
