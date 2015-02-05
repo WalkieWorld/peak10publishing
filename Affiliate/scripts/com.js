@@ -1,8 +1,10 @@
+// Globle variables here
+var isDyn = false;
+
 $( document ).ready(function() {
 	
-	var isDyn = false,
-		navTop = $('#header-nav').offset().top,	// get the top position of #header-nav
-		spanArr = (function(){ 
+	var navTop = $('#header-nav').offset().top,	// get the top position of #header-nav
+		spanArr = (function(){ 					// Adjust postion of footer links
 			var s = [];
 			$('.page-footer .wrap span').each(function(index, curVal){
 
@@ -11,30 +13,37 @@ $( document ).ready(function() {
 			return s;
 		})();		
 
+	var resetStyleCB = function(windowScrollTop){
+		
+		var winTop = windowScrollTop;
+
+		// calculate navigation position then keep it at the top
+		if ((winTop - navTop) > 0){
+
+			$('#logo').addClass('logo-margin');
+			$('#header-nav').addClass('navbar-fixed-top');
+			$('#header-nav-container').addClass('container');
+			$('#header-nav-container').css('margin-bottom', '0px');
+		}
+		// when user scroll to the top, recover its position.
+		else{
+
+			$('#logo').removeClass('logo-margin');
+			$('#header-nav').removeClass('navbar-fixed-top');
+			$('#header-nav-container').removeClass('container');
+			$('#header-nav-container').removeAttr( 'style' );
+		}
+
+		return true;
+	};
 	/**
 	*	Keep navigation and left tab at the top.
 	*	When their position are back, restore their original style.
 	*/
 	$(window).scroll(function(){
 		if($(window).width() >= 992){
-			var winTop = $(window).scrollTop();
-
-			// calculate navigation position then keep it at the top
-			if ((winTop - navTop) > 0){
-
-				$('#logo').addClass('logo-margin');
-				$('#header-nav').addClass('navbar-fixed-top');
-				$('#header-nav-container').addClass('container');
-				$('#header-nav-container').css('margin-bottom', '0px');
-			}
-			// when user scroll to the top, recover its position.
-			else{
-
-				$('#logo').removeClass('logo-margin');
-				$('#header-nav').removeClass('navbar-fixed-top');
-				$('#header-nav-container').removeClass('container');
-				$('#header-nav-container').removeAttr( 'style' );
-			}
+			
+		isDyn = resetStyleCB($(window).scrollTop());
 		}
 	});
 
@@ -64,6 +73,7 @@ $( document ).ready(function() {
 	*	Run functions initially.
 	*/
 	// detect current size of window for using the right style
+	isDyn = resetStyleCB($(window).scrollTop());
 	dynamicStyle();
 
 	$('#webFormSignUpShow').on('click', function(){

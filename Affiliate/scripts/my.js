@@ -1,11 +1,10 @@
 $(document).ready(function() {
 
 
-	var 
-		isDyn = false,
-		navTop = $('#header-nav').offset().top, 		// get the top position of #header-nav
+	var navTop = $('#header-nav').offset().top, 		// get the top position of #header-nav
 		cbTabTop = $('#clickBankTab').offset().top;
 	
+	// #clickBankTab is Details tab
 	$('#clickBankTab a').click(function (e) {
 
 		e.preventDefault();
@@ -23,7 +22,44 @@ $(document).ready(function() {
 		$(this).tab('show');
 	});
 
-	
+	// Reset the style of ClickBank tabs and panels.
+	var resetStyleCB = function(windowScrollTop){
+		
+		var winTop = windowScrollTop;
+
+		// if isDyn === true, 
+		// that means that this part has already implemented by com.js
+		if(!isDyn){
+			// calculate navigation position then keep it at the top
+			if ((winTop - navTop) > 0){
+				
+				$('#logo').addClass('logo-margin');
+				$('#header-nav').addClass('navbar-fixed-top');
+				$('#header-nav-container').addClass('container');
+			}
+			// when user scroll to the top, recover its position.
+			else{
+
+				$('#logo').removeClass('logo-margin');
+				$('#header-nav').removeClass('navbar-fixed-top');
+				$('#header-nav-container').removeClass('container');
+				$('#header-nav-container').removeAttr( 'style' );
+			}
+		}
+
+		//calculate ClickBank tab position then keep it at the top
+		if(winTop - cbTabTop > -52){
+
+			$('#clickBankTab').addClass('fixed-cbTab');
+			$('#clickBankTabContent').addClass('fixed-cbTab-right-tab-content');
+		}else{
+
+			$('#clickBankTab').removeClass('fixed-cbTab');
+			$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
+		}
+
+		return true;
+	}
 
 	/**
 	*	Keep navigation and left tab at the top.
@@ -31,40 +67,8 @@ $(document).ready(function() {
 	*/
 	$(window).scroll(function(){
 		if($(window).width() >= 992){
-			var winTop = $(window).scrollTop();
-
-			// calculate navigation position then keep it at the top
-			if ((winTop - navTop) > 0){
-				if(isDyn === false){
-					$('#logo').addClass('logo-margin');
-					$('#header-nav').addClass('navbar-fixed-top');
-					$('#header-nav-container').addClass('container');
-					$('#header-nav-container').css('margin-bottom', '0px');
-					isDyn = true;
-				}
-			}
-			// when user scroll to the top, recover its position.
-			else{
-
-				if(isDyn === true){
-					$('#logo').removeClass('logo-margin');
-					$('#header-nav').removeClass('navbar-fixed-top');
-					$('#header-nav-container').removeClass('container');
-					$('#header-nav-container').removeAttr( 'style' );
-					isDyn = false;
-				}
-			}
-
-			//calculate ClickBank tab position then keep it at the top
-			if(winTop - cbTabTop > -68){
-
-				$('#clickBankTab').addClass('fixed-cbTab');
-				$('#clickBankTabContent').addClass('fixed-cbTab-right-tab-content');
-			}else{
-
-				$('#clickBankTab').removeClass('fixed-cbTab');
-				$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
-			}
+			
+			resetStyleCB($(window).scrollTop());
 		}
 	});
 
@@ -73,6 +77,7 @@ $(document).ready(function() {
 		dynamicStyle();
 	});
 
+	// style script for tablets.
 	var tabletStyle = function(){
 		$('#header-nav').removeClass('navbar-fixed-top');
 		$('#header-nav-container').removeClass('container');
@@ -81,12 +86,14 @@ $(document).ready(function() {
 		$('#clickBankTabContent').removeClass('fixed-cbTab-right-tab-content');
 	}
 
+	// style script for phones
 	var phoneStyle = function(){
 		$('#clickBankTab').removeClass('left-tabs');
 		$('#left-tabpanel').removeClass('left-tabpanel');
 		$('#left-tabpanel').addClass('top-tabpanel');
 	}
 
+	// compute what right style is for current user dynamically
 	var dynamicStyle = function(){
 
 		if($(window).width() <= 639){
@@ -109,6 +116,7 @@ $(document).ready(function() {
 	*	Run functions initially.
 	*/
 	// detect current size of window for using the right style
+	isDyn = resetStyleCB($(window).scrollTop());
 	dynamicStyle();
 
 	// Verify the required content helper
@@ -164,6 +172,7 @@ $(document).ready(function() {
 
 	var genBtn = document.getElementById("genBtn");
 
+	// appear generate link tab when click Solar Air Lantern tab
 	var appearSAL = function(){
 
 		document.getElementById('generateLiknForm').classList.remove('hidden');
@@ -172,6 +181,7 @@ $(document).ready(function() {
 		document.getElementById('pTarget').querySelectorAll("option").item(0).selected = "selected";
 	}
 
+	// appear generate link tab when click Grenade tab
 	var appearGrenade = function(){
 
 		document.getElementById('generateLiknForm').classList.remove('hidden');
@@ -325,10 +335,10 @@ $(document).ready(function() {
 		}
 	});
 
-	// Go to Generate Link tab from another tab.
-	$("pre a[href='#salGenLink']").on('click', function(){
+	// Direct to the generate link tab
+	var directToGL = function(selector){
 
-		var salNode = $("#solarAirLanternTab")[0];
+		var salNode = $(selector)[0];
 		salNode = Array.prototype.slice.call(salNode.children);
 		salNode.forEach(function(curVal, index, arr){
 
@@ -339,5 +349,15 @@ $(document).ready(function() {
 				curVal.classList.add("active");
 			}
 		});
+	};
+	// Go to Generate Link tab from another tab.
+	$("pre a[href='#salGenLink']").on('click', function(){
+
+		directToGL("#solarAirLanternTab");
+	});
+
+	$("a[href='#grenadeGenerateLink']").on('click', function(){
+
+		directToGL("#grenadeTab");
 	});
 });
