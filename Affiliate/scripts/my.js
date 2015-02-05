@@ -324,4 +324,20 @@ $(document).ready(function() {
 			appearGrenade();
 		}
 	});
+
+	// Go to Generate Link tab from another tab.
+	$("pre a[href='#salGenLink']").on('click', function(){
+
+		var salNode = $("#solarAirLanternTab")[0];
+		salNode = Array.prototype.slice.call(salNode.children);
+		salNode.forEach(function(curVal, index, arr){
+
+			if(curVal.className.indexOf("active") === 0){
+				curVal.classList.remove("active");
+			}
+			if(index === arr.length - 1){
+				curVal.classList.add("active");
+			}
+		});
+	});
 });
