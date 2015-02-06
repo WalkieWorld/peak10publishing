@@ -4,6 +4,9 @@ $(document).ready(function() {
 	var navTop = $('#header-nav').offset().top, 		// get the top position of #header-nav
 		cbTabTop = $('#clickBankTab').offset().top;
 	
+	/**
+		Initialize the left tabs
+	*/
 	// #clickBankTab is Details tab
 	$('#clickBankTab a').click(function (e) {
 
@@ -21,6 +24,11 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).tab('show');
 	});
+
+	/**
+		Initialize the email collapse
+	*/
+	$('.collapse').collapse('show');
 
 	// Reset the style of ClickBank tabs and panels.
 	var resetStyleCB = function(windowScrollTop){

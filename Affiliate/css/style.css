@@ -88,7 +88,7 @@ body{
 	border-width: 1px;
 	border-color: #DDD #DDD;
 	margin-right: -3px;
-	margin-bottom: 0px;
+	margin-bottom: 1px;
 	
 }
 .left-tabs > li > a{
@@ -356,6 +356,12 @@ em.red{
 	width: auto;
 	height: auto;
 }
+.panel-heading{
+	padding: 1px 15px;
+}
+.panel-group .panel {
+    margin-top: 10px;
+}
 /*
 *============================== style color rewrite =====================
 */
@@ -420,41 +426,47 @@ body{
 	background-color: #43C83C;
 	color: #fff;
 }
-.left-tabs > li.active a{
-	background: none repeat scroll 0% 0% #fff !important;
-	color: #52B9E9 !important;
-}
 .left-tabs > li.active > a,
 .left-tabs > li.active > a:focus,
 .left-tabs > li.active > a:hover{
 	box-shadow: -2px 2px 2px #333;
 	text-decoration: none;
+	background: none repeat scroll 0% 0% #fff !important;
+	color: #52B9E9 !important;
 }
 .left-tabs > li > a{
 	background: none repeat scroll 0% 0% #52B9E9;
 	color: #fff;
 	border-bottom: 1px solid #fff;
-	border-top: 1px solid #333;
+	border-top: 1px solid #ddd;
 }
 .right-tab-content{
 	border-color: #fff #932AB6 #932AB6 #fff;
 	box-shadow: 3px 5px 5px -2px #333;
 }
+ .right-tab-content .nav-tabs > li > a{
+ 	background: none repeat scroll 0% 0% #52B9E9;
+	color: #fff;
+	border-bottom: 1px solid #52B9E9;
+	border-top: 1px solid #ddd;
+ }
+.right-tab-content .nav-tabs > li.active > a,
+.right-tab-content .nav-tabs > li.active > a:focus,
 .right-tab-content .nav-tabs > li.active > a:hover{
-	color: #333 !important;
-	background-color: #fff;
+	box-shadow: -4px -3px 3px 0px #95AEC6, 4px -3px 3px 0px #95AEC6;
 	text-decoration: none;
+	background: none repeat scroll 0% 0% #fff !important;
+	color: #52B9E9 !important;
+	margin-top: 1px;
+	border-bottom: none;
 }
-/*.tab-content.right-tab-content {
-    background-color: #FA3031;
-    color: #FFF !important;
+.panel-default > .panel-heading{
+	background: none repeat scroll 0% 0% #52B9E9;
 }
-.right-tab-content .nav-tabs > li > a {
-    color: #fff;
+.panel-default > .panel-heading a[data-toggle="collapse"]{
+	color: #fff;
+	display: block;
 }
-.right-tab-content .nav-tabs > li.active > a {
-    color: #337AB7;
-}*/
 /*
 *====================D9A1EB==================================================
 */
