@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 	var navTop = $('#header-nav').offset().top, 		// get the top position of #header-nav
 		cbTabTop = $('#clickBankTab').offset().top;
 	
@@ -28,7 +27,7 @@ $(document).ready(function() {
 	/**
 		Initialize the email collapse
 	*/
-	$('.collapse').collapse('show');
+	$('.left-tabpanel .collapse').collapse('show');
 
 	// Reset the style of ClickBank tabs and panels.
 	var resetStyleCB = function(windowScrollTop){
@@ -122,7 +121,11 @@ $(document).ready(function() {
 	*	Run functions initially.
 	*/
 	// detect current size of window for using the right style
-	resetStyleCB($(window).scrollTop());
+	if($(window).scrollTop() - cbTabTop > -52){
+
+		resetStyleCB($(window).scrollTop());
+	}
+	
 	dynamicStyle();
 
 	// Verify the required content helper

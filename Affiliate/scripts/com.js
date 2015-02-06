@@ -2,7 +2,7 @@
 var isDyn = false;
 
 $( document ).ready(function() {
-	
+
 	var navTop = $('#header-nav').offset().top,	// get the top position of #header-nav
 		spanArr = (function(){ 					// Adjust postion of footer links
 			var s = [];
@@ -74,8 +74,12 @@ $( document ).ready(function() {
 	*	Run functions initially.
 	*/
 	// detect current size of window for using the right style
-	isDyn = resetStyleCB($(window).scrollTop());
-	dynamicStyle();
+	if (($(window).scrollTop() - navTop) > 0){
+		isDyn = resetStyleCB($(window).scrollTop());
+	}
+	if($("title").text().toLowerCase().indexOf("clickbank") !== -1){
+		dynamicStyle();
+	}
 
 	$('#webFormSignUpShow').on('click', function(){
 
