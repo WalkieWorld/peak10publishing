@@ -229,12 +229,19 @@ body{
 	height: 100%;
 }
 .banner-info pre{
-	height: auto;
-	display: block;
+	display: -webkit-flex;
+	display: flex;
+	height: 46px;
 	position: absolute;
 	bottom: 0px;
-	left: 0px;
+	left: 160px;
 	right: 0px;
+	word-wrap: normal;
+}
+.banner-info pre.link{
+	width: 155px;
+	left: 0px;
+	margin-right: 10px;
 }
 .text-danger{
 	color: #A94442 !important;
@@ -325,10 +332,6 @@ em.red{
 }
 .description dt img{
 	margin: 0px 0px 15px 0px;
-}
-.banner-info pre{
-	display: -webkit-flex;
-	display: flex;
 }
 .template{
 	display: -webkit-flex;
@@ -488,6 +491,15 @@ body{
 /*====================== dynamic style by resize window ========*/
 .survival-frog-article{
 	position: relative;
+}
+.banner-info-resize figure{
+	width: auto;
+	height: auto;
+	margin: 0px 0px 70px 0px !important;
+}
+.banner-info-resize figure img{
+	width: 100%;
+	height: 100%;
 }
 /*================== end dynamic style by resize window ========*/
 /*====================== banner images ============================*/

@@ -80,6 +80,7 @@ $(document).ready(function() {
 	$( window ).resize(function() {
 
 		dynamicStyle();
+		dynamicResizeBannerImage();
 	});
 
 	// style script for tablets.
@@ -117,14 +118,24 @@ $(document).ready(function() {
 		}
 	}
 
+	var dynamicResizeBannerImage = function(){
+		var bannerImage = $('.banner-info figure img').width();
+console.log(document.querySelector('.banner-info').clientWidth);
+console.log(bannerImage + " =======")
+		if( bannerImage <= 298 && (bannerImage + 2) >= document.querySelector('.banner-info').clientWidth){
+
+			$('.tab-content .banner-info').addClass('banner-info-resize');
+		}else if(bannerImage > 298){
+
+			$('.tab-content .banner-info.banner-info-resize').removeClass('banner-info-resize');
+		}
+	}
+
 	/**
 	*	Run functions initially.
 	*/
 	// detect current size of window for using the right style
-	if($(window).scrollTop() - cbTabTop > -52){
-
-		resetStyleCB($(window).scrollTop());
-	}
+	resetStyleCB($(window).scrollTop());
 	
 	dynamicStyle();
 

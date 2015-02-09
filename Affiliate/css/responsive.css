@@ -19,7 +19,7 @@
 		bottom: 0px;
 	}
 	.banner-info figure{
-		margin: 0px 0px 60px 0px;
+		margin: 0px 200px 70px 0px;
 	}
 	/*.banner-info pre{
 		position: relative;
@@ -52,12 +52,8 @@
 	.left-tabs{
 		min-width: 80px;
 	}
-	/*.page-footer{
-		position: relative;
-	}*/
-	.sal-img-size-300-250 {
-	    width: auto;
-	    height: auto;
+	.banner-info figure{
+		margin: 0px 248px 70px 0px;
 	}
 	#generateLiknForm .col-sm-5 {
 	    width: 100%;
@@ -123,6 +119,13 @@
 		padding: 35px 0px 0px 0px;
 		font-size: 14px;
 	}
+	.banner-info pre {
+		left: 0px;
+	}
+	.banner-info pre.link {
+	    bottom: 60px;
+	    position: relative;
+	}
 }
 @media screen and (max-width: 337px){
 	.page-footer section .wrap{
@@ -132,5 +135,8 @@
 @media screen and (max-width: 318px){
 	#modalLabel{
 		display: none;
+	}
+	.banner-info pre.link{
+		width: 100%;
 	}
 }
