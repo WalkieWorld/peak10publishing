@@ -36,13 +36,17 @@ html{
 body{
 	min-height: 100%;
 	position: relative;
-	background-color: #E0E0E0;
-	
+	background-color: #ffffff;
 }
 .container{
 	background-color: #fff;
 	box-shadow: -7px 3px 12px 0px #5E5A56, 7px 3px 12px -3px;
+	position: relative;
 }
+/*.container .body{
+	height: 100%;
+	position: absolute;
+}*/
 .page-footer{
 	position: absolute;
 	bottom: 0px;
@@ -140,6 +144,9 @@ body{
 .right-tab-content > .tab-pane{
 	padding: 20px;
 }
+.right-tab-content .tab-content dl.description{
+	margin: 50px 0px 0px 0px;
+}
 .nav-tabs.left-tabs{
 	border-bottom: none;
 }
@@ -231,12 +238,14 @@ body{
 .banner-info pre{
 	display: -webkit-flex;
 	display: flex;
-	height: 46px;
+	height: 48px;
 	position: absolute;
 	bottom: 0px;
 	left: 160px;
 	right: 0px;
 	word-wrap: normal;
+	overflow-y: hidden;
+	padding: 5px;
 }
 .banner-info pre.link{
 	width: 155px;
@@ -297,7 +306,6 @@ body{
 .form-btn-control{
 	display: -webkit-flex;
 	display: flex;
-	justify-content: -webkit-flex-end;
 	justify-content: flex-end;
 	margin: 0px 0px 0px 0px;
 }
@@ -339,13 +347,12 @@ em.red{
 }
 .home-page{
 	width: 75%;
+	margin-left: 78px;
 }
 .product-albums{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
-	justify-content: -webkit-flex-start;
-	align-items: -webkit-flex-start;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -369,7 +376,7 @@ em.red{
 *============================== style color rewrite =====================
 */
 body{
-	background-color: #fff;
+	background-color: #dddddd;
 }
 .navbar-default .navbar-brand{
 	color: #fff;
@@ -408,19 +415,23 @@ body{
     background-color: #52B9E9 !important;
 }
 .page-footer .container {
-    background-color: #ddd !important;
+    background-color: #52B9E9 !important;
 }
 .page-footer section label a{
-	color: #333 !important;
+	color: #ffffff !important;
+	padding: 18px 0px 18px 0px;
 }
+.page-footer section .wrap span{
+	color: #ffffff;
+}
+.page-footer section label a:hover,
 .navbar-default .navbar-nav > li > a:hover,
 .right-tab-content .nav-tabs > li > a:hover{
 	color: #fff !important;
 	background-color: #43C83C;
 	text-decoration: underline;
 }
-.navbar-default .navbar-nav > .active > a:hover,
-.page-footer section label a:hover{
+.navbar-default .navbar-nav > .active > a:hover{
 	color: #43C83C !important;
 	text-decoration: underline;
 }

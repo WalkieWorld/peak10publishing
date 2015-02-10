@@ -229,8 +229,39 @@ $( document ).ready(function() {
 		$('.page-footer section .wrap').css("width", footerWidth + "px");
 	};
 
+	/**
+	 * Compute section.body height dynamically.
+	 * */
+
+
+	var sectionBodyHeight = {
+
+		headerHt: undefined,
+		footerHt: undefined,
+		windowHt: undefined,
+		bodyHt: undefined,
+
+		initial: function(){
+			this.headerHt = $("header.big-header").height();
+			this.footerHt = $("footer.page-footer").height();
+			this.windowHt = $(window).height();
+			this.bodyHt = $("section.body").height();
+		},
+
+		setHeight: function(){
+
+			if(this.windowHt > (this.bodyHt + this.footerHt + this.headerHt)){
+
+				$("section.body").animate({
+					"min-height": this.windowHt - this.footerHt - this.headerHt
+				}, 3000);
+			}
+		}
+	};
+
 	$( window ).resize(function() {
 
+		sectionBodyHeight.setHeight();
 		footerWrap();
 	});
 
@@ -238,5 +269,6 @@ $( document ).ready(function() {
 	*	Run functions initially.
 	*/
 	footerWrap();
-
+	sectionBodyHeight.initial();
+	sectionBodyHeight.setHeight();
 });

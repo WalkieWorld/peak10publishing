@@ -120,8 +120,7 @@ $(document).ready(function() {
 
 	var dynamicResizeBannerImage = function(){
 		var bannerImage = $('.banner-info figure img').width();
-console.log(document.querySelector('.banner-info').clientWidth);
-console.log(bannerImage + " =======")
+
 		if( bannerImage <= 298 && (bannerImage + 2) >= document.querySelector('.banner-info').clientWidth){
 
 			$('.tab-content .banner-info').addClass('banner-info-resize');
