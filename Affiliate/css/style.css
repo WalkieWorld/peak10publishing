@@ -43,9 +43,8 @@ body{
 	box-shadow: -7px 3px 12px 0px #5E5A56, 7px 3px 12px -3px;
 	position: relative;
 }
-/*.container .body{
-	height: 100%;
-	position: absolute;
+/*.container.body{
+	min-height: 765px;
 }*/
 .page-footer{
 	position: absolute;
