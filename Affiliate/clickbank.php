@@ -1,73 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: HZ
+ * Date: 2/19/2015
+ * Time: 2:57 PM
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="Survival Frog: Affiliate" name="description">
-    <meta content="Hao Zhang" name="author">
-    <!-- Latest Version of FontAwesome 4.3.0 -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Latest Version of BootStrap 3.3.2 -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"></link> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-    <link rel="shortcut icon" href="image/frog-logo-affiliate.ico">
-    <title>Survival Frog Affiliate: ClickBank</title>
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+<?php
+$title = "Survival Frog Affiliate: Affiliate Contest";
+include_once("includes/head.php");
+?>
 <body>
-<header class="container big-header">
-    <!-- logo -->
-    <section class="logo" id="logo">
-        <a href="index.html">
-            <img src="image/survival-affiliate.jpg" alt="survival frog">
-            <!-- <h2>SURVIVAL</h2>
-            <aside class="logo-aside">
-            <p>FROG</p>
-            <img src="image/frog-logo-affiliate.jpg" alt="survival frog">
-            </aside> -->
-        </a>
-
-        <h1>Affiliate Portal</h1>
-    </section>
-    <!-- navigation -->
-    <nav id="header-nav">
-        <section class="navbar navbar-default" id="header-nav-container">
-            <section class="container-fluid">
-                <article class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        Home
-                    </a>
-                </article>
-                <article class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="clickbank.html">Affiliate Contest<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li><a href="survivalfrog.html">E-Commerce</a></li>
-                        <li><a href="contactus.html">Contact US</a></li>
-                    </ul>
-                    <button type="button" class="btn btn-default navbar-btn navbar-right" data-toggle="modal"
-                            data-target="#signUpModal">Affiliate SignUp
-                    </button>
-                </article>
-                <!-- /.navbar-collapse -->
-            </section>
-        </section>
-    </nav>
-</header>
+<?php
+include_once("includes/header.php");
+?>
 <section class="container body">
     <section class="page-header">
         <h3>CLICKBANK</h3>
@@ -163,9 +111,9 @@
                                     <img src="image/solarairlantern/solarAirLantern_300x250_01.jpg"
                                          alt="Solar Air Lantern 1">
                                 </figure>
-                                        <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link! </a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_01.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link! </a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_01.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -175,9 +123,9 @@
                                     <img src="image/solarairlantern/solarAirLantern_300x250_02.jpg"
                                          alt="Solar Air Lantern 2">
                                 </figure>
-                                        <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link! </a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_02.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link! </a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_02.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -187,9 +135,9 @@
                                     <img src="image/solarairlantern/solarAirLantern_300x250_03.jpg"
                                          alt="Solar Air Lantern 3">
                                 </figure>
-                                        <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link! </a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_03.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link! </a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_03.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -199,9 +147,9 @@
                                     <img src="image/solarairlantern/solarAirLantern_300x250_04.jpg"
                                          alt="Solar Air Lantern 4">
                                 </figure>
-                                        <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link! </a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_04.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link! </a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_04.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -211,9 +159,9 @@
                                     <img src="image/solarairlantern/solarAirLantern_300x250_05.jpg"
                                          alt="Solar Air Lantern 2">
                                 </figure>
-                                        <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link! </a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_05.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#salGenLink" aria-controls="salGenLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link! </a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/solarairlantern/solarAirLantern_300x250_05.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                         </article>
                         <!-- Email -->
@@ -319,7 +267,7 @@
                                     Start Promoting! Click on the <a href="#grenadeGenerateLink"
                                                                      aria-controls="grenadeGenerateLink"
                                                                      role="tab" data-toggle="tab">Generate
-                                    Link!</a> Tab above to generate your link.
+                                        Link!</a> Tab above to generate your link.
                                 </dd>
                                 <dd>
                                     <a href="http://deals.survivalfrog.com/cb/free-paracord-grenade.php"
@@ -336,10 +284,10 @@
                                     <img src="image/grenade/KS_19-09-2014_300-x-250.gif"
                                          alt="Grenade 1">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/KS_19-09-2014_300-x-250.gif" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/KS_19-09-2014_300-x-250.gif" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -349,10 +297,10 @@
                                     <img src="image/grenade/paracord-Survival_300x250_01.jpg"
                                          alt="Grenade 2">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_01.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_01.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -362,10 +310,10 @@
                                     <img src="image/grenade/paracord-Survival_300x250_02.jpg"
                                          alt="Grenade 3">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_02.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_02.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -375,10 +323,10 @@
                                     <img src="image/grenade/paracord-Survival_300x250_03.jpg"
                                          alt="Grenade 4">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_03.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_03.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -388,10 +336,10 @@
                                     <img src="image/grenade/paracord-Survival_300x250_04.jpg"
                                          alt="Grenade 5">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_04.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_04.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -401,10 +349,10 @@
                                     <img src="image/grenade/paracord-Survival_300x250_05.jpg"
                                          alt="Grenade 6">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_015.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Survival_300x250_015.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -414,10 +362,10 @@
                                     <img src="image/grenade/paracord-Grenade_300x250_07.jpg"
                                          alt="Grenade 7">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Grenade_300x250_07.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Grenade_300x250_07.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -427,10 +375,10 @@
                                     <img src="image/grenade/paracord-Grenade_300x250_08.jpg"
                                          alt="Grenade 8">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Grenade_300x250_08.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Grenade_300x250_08.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                             <section class="banner-info">
                                 <aside class="pic-des">
@@ -440,10 +388,10 @@
                                     <img src="image/grenade/paracord-Grenade_300x250_09.jpg"
                                          alt="Grenade 9">
                                 </figure>
-                                        <!--<pre class="link"><a href="#grenadeGenerateLink"-->
-                                                             <!--aria-controls="grenadeGenerateLink" role="tab"-->
-                                                             <!--data-toggle="tab">Generate Your Link!</a></pre>-->
-                                        <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Grenade_300x250_09.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
+                                <!--<pre class="link"><a href="#grenadeGenerateLink"-->
+                                <!--aria-controls="grenadeGenerateLink" role="tab"-->
+                                <!--data-toggle="tab">Generate Your Link!</a></pre>-->
+                                <pre><aside class="template">&lt;img src="http://affiliate.survivalfrog.com/image/grenade/paracord-Grenade_300x250_09.jpg" style="width: 300px; height: 250px;"&gt;</aside></pre>
                             </section>
                         </article>
                         <!-- Email -->
@@ -488,161 +436,10 @@
     </section>
 
 </section>
-<footer class="page-footer">
-    <section class="container">
-        <section class="wrap">
-            <!-- <span class="fa fa-tag"></span>
-            <label>
-                Copyright ©2014 Survival Frog
-            </label> -->
-            <span class="fa fa-tag"></span>
-            <label>
-                <a href="termconditions.html"> Terms & Conditions </a>
-            </label>
-            <span class="fa fa-tag"></span>
-            <label>
-                <a href="privacypolicy.html">Privacy Policy</a>
-            </label>
-            <span class="fa fa-tag"></span>
-            <label>
-                <a href="contactus.html">Contact Us</a>
-            </label>
-            <!-- <span class="fa fa-tag"></span>
-            <label>
-                <a href="adswithus.html">Advertise With Us</a>
-            </label> -->
-            <span class="fa fa-tag"></span>
-            <label>
-                <a href="index.html">Affiliate Sites</a>
-            </label>
-        </section>
-    </section>
-</footer>
-<!-- Sign up form -->
-<form accept-charset="UTF-8" action="https://ts970.infusionsoft.com/app/form/process/09a1b8333a752929cfc593c35bb2780f"
-      class="modal fade" method="POST"
-      id="signUpModal" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
-    <section class="modal-dialog">
-        <article class="modal-content">
-            <input name="inf_form_xid" type="hidden" value="09a1b8333a752929cfc593c35bb2780f"/>
-            <input name="inf_form_name" type="hidden" value="ClickBank Affiliate Form"/>
-            <input name="infusionsoft_version" type="hidden" value="1.37.0.44"/>
-            <header class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <section class="sub-header">
-                    <section class="logo">
-                        <h2>SURVIVAL</h2>
-                        <aside class="logo-aside">
-                            <p>FROG</p>
-                            <img src="image/frog-logo-affiliate.jpg" alt="survival frog">
-                        </aside>
-                    </section>
-                    <h4 class="modal-title" id="modalLabel">Almost there: Let's make money! </h4>
-                </section>
-            </header>
-            <section class="modal-body">
-                <div class="form-group">
-                    <label for="inf_field_Email">Email *</label>
-                    <input class="form-control" id="inf_field_Email" name="inf_field_Email" placeholder="Email"
-                           type="text"/>
-                </div>
-                <div class="form-group">
-                    <label for="inf_field_FirstName">First Name</label>
-                    <input class="form-control" id="inf_field_FirstName" name="inf_field_FirstName"
-                           placeholder="First Name" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label for="inf_field_LastName">Last Name</label>
-                    <input class="form-control" id="inf_field_LastName" name="inf_field_LastName"
-                           placeholder="Last Name" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label for="inf_field_Phone1">Phone</label>
-                    <input class="form-control" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Phone"
-                           type="text"/>
-                </div>
-                <div class="form-group">
-                    <label for="inf_custom_clickbankhop">ClickBank ID</label>
-                    <input class="form-control" id="inf_custom_clickbankhop" name="inf_custom_clickbankhop"
-                           placeholder="ClickBank ID" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label for="inf_field_Nickname">Skype</label>
-                    <input class="form-control" id="inf_field_Nickname" name="inf_field_Nickname" placeholder="Skype"
-                           type="text"/>
-                </div>
-            </section>
-            <section class="modal-footer">
-                <input id="webFormSignUp" class="btn btn-default" type="submit" value="Sign Up"/>
-            </section>
-        </article>
-    </section>
-</form>
-<noscript>
-    <strong>Warning !</strong>
-    Because your browser does not support HTML5, some elements are simulated using JScript.
-    Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
-</noscript>
-<!-- role="tabpanel" class="tab-pane fade" -->
-<article id="generateLiknForm" class="form-size hidden">
-    <section class="form-horizontal">
-        <section class="form-group">
-            <span id="requiredCBID" class="fa fa-asterisk"></span>
-            <label for="cbid" class="col-xs-2 control-label">Infusionsoft Affiliate ID:</label>
-            <section class="col-sm-5">
-                <input type="text" class="form-control" id="cbid" placeholder="ClickBank Affiliate ID">
-            </section>
-        </section>
-        <section class="form-group">
-            <label for="tid" class="col-xs-2 control-label">Tracking ID:</label>
-            <section class="col-sm-5">
-                <input type="text" class="form-control" id="tid" placeholder="ClickBank Tracking ID">
-            </section>
-        </section>
-        <section class="form-group">
-            <label for="pTarget" class="col-xs-2 control-label">Products:</label>
-            <section class="col-sm-5">
-                <select id="pTarget" class="form-control">
-                    <option value="">Solar Air Lantern</option>
-                    <option value="grn">Grenade</option>
-                </select>
-            </section>
-        </section>
-        <section class="form-group">
-            <label class="col-xs-2 control-label">Exit Pop Up Offer:</label>
-            <section class="col-sm-5">
-                <div class="radio">
-                    <label class="radio-inline">
-                        <input type="radio" name="onoff" id="onPop" value="" checked> On
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="onoff" id="offPop" value="v=n"> Off
-                    </label>
-                </div>
-            </section>
-        </section>
-        <section class="form-group">
-            <label class="col-xs-2 control-label">
-            </label>
-            <section class="col-sm-5 form-btn-control">
-                <button id="genBtn" type="button" class="btn btn-default">Generate Link</button>
-            </section>
-        </section>
-        <section class="form-group">
-            <label class="col-xs-2 control-label">Your Link:</label>
-            <section class="col-sm-5">
-                <input id="generatedLink" data-toggle="tooltip" data-placement="top" type="text" title=""
-                       class="form-control" readonly>
-            </section>
-        </section>
-    </section>
-</article>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="scripts/com.js"></script>
-<script async src="scripts/my.js"></script>
-<script async src="https://ts970.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=f7ce9c537fb005f19ad603e982beacf3"></script>
+<?php
+// add custom script. Just add the relative path of the script.
+$customScript[] = "scripts/my.js";
+include_once("includes/footer.php");
+?>
 </body>
 </html>

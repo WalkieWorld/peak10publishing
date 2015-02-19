@@ -240,7 +240,7 @@ body{
 	height: 48px;
 	position: absolute;
 	bottom: 0px;
-	left: 160px;
+	left: 0px;
 	right: 0px;
 	word-wrap: normal;
 	overflow-y: hidden;
@@ -332,7 +332,7 @@ em.red{
 	width: 100%;
 }
 .description dt{
-	margin: 10px 0px 15px 0px;
+	margin: -10px 0px 15px 0px;
 }
 .description dd{
 	margin: 5px 0px 15px 0px;
@@ -385,6 +385,8 @@ body{
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;
+    font-size: 18px;
+    line-height: 20px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > p,
@@ -394,8 +396,9 @@ body{
 }
 .navbar-default .navbar-brand:hover{
 	color: #fff !important;
-	background-color: #43C83C !important;
+	background-color: #caf192 !important;
 	text-decoration: underline;
+    text-shadow:2px -2px 3px #52B9E9
 }
 .btn-default {
     color: #fff;
@@ -404,8 +407,9 @@ body{
 }
 .btn.focus,.btn:focus,.btn:hover{
 	color: #fff;
-	background-color: #43C83C;
+	background-color: #caf192;
 	text-decoration: none;
+    text-shadow:2px -2px 3px #52B9E9
 }
 .page-header{
 	border-bottom-color: #D9534F;
@@ -427,17 +431,20 @@ body{
 .navbar-default .navbar-nav > li > a:hover,
 .right-tab-content .nav-tabs > li > a:hover{
 	color: #fff !important;
-	background-color: #43C83C;
+	background-color: #caf192;
 	text-decoration: underline;
+    text-shadow:2px -2px 3px #52B9E9
 }
 .navbar-default .navbar-nav > .active > a:hover{
-	color: #43C83C !important;
+	color: #04B404 !important;
 	text-decoration: underline;
+    text-shadow: none;
 }
 .left-tabs > li > a:hover{
 	text-decoration: underline;
-	background-color: #43C83C;
+	background-color: #caf192;
 	color: #fff;
+    text-shadow:2px -2px 3px #52B9E9
 }
 .left-tabs > li.active > a,
 .left-tabs > li.active > a:focus,
@@ -446,6 +453,7 @@ body{
 	text-decoration: none;
 	background: none repeat scroll 0% 0% #fff !important;
 	color: #52B9E9 !important;
+    text-shadow: 0px 0px 0px #52B9E9;
 }
 .left-tabs > li > a{
 	background: none repeat scroll 0% 0% #52B9E9;
@@ -472,6 +480,7 @@ body{
 	color: #52B9E9 !important;
 	margin-top: 1px;
 	border-bottom: none;
+    text-shadow: 0px 0px 0px #52B9E9;
 }
 .panel-default > .panel-heading{
 	background: none repeat scroll 0% 0% #52B9E9;
