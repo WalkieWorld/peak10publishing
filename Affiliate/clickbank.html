@@ -57,10 +57,10 @@
                         <li class="active"><a href="clickbank.html">Affiliate Contest<span class="sr-only">(current)</span></a>
                         </li>
                         <li><a href="survivalfrog.html">E-Commerce</a></li>
-                        <li><a href="contactus.html">Contact US</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
                     <button type="button" class="btn btn-default navbar-btn navbar-right" data-toggle="modal"
-                            data-target="#signUpModal">Affiliate SignUp
+                            data-target="#signUpModal">Affiliate Signup
                     </button>
                 </article>
                 <!-- /.navbar-collapse -->
@@ -69,9 +69,9 @@
     </nav>
 </header>
 <section class="container body">
-    <section class="page-header">
-        <h3>CLICKBANK</h3>
-    </section>
+<!--    <section class="page-header">
+        <h3>Affiliate Contest</h3>
+    </section>-->
     <section class="left-tabpanel" role="tabpanel" id="left-tabpanel">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs left-tabs" role="tablist" id="clickBankTab">
@@ -87,9 +87,9 @@
             <!-- Description of ClickBank -->
             <article role="tabpanel" class="tab-pane fade in active" id="cbAbout">
                 <dl class="description">
-                    <dt class="logo">
+                    <!--<dt class="logo">
                         <img src="image/clickbank-logo.jpg" alt="ClickBank">
-                    </dt>
+                    </dt>-->
                     <!--<dd>We are Clickbank's first vendor to have the ability to offer multiple quantity on
                         physical products. Multiple quantity has significant advantages, namely higher
                         commissions. The average customer purchases three or more front-end products before
@@ -108,7 +108,7 @@
             <!-- Solar Air Lantern panel -->
             <article role="tabpanel" class="tab-pane fade" id="solarAirLantern">
                 <dl class="description">
-                    <dt>New Solar Air Lantern</dt>
+                    <dt>Solar Air Lantern</dt>
                 </dl>
                 <section role="tabpanel">
                     <!-- tabs inside panel of Solar Air Lantern -->
@@ -519,7 +519,7 @@
     </section>
 </footer>
 <!-- Sign up form -->
-<form accept-charset="UTF-8" action="https://ts970.infusionsoft.com/app/form/process/09a1b8333a752929cfc593c35bb2780f"
+<form accept-charset="UTF-8" action="https://ts970.infusionsoft.com/app/form/process/26ec775d75cc1320b10ed0c3bad53618"
       class="modal fade" method="POST"
       id="signUpModal" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <section class="modal-dialog">
@@ -545,32 +545,53 @@
                 <div class="form-group">
                     <label for="inf_field_Email">Email *</label>
                     <input class="form-control" id="inf_field_Email" name="inf_field_Email" placeholder="Email"
-                           type="text"/>
+                           type="text" required/>
                 </div>
                 <div class="form-group">
-                    <label for="inf_field_FirstName">First Name</label>
+                    <label for="inf_field_FirstName">First Name *</label>
                     <input class="form-control" id="inf_field_FirstName" name="inf_field_FirstName"
-                           placeholder="First Name" type="text"/>
+                           placeholder="First Name" type="text" required/>
                 </div>
                 <div class="form-group">
-                    <label for="inf_field_LastName">Last Name</label>
+                    <label for="inf_field_LastName">Last Name *</label>
                     <input class="form-control" id="inf_field_LastName" name="inf_field_LastName"
-                           placeholder="Last Name" type="text"/>
+                           placeholder="Last Name" type="text" required/>
                 </div>
                 <div class="form-group">
-                    <label for="inf_field_Phone1">Phone</label>
-                    <input class="form-control" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Phone"
+                    <label for="inf_field_Address2Street1">Street Address</label>
+                    <input class="form-control" id="inf_field_Address2Street1" name="inf_field_Address2Street1" placeholder="Street Address"
                            type="text"/>
                 </div>
                 <div class="form-group">
-                    <label for="inf_custom_clickbankhop">ClickBank ID</label>
-                    <input class="form-control" id="inf_custom_clickbankhop" name="inf_custom_clickbankhop"
-                           placeholder="ClickBank ID" type="text"/>
+                    <label for="inf_field_City2">City</label>
+                    <input class="form-control" id="inf_field_City2" name="inf_field_City2"
+                           placeholder="City" type="text"/>
                 </div>
                 <div class="form-group">
-                    <label for="inf_field_Nickname">Skype</label>
-                    <input class="form-control" id="inf_field_Nickname" name="inf_field_Nickname" placeholder="Skype"
+                    <label for="inf_field_State2">State</label>
+                    <input class="form-control" id="inf_field_State2" name="inf_field_State2" placeholder="State"
                            type="text"/>
+                </div>
+                <div class="form-group">
+                    <label for="inf_field_State2">Zip Code</label>
+                    <input class="form-control" id="inf_field_PostalCode2" name="inf_field_PostalCode2" placeholder="Zip Code"
+                           type="text"/>
+                </div>
+                <aside class="split-line"></aside>
+                <div class="form-group">
+                    <label for="inf_field_State2">Username *</label>
+                    <input class="form-control" id="inf_other_Username" name="inf_other_Username" placeholder="Username"
+                           type="text" required/>
+                </div>
+                <div class="form-group">
+                    <label for="inf_field_State2">Password *</label>
+                    <input class="form-control" id="inf_other_Password" name="inf_other_Password" placeholder="Password"
+                           type="password" required/>
+                </div>
+                <div class="form-group">
+                    <label for="inf_field_State2">Confirm Password *</label>
+                    <input class="form-control" id="inf_other_RetypePassword" name="inf_other_RetypePassword" placeholder="Confirm Password"
+                           type="Password" required/>
                 </div>
             </section>
             <section class="modal-footer">
@@ -591,21 +612,21 @@
             <span id="requiredCBID" class="fa fa-asterisk"></span>
             <label for="cbid" class="col-xs-2 control-label">Infusionsoft Affiliate ID:</label>
             <section class="col-sm-5">
-                <input type="text" class="form-control" id="cbid" placeholder="ClickBank Affiliate ID">
+                <input type="text" class="form-control" id="cbid" placeholder="Infusionsoft Affiliate ID">
             </section>
         </section>
         <section class="form-group">
             <label for="tid" class="col-xs-2 control-label">Tracking ID:</label>
             <section class="col-sm-5">
-                <input type="text" class="form-control" id="tid" placeholder="ClickBank Tracking ID">
+                <input type="text" class="form-control" id="tid" placeholder="Tracking ID">
             </section>
         </section>
         <section class="form-group">
             <label for="pTarget" class="col-xs-2 control-label">Products:</label>
             <section class="col-sm-5">
                 <select id="pTarget" class="form-control">
-                    <option value="">Solar Air Lantern</option>
-                    <option value="grn">Grenade</option>
+                    <option value="salf">Solar Air Lantern</option>
+                    <option value="apgf">Grenade</option>
                 </select>
             </section>
         </section>

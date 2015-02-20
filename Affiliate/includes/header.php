@@ -36,7 +36,7 @@
                 </article>
                 <article class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="clickbank.php">Affiliate Contest<span class="sr-only">(current)</span></a></li>
+                        <li><a href="affiliatecontest.php">Affiliate Contest<span class="sr-only">(current)</span></a></li>
                         <li><a href="survivalfrog.php">E-Commerce</a></li>
                         <li><a href="contactus.php">Contact US</a></li>
                     </ul>

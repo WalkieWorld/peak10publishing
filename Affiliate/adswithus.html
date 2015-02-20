@@ -136,58 +136,87 @@
 		</section>
 	</footer>
 	<!-- Sign up form -->
-	<form accept-charset="UTF-8" action="https://ts970.infusionsoft.com/app/form/process/09a1b8333a752929cfc593c35bb2780f" class="modal fade" method="POST" 
-	id="signUpModal" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
-		<section class="modal-dialog">
-			<article class="modal-content">
-				<input name="inf_form_xid" type="hidden" value="09a1b8333a752929cfc593c35bb2780f" />
-				<input name="inf_form_name" type="hidden" value="ClickBank Affiliate Form" />
-				<input name="infusionsoft_version" type="hidden" value="1.37.0.44" />
-				<header class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<section class="sub-header">
-						<section class="logo">
-						<h2>SURVIVAL</h2>
-						<aside class="logo-aside">
-						<p>FROG</p>
-						<img src="image/frog-logo-affiliate.jpg" alt="survival frog">
-						</aside>
-						</section>
-						<h4 class="modal-title" id="modalLabel">Almost there: Let's make money! </h4>
-					</section>
-				</header>
-				<section class="modal-body">
-					<div class="form-group">
-						<label for="inf_field_Email">Email *</label>
-						<input class="form-control" id="inf_field_Email" name="inf_field_Email" placeholder="Email" type="text" />
-					</div>
-					<div class="form-group">
-						<label for="inf_field_FirstName">First Name</label>
-						<input class="form-control" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name" type="text" />
-					</div>
-					<div class="form-group">
-						<label for="inf_field_LastName">Last Name</label>
-						<input class="form-control" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name" type="text" />
-					</div>
-					<div class="form-group">
-						<label for="inf_field_Phone1">Phone</label>
-						<input class="form-control" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Phone" type="text" />
-					</div>
-					<div class="form-group">
-						<label for="inf_custom_clickbankhop">ClickBank ID</label>
-						<input class="form-control" id="inf_custom_clickbankhop" name="inf_custom_clickbankhop" placeholder="ClickBank ID" type="text" />
-					</div>
-					<div class="form-group">
-						<label for="inf_field_Nickname">Skype</label>
-						<input class="form-control" id="inf_field_Nickname" name="inf_field_Nickname" placeholder="Skype" type="text" />
-					</div>
-				</section>
-				<section class="modal-footer">
-					<input id="webFormSignUp" class="btn btn-default" type="submit" value="Sign Up" />
-				</section>
-			</article>
-		</section>
-	</form>
+    <form accept-charset="UTF-8" action="https://ts970.infusionsoft.com/app/form/process/26ec775d75cc1320b10ed0c3bad53618"
+          class="modal fade" method="POST"
+          id="signUpModal" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <section class="modal-dialog">
+            <article class="modal-content">
+                <input name="inf_form_xid" type="hidden" value="09a1b8333a752929cfc593c35bb2780f"/>
+                <input name="inf_form_name" type="hidden" value="ClickBank Affiliate Form"/>
+                <input name="infusionsoft_version" type="hidden" value="1.37.0.44"/>
+                <header class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <section class="sub-header">
+                        <section class="logo">
+                            <h2>SURVIVAL</h2>
+                            <aside class="logo-aside">
+                                <p>FROG</p>
+                                <img src="image/frog-logo-affiliate.jpg" alt="survival frog">
+                            </aside>
+                        </section>
+                        <h4 class="modal-title" id="modalLabel">Almost there: Let's make money! </h4>
+                    </section>
+                </header>
+                <section class="modal-body">
+                    <div class="form-group">
+                        <label for="inf_field_Email">Email *</label>
+                        <input class="form-control" id="inf_field_Email" name="inf_field_Email" placeholder="Email"
+                               type="text" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_FirstName">First Name *</label>
+                        <input class="form-control" id="inf_field_FirstName" name="inf_field_FirstName"
+                               placeholder="First Name" type="text" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_LastName">Last Name *</label>
+                        <input class="form-control" id="inf_field_LastName" name="inf_field_LastName"
+                               placeholder="Last Name" type="text" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_Address2Street1">Street Address</label>
+                        <input class="form-control" id="inf_field_Address2Street1" name="inf_field_Address2Street1" placeholder="Street Address"
+                               type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_City2">City</label>
+                        <input class="form-control" id="inf_field_City2" name="inf_field_City2"
+                               placeholder="City" type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_State2">State</label>
+                        <input class="form-control" id="inf_field_State2" name="inf_field_State2" placeholder="State"
+                               type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_State2">Zip Code</label>
+                        <input class="form-control" id="inf_field_PostalCode2" name="inf_field_PostalCode2" placeholder="Zip Code"
+                               type="text"/>
+                    </div>
+                    <aside class="split-line"></aside>
+                    <div class="form-group">
+                        <label for="inf_field_State2">Username *</label>
+                        <input class="form-control" id="inf_other_Username" name="inf_other_Username" placeholder="Username"
+                               type="text" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_State2">Password *</label>
+                        <input class="form-control" id="inf_other_Password" name="inf_other_Password" placeholder="Password"
+                               type="password" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inf_field_State2">Confirm Password *</label>
+                        <input class="form-control" id="inf_other_RetypePassword" name="inf_other_RetypePassword" placeholder="Confirm Password"
+                               type="Password" required/>
+                    </div>
+                </section>
+                <section class="modal-footer">
+                    <input id="webFormSignUp" class="btn btn-default" type="submit" value="Sign Up"/>
+                </section>
+            </article>
+        </section>
+    </form>
 	<noscript>
 		<strong>Warning !</strong>
 		Because your browser does not support HTML5, some elements are simulated using JScript.

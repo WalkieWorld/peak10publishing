@@ -75,10 +75,19 @@ body{
 .left-tabpanel{
 	display: -webkit-flex;
 	display: flex;
-	margin-bottom: 100px; 
+	margin-bottom: 100px;
+    margin-top: 10px;
 }
 .top-tabpanel{
 	margin-bottom: 100px; 
+}
+.tooltip-inner{
+    max-width: 500px !important;
+}
+.tooltip.top {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
 }
 .left-tabs{
 	min-width: 150px;
@@ -111,10 +120,10 @@ body{
     float: left;
     padding-right: 15px;
     padding-left: 15px;
-}
-.navbar-text {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .left-tabs > li.active > a,
@@ -332,7 +341,7 @@ em.red{
 	width: 100%;
 }
 .description dt{
-	margin: -10px 0px 15px 0px;
+	margin: -25px 0px 15px 0px;
 }
 .description dd{
 	margin: 5px 0px 15px 0px;
@@ -370,6 +379,9 @@ em.red{
 }
 .panel-group .panel {
     margin-top: 10px;
+}
+.split-line{
+    border: 1px solid #52B9E9;
 }
 /*
 *============================== style color rewrite =====================
@@ -412,7 +424,7 @@ body{
     text-shadow:2px -2px 3px #52B9E9
 }
 .page-header{
-	border-bottom-color: #D9534F;
+	border-bottom-color: #52B9E9;
 }
 .page-footer {
     background-color: #52B9E9 !important;

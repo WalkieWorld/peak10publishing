@@ -182,7 +182,7 @@ $(document).ready(function() {
 						} 
 					} 
 				} 
-				else if (test.charAt(0) == 'R') errors += 'The ClickBank Affiliate ID'+nm+' is required!\n'; 
+				else if (test.charAt(0) == 'R') errors += 'The Infusionsoft Affiliate ID'+nm+' is required!\n';
 			}
 		} 
 		if (errors) alert('The following error(s) occurred:\n'+errors);
@@ -237,7 +237,6 @@ $(document).ready(function() {
 	genBtn.addEventListener("click", function(){
 
 		MM_validateForm('cbid','','R');
-
 		if(document.MM_returnValue){
 
 			clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
@@ -246,7 +245,7 @@ $(document).ready(function() {
 			tid = document.getElementById('tid').value.trim(),
 			pVal,
 			onOff,
-			generatedLink = "http://" + cbid + ".srvvlfrog.hop.clickbank.net";
+			generatedLink = "https://ts970.isrefer.com/go/";
 			
 			var pSelect = document.getElementById('pTarget');
 			var pValList = pSelect.querySelectorAll('option');
@@ -255,56 +254,14 @@ $(document).ready(function() {
 			pValList.item(0).selected === true 	? pVal = pValList.item(0).value 
 												: pVal = pValList.item(1).value;
 
-			// generatedLink = "http://" + cbid.trim() + ".srvvlfrog.hop.clickbank.net" 
-
 			rCheck.item(0).checked === true	? onOff = rCheck.item(0).value 
 											: onOff = rCheck.item(1).value;
 
-			switch(pVal){
-
-				case "":
-					if(onOff === ""){
-						if(tid !== ""){
-
-							generatedLink += "?tid=" + tid.trim();
-						}
-					}else{
-						if(tid === ""){
-
-							generatedLink += "?" + onOff;
-						}else{
-
-							generatedLink += "?" + onOff + "&tid=" + tid.trim();
-						}
-					}
-					break;
-
-				case "grn":
-					if(onOff === ""){
-						if(tid === ""){
-
-							generatedLink += "?p=" + pVal;
-						}else{
-
-							generatedLink += "?p=" + pVal + "&tid=" + tid.trim();
-						}
-					}else{
-						if(tid === ""){
-
-							generatedLink += "?p=" + pVal + "&" + onOff;
-						}else{
-
-							generatedLink += "?p=" + pVal + "&" + onOff + "&tid=" + tid.trim();
-						}
-					}
-					break;
-
-				default:
-					break;
-			}
-			
-			
-
+            if(onOff === ""){ // pop when exit
+                generatedLink += pVal + "/" + cbid.trim() + "/" + tid.trim();
+            }else{  // no pop when exit
+                generatedLink += pVal + "/" + cbid.trim() + "/" + tid.trim() + "?v=n";
+            }
 			document.getElementById("generatedLink").value = generatedLink;
 			document.getElementById("generatedLink").title = generatedLink;
 			
