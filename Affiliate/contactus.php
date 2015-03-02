@@ -23,21 +23,28 @@ include_once("includes/header.php");
     <article class="content">
         <section class="paragraph">
             <p>
-                Our live customer service hours are Mon-Fri 8am-4pm Mountain time
-                You can contact us using any of the following methods:
+                For any affiliate support, email us at <a href="mailto:affiliate@SurvivalFrog.com">affiliate@SurvivalFrog.com</a>. If your audience needs to contact us regarding product support, have them contact via one of the methods below.
             </p>
         </section>
         <section class="paragraph">
             <p>
-                -- Email - <a href="mailto:#">support@survivalFrog.com</a>
+                Email Support: <em>
+                    <a href="mailto:support@SurvivalFrog.com">support@SurvivalFrog.com</a>
+                </em>
+            </p>
+            <p>
+                We will reply within 24 hours Monday – Friday and within 48 hours after Saturday and Sunday.
             </p>
         </section>
         <section class="paragraph">
             <p>
-                -- Call <abbr title="Phone">800-PREPPER (773-7737) </abbr>
+                <em>Phone Support:</em> <abbr title="Phone">800-PREPPER (773-7737) </abbr>
+            </p>
+            <p>
+                Hours: 8am – 4pm Mountain
             </p>
         </section>
-        <section class="paragraph">
+        <!--<section class="paragraph">
             <P>-- Mail us at the address below:</P>
         </section>
         <address>
@@ -49,7 +56,7 @@ include_once("includes/header.php");
             <p>
                 -- Our <a href="http://blog.survivalfrog.com/customer-support-contact-us/"> Contact Us form</a>. We will reply within 24 hours Monday - Friday, within 48 hours after Saturday and Sunday.
             </p>
-        </section>
+        </section>-->
     </article>
 </section>
 <?php

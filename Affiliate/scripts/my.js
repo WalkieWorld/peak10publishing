@@ -2,32 +2,6 @@ $(document).ready(function() {
 
 	var navTop = $('#header-nav').offset().top, 		// get the top position of #header-nav
 		cbTabTop = $('#clickBankTab').offset().top;
-	
-	/**
-		Initialize the left tabs
-	*/
-	// #clickBankTab is Details tab
-	$('#clickBankTab a').click(function (e) {
-
-		e.preventDefault();
-		$(this).tab('show');
-	});
-
-	$('#solarAirLanternTab a').click(function (e) {
-
-		e.preventDefault();
-		$(this).tab('show');
-	});
-
-	$('#grenadeTab a').click(function (e) {
-		e.preventDefault();
-		$(this).tab('show');
-	});
-
-	/**
-		Initialize the email collapse
-	*/
-	$('.left-tabpanel .collapse').collapse('show');
 
 	// Reset the style of ClickBank tabs and panels.
 	var resetStyleCB = function(windowScrollTop){
@@ -138,6 +112,7 @@ $(document).ready(function() {
 	
 	dynamicStyle();
 
+    /*************************************************************** Generate Link Functions *********************************************************/
 	// Verify the required content helper
 	function MM_findObj(n, d) { //v4.01
 		var p,i,x;  
@@ -191,55 +166,18 @@ $(document).ready(function() {
 
 	var genBtn = document.getElementById("genBtn");
 
-	// appear generate link tab when click Solar Air Lantern tab
-	var appearSAL = function(){
-
-		document.getElementById('generateLiknForm').classList.remove('hidden');
-		$('#salGenLink').append($('#generateLiknForm'));
-
-		document.getElementById('pTarget').querySelectorAll("option").item(0).selected = "selected";
-	}
-
-	// appear generate link tab when click Grenade tab
-	var appearGrenade = function(){
-
-		document.getElementById('generateLiknForm').classList.remove('hidden');
-		$('#grenadeGenerateLink').append($('#generateLiknForm'));
-
-		document.getElementById('pTarget').querySelectorAll("option").item(1).selected = "selected";
-	}
-
-	var clearGeneratLinkForm = function(){
-
-		document.getElementById('generatedLink').value = "";
-		document.getElementById('cbid').value = "";
-		document.getElementById('tid').value = "";
-		document.getElementById('onPop').checked = true;
-		$('[data-toggle="tooltip"]').tooltip('destroy');
-	};
-
-	var alertRequired = function(handle, classArray){
-
-		classArray.forEach(function(curVal, index, arr){
-
-			handle.classList.add(curVal);
-		});
-	}
-
-	var clearAlert = function(handle, classArray){
-
-		classArray.forEach(function(curVal, index, arr){
-
-			handle.classList.remove(curVal);
-		});
-	}
+    var alertRequired = function(handle, classArray){
+        classArray.forEach(function(curVal, index, arr){
+            handle.classList.add(curVal);
+        });
+    }
 	// Generate Button event
 	genBtn.addEventListener("click", function(){
 
 		MM_validateForm('cbid','','R');
 		if(document.MM_returnValue){
 
-			clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
+			GenerateLinkObject.clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
 
 			var cbid = document.getElementById('cbid').value.trim(),
 			tid = document.getElementById('tid').value.trim(),
@@ -247,12 +185,14 @@ $(document).ready(function() {
 			onOff,
 			generatedLink = "https://ts970.isrefer.com/go/";
 			
-			var pSelect = document.getElementById('pTarget');
-			var pValList = pSelect.querySelectorAll('option');
+			var pSelect = GenerateLinkObject.toArray(document.getElementById('pTarget'));
 			var rCheck = document.querySelectorAll("[type='radio']");
 
-			pValList.item(0).selected === true 	? pVal = pValList.item(0).value 
-												: pVal = pValList.item(1).value;
+            pSelect.forEach(function(curVal, index, arr){
+                if(curVal.selected === true){
+                    pVal = curVal.value;
+                }
+            });
 
 			rCheck.item(0).checked === true	? onOff = rCheck.item(0).value 
 											: onOff = rCheck.item(1).value;
@@ -265,9 +205,9 @@ $(document).ready(function() {
 			document.getElementById("generatedLink").value = generatedLink;
 			document.getElementById("generatedLink").title = generatedLink;
 			
-			$('[data-toggle="tooltip"]').tooltip();
+			$('#generatedLink[data-toggle="tooltip"]').tooltip();
 
-			$('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
+			$('#generatedLink[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
 				
 				document.getElementsByClassName("tooltip-inner")[0].textContent = generatedLink;
 			});
@@ -277,63 +217,136 @@ $(document).ready(function() {
 		}
 	});
 
-	$('[aria-controls="salGenLink"]').on('click', function(){
+    //================================== Switch Generate Link Tab Functions ============================================//
 
-		clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
-		clearGeneratLinkForm();
-		appearSAL();
-	});
+    var GenerateLinkObject = {
+        mainTabsFrame: document.getElementById("clickBankTab"),
+        mainTabs: undefined,
+        subTabs: undefined,
+        flag: "patrioticParacordGenerateLink",    // set it manually
+        init: function(){
+            "use strict"
+            this.mainTabs = this.toArray(this.mainTabsFrame.getElementsByTagName("a"));
+            var leftSubTabsFrame = document.getElementById("clickBankTabContent");
+            this.subTabs = this.toArray(leftSubTabsFrame.getElementsByTagName("a"));
+            this.render();
+        },
+        toArray: function(nodeList){
+            return Array.prototype.slice.call(nodeList);
+        },
+        addEvent: function(handler, event, fun){
+            handler.addEventListener(event, fun);
+        },
+        /**
+         * selectedId:
+         *  0: Solar Air Lantern ID,
+         *  1: Grenade ID,
+         *  2: Patriotic Paracord,
+         *  3: Cobra Belt
+         * */
+        appearGenerateLink: function(id, selectedId){
+            "use strict"
+            document.getElementById('generateLiknForm').classList.remove('hidden');
+            $(id).append($('#generateLiknForm'));
 
-	$('[aria-controls="grenadeGenerateLink"]').on('click', function(){
+            document.getElementById('pTarget').querySelectorAll("option").item(selectedId).selected = "selected";
+        },
+        clearGeneratLinkForm: function(){
+            "use strict"
+            document.getElementById('generatedLink').value = "";
+            document.getElementById('cbid').value = "";
+            document.getElementById('tid').value = "";
+            document.getElementById('onPop').checked = true;
+            $('#generatedLink[data-toggle="tooltip"]').tooltip('destroy');
+        },
+        clearAlert: function(handle, classArray){
+            "use strict"
+            classArray.forEach(function(curVal, index, arr){
 
-		clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
-		clearGeneratLinkForm();
-		appearGrenade();
-	});
-	
-	$('[aria-controls="solarAirLantern"]').on('click', function(){
+                handle.classList.remove(curVal);
+            });
+        },
+        directToGL: function(selector){
+            "use strict"
+            var salNode = $(selector)[0];
+            salNode = Array.prototype.slice.call(salNode.children);
+            salNode.forEach(function(curVal, index, arr){
 
-		if(document.getElementById('salGenLink').className.indexOf('active') !== -1){
+                if(curVal.className.indexOf("active") === 0){
+                    curVal.classList.remove("active");
+                }
+                if(index === arr.length - 1){
+                    curVal.classList.add("active");
+                }
+            });
+        },
+        checkRenderResult: function(){
+            "use strict"
+            if(document.getElementById(GenerateLinkObject.flag) !== null){
+                clearInterval(GenerateLinkObject.checkRenderResult);
+                GenerateLinkObject.render();
+            }else{
+                return false;
+            }
+        },
+        // Add event to left-main-tab-nav and sub-tab-nav
+        render: function(){
+            "use strict"
+            // Add event to left-main-tab-nav
+            this.mainTabs.forEach(function(curVal, index, arr){
+                GenerateLinkObject.addEvent(curVal, "click", function(){
+                    var id = curVal.href.split("#")[1];
+                    // remove the first tab link, because it's not a product
+                    if(id !== "cbAbout"
+                        && id !== undefined){
+                        GenerateLinkObject.clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
+                        GenerateLinkObject.clearGeneratLinkForm();
+                        GenerateLinkObject.appearGenerateLink("#" + id + "GenerateLink", index - 1);
+                    }
+                });
+            });
+            // Add event to sub-tab-nav
+            this.subTabs.forEach(function(curVal, index, arr){
+                var id = curVal.href.split("#")[1];
+                if(id !== undefined && id.indexOf("Link") !== -1){
+                    if(document.getElementById(id).className.indexOf('active') !== -1){
+                        GenerateLinkObject.clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
+                        GenerateLinkObject.clearGeneratLinkForm();
+                        var mainId = GenerateLinkObject.mainTabs.indexOf(id);
+                        GenerateLinkObject.appearGenerateLink("#" + id, mainId - 1);
+                        GenerateLinkObject.directToGL("#" + id + "Tab");
+                    }
+                }
+            });
+        }
+    };
 
-			clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
-			clearGeneratLinkForm();
-			appearSAL();
-		}
-	});
+    GenerateLinkObject.init();
 
-	$('[aria-controls="grenade"]').on('click', function(){
+    //============================== End Switch Generate Link Tab Functions ============================================//
+    /******************************************************************* End Generate Link Functions *************************************************/
 
-		if(document.getElementById('grenadeGenerateLink').className.indexOf("active") !== -1){
-
-			clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
-			clearGeneratLinkForm();
-			appearGrenade();
-		}
-	});
-
-	// Direct to the generate link tab
-	var directToGL = function(selector){
-
-		var salNode = $(selector)[0];
-		salNode = Array.prototype.slice.call(salNode.children);
-		salNode.forEach(function(curVal, index, arr){
-
-			if(curVal.className.indexOf("active") === 0){
-				curVal.classList.remove("active");
-			}
-			if(index === arr.length - 1){
-				curVal.classList.add("active");
-			}
-		});
-	};
-	// Go to Generate Link tab from another tab.
-	$("pre a[href='#salGenLink']").on('click', function(){
-
-		directToGL("#solarAirLanternTab");
-	});
-
-	$("a[href='#grenadeGenerateLink']").on('click', function(){
-
-		directToGL("#grenadeTab");
-	});
+    //ZeroClipboard.config( { swfPath: "https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.swf" } );
+    // For testing Copy function
+    var myCopy = {
+        btnArray: Array.prototype.slice.call(document.getElementsByClassName("copy")),
+        preArray: Array.prototype.slice.call(document.getElementsByTagName("pre")),
+        init: function(){
+            this.getBtnArray();
+            this.preArray.forEach(function(curVal, index, arr){
+                myCopy.addEvent(curVal, "mouseenter", function(e){
+                    $(this).next("button").show("slow").animate({
+                        "bottom": "58px"
+                    }, 500);
+                });
+            });
+        },
+        getBtnArray: function(){
+            new ZeroClipboard(this.btnArray);
+        },
+        addEvent: function(handler, event, fun){
+            handler.addEventListener(event, fun);
+        }
+    };
+    myCopy.init();
 });

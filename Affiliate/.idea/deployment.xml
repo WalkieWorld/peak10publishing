@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="affiliate.survivalfrog.com">
+  <component name="PublishConfigData" serverName="XAMPP Apache">
     <serverData>
+      <paths name="XAMPP Apache">
+        <serverdata>
+          <mappings>
+            <mapping deploy="peak10publishing\affiliate" local="$PROJECT_DIR$" web="/peak10publishing\affiliate" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="affiliate.survivalfrog.com">
         <serverdata>
           <mappings>

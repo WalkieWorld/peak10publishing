@@ -1,6 +1,8 @@
 /**
  * Created by HZ on 2/20/2015.
  */
+
+var hasInvokeHeight = false;
 var sectionBodyHeight = {
 
     headerHt: undefined,
@@ -12,6 +14,7 @@ var sectionBodyHeight = {
 
     initial: function(){
         "use strict"
+        hasInvokeHeight = true;
         this.headerHt = document.querySelector("header.big-header").clientHeight;
         //this.footerHt = document.querySelector("footer.page-footer").clientHeight;
         this.windowHt = document.getElementsByTagName("body")[0].clientHeight;
@@ -37,4 +40,25 @@ var sectionBodyHeight = {
     }
 };
 
-sectionBodyHeight.initial();
+(function(){
+    /**
+     * In case of that IE doesn't support it
+     * */
+    try{
+        var isCalled = true;
+        var myAychr = new Promise(function(resolve, reject){
+            resolve();
+        });
+        myAychr.then(
+            sectionBodyHeight.initial()
+        )
+    }
+    catch(e) {
+        isCalled = false;
+    }
+    finally{
+        if(!isCalled){
+            sectionBodyHeight.initial();
+        }
+    }
+})();

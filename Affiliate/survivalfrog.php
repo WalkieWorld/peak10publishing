@@ -22,11 +22,17 @@ include_once("includes/header.php");
     </section>
     <article class="content">
         <h2>Affiliates</h2>
-        <p>The products published by survivalfrog.com are of the the highest quality and have the strongest conversions anywhere. For top selling affiliates, we provide full support and bonus commissions.</p>
-        <p>We have a full line of survivalist Info Products on Clickbank. See <a href="www.peak10publishing.com">www.Peak10Publishing.com</a> for a list of info products.</p>
-        <p>Soon we'll also have dozens Physical Survival Products on Clickbank as well. These will be dedicated sales pages with high converting upsells. See www.(the clickbank vendor page) for current list of products.</p>
-        <p>For our e-commerce site, we use <a href="http://www.shareasale.com/shareasale.cfm?merchantID=51591">ShareASale.com.</a></p>
-        <p>If you need general affiliate support you can contact our affiliate manager here: <a href="mailto:affiliate@peak10publishing.com" target="_blank">affiliates@survivalfrog.com</a></p>
+
+        <p>The products offered on SurvivalFrog.com are of the highest quality and have the strongest conversions
+            anywhere. We have the highest commission available out of any survival e-commerce site, 10% on all products
+            with a 180 day cookie. </p><p> To sign up, go to <a
+                href="http://www.shareasale.com/shareasale.cfm?merchantID=51591">ShareAsale.com</a></p>
+        <p>
+            Hundreds of top selling survival gear: <a href="http://survivalfrog.com/">SurvivalFrog.com</a>.
+        </p>
+        <figure id="survivalfrog-website-img">
+            <img src="image/survivalfrog-officalsite.jpg" alt="Survival Frog Official Website">
+        </figure>
     </article>
 </section>
 <?php

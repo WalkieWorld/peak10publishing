@@ -22,7 +22,7 @@ var RestyleDOM = {
             }
         };
         menuArray.forEach(function(curVal, index, arr){
-            if( url.indexOf("index.php") !== -1 ){
+            if(url.toLowerCase() === "http://affiliate.survivalfrog.com/" ||url.indexOf("index.php") !== -1 ){
                 addAnchorClass(curVal, "index.php", "active");
             }
             else if(url.indexOf("affiliatecontest.php") !== -1){
@@ -61,7 +61,24 @@ var RestyleDOM = {
 };
 
 (function(){
-    new Promise(function(resolve, reject){
-        resolve(RestyleDOM.init());
-    });
+    /**
+     * In case of that IE doesn't support it
+     * */
+    try{
+        var isCalled = true;
+        var myAychr = new Promise(function(resolve, reject){
+            resolve();
+        });
+        myAychr.then(
+            RestyleDOM.init()
+        )
+    }
+    catch(e) {
+        isCalled = false;
+    }
+    finally{
+        if(!isCalled){
+            RestyleDOM.init();
+        }
+    }
 })();

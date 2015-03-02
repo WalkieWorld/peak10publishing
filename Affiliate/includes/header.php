@@ -9,7 +9,7 @@
 <header class="container big-header">
     <!-- logo -->
     <section class="logo" id="logo">
-        <a href="index.html">
+        <a href="index.php">
             <img src="image/survival-affiliate.jpg" alt="survival frog">
             <!-- <h2>SURVIVAL</h2>
             <aside class="logo-aside">
@@ -17,7 +17,9 @@
             <img src="image/frog-logo-affiliate.jpg" alt="survival frog">
             </aside> -->
         </a>
-        <h1>Affiliate Portal</h1>
+        <section class="header-title">
+            <h1>Affiliate Portal</h1>
+        </section>
     </section>
     <!-- navigation -->
     <nav id="header-nav">
@@ -38,12 +40,19 @@
                     <ul class="nav navbar-nav">
                         <li><a href="affiliatecontest.php">Affiliate Contest<span class="sr-only">(current)</span></a></li>
                         <li><a href="survivalfrog.php">E-Commerce</a></li>
-                        <li><a href="contactus.php">Contact US</a></li>
+                        <li><a href="contactus.php">Contact Us</a></li>
                     </ul>
-                    <button type="button" class="btn btn-default navbar-btn navbar-right" data-toggle="modal" data-target="#signUpModal">Affiliate SignUp</button>
+                    <?php
+                    /*
+                     * For now, the index.php page doesn't need the signup form function
+                     * */
+                    if(isset($isSignupShow) == null || $isSignupShow == true){
+                        echo "<button type='button' class='btn btn-default navbar-btn navbar-right' data-toggle='modal' data-target='#signUpModal'>Affiliate Signup</button>";
+                    }
+                    ?>
                 </article><!-- /.navbar-collapse -->
             </section>
         </section>
     </nav>
 </header>
-<script src="../scripts/headerSection.js"></script>
+<script src="./scripts/headerSection.js"></script>

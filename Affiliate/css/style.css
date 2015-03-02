@@ -84,11 +84,6 @@ body{
 .tooltip-inner{
     max-width: 500px !important;
 }
-.tooltip.top {
-    width: 100%;
-    display: flex !important;
-    justify-content: center;
-}
 .left-tabs{
 	min-width: 150px;
 	width: auto;
@@ -170,7 +165,7 @@ body{
 	display: inline-block;
 }
 .logo h1{
-	margin: 45px 0px 0px 20px;
+	margin: 45px 106px 0px 0px;
 	font-size: 40px;
 	font-weight: 600;
 }
@@ -206,6 +201,13 @@ body{
 .logo .logo-aside img{
 	margin: -10px 0px 10px 20px;
 	padding: 0px;
+}
+.header-title{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
 }
 .page-header{
 	border-bottom: 1px solid #EEE;
@@ -271,6 +273,12 @@ body{
 #modalLabel{
 	padding: 50px 0px 0px 15px;
 }
+.paragraph{
+    margin-bottom: 10px;
+}
+.paragraph p{
+    margin-bottom: 0px;
+}
 .content{
 	margin: 0px 0px 100px 0px;
 }
@@ -314,6 +322,7 @@ body{
 .form-btn-control{
 	display: -webkit-flex;
 	display: flex;
+    -webkit-justify-content: flex-end;
 	justify-content: flex-end;
 	margin: 0px 0px 0px 0px;
 }
@@ -362,17 +371,17 @@ em.red{
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
 	justify-content: flex-start;
+    -webkit-align-items: flex-start;
 	align-items: flex-start;
 }
 .product-albums figure{
-	width: 250px;
 	height: 200px;
 	margin: 0px 20px 15px 0px;
 }
 .product-albums figure img{
-	width: auto;
-	height: auto;
+	height: 100%;
 }
 .panel-heading{
 	padding: 1px 15px;
@@ -382,6 +391,32 @@ em.red{
 }
 .split-line{
     border: 1px solid #52B9E9;
+}
+button.copy{
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+    display: none;
+}
+.modal-body .horizontal{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.modal-body .left{
+    width: 100%;
+    padding: 0px 15px;
+}
+.modal-body .right{
+    width: 100%;
+    padding: 0px 15px;
+}
+h1.center{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 /*
 *============================== style color rewrite =====================
@@ -417,7 +452,8 @@ body{
     background-color: #1171A3;
     border-color: #1E5D7F;
 }
-.btn.focus,.btn:focus,.btn:hover{
+.btn.focus,.btn:focus,.btn:hover,
+.zeroclipboard-is-hover{
 	color: #fff;
 	background-color: #caf192;
 	text-decoration: none;
@@ -500,6 +536,28 @@ body{
 .panel-default > .panel-heading a[data-toggle="collapse"]{
 	color: #fff;
 	display: block;
+    width: 100%;
+}
+.panel-default > .panel-heading h4, .panel-default > .panel-heading h3{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#survivalfrog-website-img{
+    padding: 0px;
+}
+figure#survivalfrog-website-img img {
+    width: auto;
+    border: 1px solid #dddddd;
+}
+a.fa-download{
+    font-size: 0.85em;
+    width: 10em;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 /*
 *====================D9A1EB==================================================
@@ -509,9 +567,10 @@ body{
 	position: fixed;
 	top: 52px;
 	z-index: 1;
+    max-width: 176px;
 }
 .fixed-cbTab-right-tab-content{
-	margin: 0px 0px 0px 149px !important;
+	margin: 0px 0px 0px 175px !important;
 	border-left: 1px solid rgb(221, 221, 221);
 	position: relative;
 }
@@ -535,7 +594,7 @@ body{
 /*================== end dynamic style by resize window ========*/
 /*====================== banner images ============================*/
 .sal-img-size-300-250{
-	width: 300px;
-	height: 250px;
+	width: auto;
+	height: auto;
 }
 /*================== end banner images ============================*/
