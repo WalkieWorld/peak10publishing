@@ -20,20 +20,33 @@ include_once("includes/header.php");
     <section class="page-header">
         <h3>SurvivalFrog.com E-Commerce</h3>
     </section>
-    <article class="content">
-        <h2>Affiliates</h2>
+    <section class="left-tabpanel" role="tabpanel" id="left-tabpanel">
+        <!-- Nav tabs -->
+        <?php
+        include_once("includes/left_sub_nav.php");
+        $subNavHelper->renderNavTabs($subNavHelper->navTabs);
+        ?>
+        <section class="tab-content right-tab-content">
+            <article class="content">
+                <h2>Affiliates</h2>
 
-        <p>The products offered on SurvivalFrog.com are of the highest quality and have the strongest conversions
-            anywhere. We have the highest commission available out of any survival e-commerce site, 10% on all products
-            with a 180 day cookie. </p><p> To sign up, go to <a
-                href="http://www.shareasale.com/shareasale.cfm?merchantID=51591">ShareAsale.com</a></p>
-        <p>
-            Hundreds of top selling survival gear: <a href="http://survivalfrog.com/">SurvivalFrog.com</a>.
-        </p>
-        <figure id="survivalfrog-website-img">
-            <img src="image/survivalfrog-officalsite.jpg" alt="Survival Frog Official Website">
-        </figure>
-    </article>
+                <p>The products offered on SurvivalFrog.com are of the highest quality and have the strongest conversions
+                    anywhere. We have the highest commission available out of any survival e-commerce site, 10% on all
+                    products
+                    with a 180 day cookie. </p>
+
+                <p> To sign up, go to <a
+                        href="http://www.shareasale.com/shareasale.cfm?merchantID=51591">ShareAsale.com</a></p>
+
+                <p>
+                    Hundreds of top selling survival gear: <a href="http://survivalfrog.com/">SurvivalFrog.com</a>.
+                </p>
+                <figure id="survivalfrog-website-img">
+                    <img src="image/survivalfrog-officalsite.jpg" alt="Survival Frog Official Website">
+                </figure>
+            </article>
+        </section>
+    </section>
 </section>
 <?php
 include_once("includes/footer.php");

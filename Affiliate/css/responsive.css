@@ -137,6 +137,9 @@
 	    bottom: 60px;
 	    position: relative;
 	}
+    .panel-body figure img{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 337px){
 	.page-footer section .wrap{

@@ -349,4 +349,30 @@ $(document).ready(function() {
         }
     };
     myCopy.init();
+
+    /**
+     * Detect click nav tabs automatically.
+     * */
+    (function(){
+        "use strict"
+        var myAychr = new Promise(function(resolve, reject){
+            var urlParameter = window.location.hash.split("#");
+            if(urlParameter.length === 2){
+                try{
+                    resolve(urlParameter[1]);
+                }
+                catch (ex){
+                    reject(ex.message);
+                }
+            }
+        });
+        myAychr.then(function(id){
+            var myClick = document.querySelector("[aria-controls='" + id + "']");
+            if(myClick){
+                myClick.click();
+            }
+        }, function(err){
+            alert(err);
+        });
+    })();
 });

@@ -12,7 +12,7 @@ class myFooter
         "apgf" => "Grenade",
         "ppfree" => "Patriotic Paracord",
         "cpb" => "Cobra Belt",
-//        "lswf" => "Lifestraw",
+        "lswf" => "Lifestraw",
         "card" => "Playing Cards",
         "esbf" => "Emergency Survival Blanket"
     );

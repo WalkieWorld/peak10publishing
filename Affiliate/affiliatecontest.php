@@ -6,6 +6,7 @@
  * Date: 2/19/2015
  * Time: 2:57 PM
  */
+/*include_once "server/DBConnector.php";*/
 class Banners
 {
     /**
@@ -68,16 +69,6 @@ class Banners
         "ESB_600x500_1.jpg" =>
             "&lt;img src='http://affiliate.survivalfrog.com/image/emergencysurvivalblanket/ESB_600x500_1.jpg' style='width: 600px; height: 500px;'&gt;"
     ),
-        $navTabs = array(
-        "cbAbout" => "Details",
-        "solarAirLantern" => "Solar Air Lantern",
-        "grenade" => "Grenade Paracord",
-        "patrioticParacord" => "Patriotic Paracord",
-        "cobraBelt" => "Cobra Belt",
-//        "lifestraw" => "Lifestraw",
-        "playingCards" => "Playing Cards",
-        "emergencySurvivalBlanket" => "Emergency Survival Blanket"
-    ),
         $subTabs = array(
         "solarAirLanternTab" => array(
             "solarAirLanternDescription" => "Details",
@@ -105,7 +96,7 @@ class Banners
         ),
         "lifestrawTab" => array(
             "lifestrawDescription" => "Details",
-            "lifestrawBanners" => "Banners",
+//            "lifestrawBanners" => "Banners",
             "lifestrawEmail" => "Email",
             "lifestrawGenerateLink" => "Generate Link"
         ),
@@ -323,6 +314,98 @@ class Banners
                 PS: you can forward this email to a few friends, but don't over do it. When they are out of stock, they are gone.  Get yours today:
                 <a href='YOUR_LINK'>LINK</a>
             </p>
+            ",
+            "https://www.dropbox.com/s/ihh8gypmyin0bir/Email%203.html?dl=1" =>
+                "
+            <h4>SUBJECT: 100% Legal Survival Grenade (Pic)</h4>
+            <p>Check out this crazy survival tool.</p>
+            <p>It’s a Paracord Grenade.</p>
+            <p>Go here to see <a href='YOUR_LINK'>its advanced features</a>.</p>
+            <figure>
+                <img src='image/grenade/ParacordGrenade.jpg' alt='Grenade 15'>
+            </figure>
+            <p>Unlike a real grenade this grenade has survival tools packed inside.</p>
+            <p>9 feet of Paracord are wrapped around essential gear.</p>
+            <p>It could easily help save your life.</p>
+            <p>What exactly is inside?</p>
+            <p>Things like:
+                <ul><li>Razor sharp knife blade</li>
+                <li>Fire starter</li>
+                <li>Tin foil</li>
+                </ul>
+            </p>
+            <p>Plus 7 others.</p>
+            <P>Best of all it doesn’t take up a lot of room. It’s small enough to fit in the palm of your hand.  You can take it anywhere.</P>
+            <p>And the rest of tools stuffed inside are legit.</p>
+            <p>So yes, the Paracord grenade is the real deal.</p>
+            <p>With it you can:<ul><li>Take out a bad guy</li>
+            <li>Sew up torn clothes</li>
+            <li>Create a snare for dinner</li>
+            <li>Catch fish</li>
+            <li>Fix broken shoes</li>
+            <li>Make a belt</li>
+            <li>Build shelter</li>
+            </ul>
+            </p>
+            <p>And more.</p>
+            <p>Curious what else is inside? Go here now <a href='YOUR_LINK'>to see the other 7 tools.</a></p>
+            <p>These are perfect for everyday carry and bug-out-bags.</p>
+            <p><em>BONUS:</em> For the next few days, you can get a free sample.</p>
+            <p>My friend Damian makes them and is giving them away to patriots.</p>
+            <p>All you have to do is cover shipping.</p>
+            <p>But you’ll want to act fast, quantity is limited.</p>
+            <p>
+            Prepare Now,
+            <br>
+            Survive Later!
+            <br>
+            ~Damian Campbell
+            </p>
+            <p>P.S. Damian said this deal is taking off. Don’t sleep on this. <a href='YOUR_LINK'>Here’s the link.</a></p>
+            ",
+            "https://www.dropbox.com/s/bohfwjbcg8wx7pi/Email%204.html?dl=1" =>
+                "
+            <h4>SUBJECT: New Survival Tool (50-state Legal)</h4>
+            <p>Hey, check this out.</p>
+            <p>This is a survival grenade you can legally carry in your pocket.</p>
+            <p>Go here to see this <a href='YOUR_LINK'>amazing survival tool</a>.</p>
+            <figure>
+                <img src='image/grenade/ParacordGrenade.jpg' alt='Grenade 16'>
+            </figure>
+            <p>There are a lot of survival tools you can’t take into banks, government buildings and more.</p>
+            <p>This isn’t one of those</p>
+            <p>Once you see how many things you can do with it you’ll agree it’s a survival necessity.</p>
+            <p>Check it out.  This tiny tool can help you: </p>
+            <p>
+                <ul><li>Catch dinner</li>
+                <li>Make Dinner</li>
+                <li>Create Shelter</li>
+                <li>Signal distress</li>
+                <li>Disable bad guys</li>
+                <li>Tow a car</li>
+                <li>Fix broken machine parts</li>
+                <li>Make a weapon</li>
+                </ul>
+            </p>
+            <p>And a whole lot more.</p>
+            <p>In fact, there are over 100 listed survival uses for this tiny survival grenade. </p>
+            <P>Pretty crazy huh?</P>
+            <p>The best part about this tool is how compact it is.</p>
+            <p>Clip the attached carabiner to your keys and you’ve always got a solid survival tool on hand.</p>
+            <p>For a limited time you can get your grenade 100% Free.</p>
+            <p>
+            Be sure to go to the next page to learn about the other amazing tools concealed inside and how you can get yours for free.
+            </p>
+            <p>Hurry though, supplies are limited. <a href='YOUR_LINK'>Go here now.</a></p>
+            <p>
+            Prepare Now,
+            <br>
+            Survive Later!
+            <br>
+            ~Damian Campbell
+            </p>
+            <p>P.S. You’ll never believe what else is inside this grenade. You’ve got to see it to believe it.
+            Go here to see what’s inside and get yours Free (while they still last) <a href='YOUR_LINK'>link.</a></p>
             "
         ),
         "patrioticParacord" => array(
@@ -634,7 +717,6 @@ class Banners
                 <img src='image/playingcards/playingcards.jpg'>
             </figure>
             <p>Survival Playing Cards - 50% Off</p>
-            <p>==HOLIDAY ALERT == Order today and your order is guaranteed to arrive before Christmas.</p>
             <p>Great gift idea for
                 <ul>
                     <li>
@@ -856,23 +938,6 @@ END;
         }
     }
 
-    public function renderNavTabs($tabs)
-    {
-        $cnt = 0;
-        $isActiveClass = "class='active'";
-        foreach($tabs as $key => $value)
-        {
-            $cnt++;
-            if($cnt > 1){
-                $isActiveClass = "";
-            }
-            echo <<<END
-            <li role="presentation" $isActiveClass><a href="#$key" aria-controls="$key" role="tab" data-toggle="tab">$value</a></li>
-END;
-        }
-        echo "<li role='presentation'><a href='survivalfrog.php'>E-Commerce</a></li>";
-    }
-
     public function renderSubNavTabs($sTabs, $tabId)
     {
         $cnt = 0;
@@ -940,6 +1005,10 @@ END;
 
 $myBanners = new Banners();
 
+/*$myDBConnector = new \server\DBConnector();
+
+echo $myDBConnector->get_db_server();*/
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -957,11 +1026,10 @@ include_once("includes/header.php");
     </section>-->
     <section class="left-tabpanel" role="tabpanel" id="left-tabpanel">
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs left-tabs" role="tablist" id="clickBankTab">
-            <?php
-            $myBanners->renderNavTabs($myBanners->navTabs);
-            ?>
-        </ul>
+        <?php
+        include_once("includes/left_sub_nav.php");
+        $subNavHelper->renderNavTabs($subNavHelper->navTabs);
+        ?>
         <!-- Tab panels -->
         <section class="tab-content right-tab-content" id="clickBankTabContent">
             <!-- Description of Affiliate Contest -->
@@ -999,7 +1067,7 @@ include_once("includes/header.php");
                     </dd>
                     <dd>
                         Plus:<br>
-                        Grab some quick cash by ranking in the top 3 spots.  Based on the total amount of buyers during the March 1-15th time period.  Top dog gets $2,500 (as long as there are over 150 buyers). No minimums for the 2nd prize at $1,000 or 3rd at $500.
+                        Grab some quick cash by ranking in the top 3 spots.  Based on the total amount of buyers during the March 1 - 22nd time period.  Top dog gets $2,500 (as long as there are over 150 buyers). No minimums for the 2nd prize at $1,000 or 3rd at $500.
                     </dd>
                     <dd>
                         <strong>
@@ -1057,7 +1125,7 @@ include_once("includes/header.php");
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="https://secure.peak10publishing.com/emergency-survival-lantern.php" target="_blank">https://secure.peak10publishing.com/emergency-survival-lantern.php</a>
+                                    <a href="http://secure.peak10publishing.com/emergency-survival-lantern-2s.php" target="_blank">http://secure.peak10publishing.com/emergency-survival-lantern-2s.php</a>
                                 </dd>
                             </dl>
                         </article>
@@ -1275,7 +1343,7 @@ include_once("includes/header.php");
                                     <em>Offer: </em>$19.97 for 1 LifeStraw, or $39.97 for 2 LifeStraws plus a free Paracord Grenade. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $18 net on the entire sales funnel, including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
