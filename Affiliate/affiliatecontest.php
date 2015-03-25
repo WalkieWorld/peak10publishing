@@ -1175,7 +1175,7 @@ include_once("includes/header.php");
                                     <em>Offer: </em>Free plus shipping on the first grenade, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em> We normally pay $6 CPA ($6 per customer) on our free ship offers, but for the next 3 weeks during the contest we are bumping that up to $7 for all affiliates. That's 15% more commission paid to you.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
@@ -1231,7 +1231,7 @@ include_once("includes/header.php");
                                     <em>Offer: </em>Free plus shipping on the first Patriotic Paracord, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>We normally pay $6 CPA ($6 per customer) on our free ship offers, but for the next 3 weeks during the contest we are bumping that up to $7 for all affiliates. That's 15% more commission paid to you.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
@@ -1399,7 +1399,7 @@ include_once("includes/header.php");
                                     <em>Offer: </em>Free plus shipping on the first set of playing cards, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>We normally pay $6 CPA ($6 per customer) on our free ship offers, but for the next 3 weeks during the contest we are bumping that up to $7 for all affiliates. That's 15% more commission paid to you.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
@@ -1455,7 +1455,7 @@ include_once("includes/header.php");
                                     <em>Offer: </em>Free plus shipping on the first blanket, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>We normally pay $6 CPA ($6 per customer) on our free ship offers, but for the next 3 weeks during the contest we are bumping that up to $7 for all affiliates. That's 15% more commission paid to you.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
