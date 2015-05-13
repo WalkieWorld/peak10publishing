@@ -183,15 +183,15 @@ $myProductSelection = new myFooter();
                     ?>
                 </section>
             </section>
-            <section class="form-group">
+            <section class="form-group hidden">
                 <label class="col-xs-2 control-label">Exit Pop Up Offer:</label>
                 <section class="col-sm-5">
                     <div class="radio">
                         <label class="radio-inline">
-                            <input type="radio" name="onoff" id="onPop" value="" checked> On
+                            <input type="radio" name="onoff" id="onPop" value=""> On
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="onoff" id="offPop" value="v=n"> Off
+                            <input type="radio" name="onoff" id="offPop" value="v=n" checked> Off
                         </label>
                     </div>
                 </section>

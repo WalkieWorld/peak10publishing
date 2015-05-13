@@ -164,11 +164,7 @@ class Banners
             <p>The Solar Air Lantern is virtually indestructible and even floats, so you can re use your lantern for years to come.</p>
             <p>See the next page for a 2-minute video.</p>
             <section class='paragraph'>
-            Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+            SIGNATURE
             </section>
             <p>This is a must-have light source! Click the link below to see how it works.</p><p><a href='YOUR LINK' target='_blank'>FULL LINK</a></p>"
             ,
@@ -183,11 +179,7 @@ class Banners
             <p>Everyone needs this in their go-bag and car.</p>
             <p>This is a must-have item for everyone in the family.</p>
              <section class='paragraph'>
-            Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+            SIGNATURE
             </section>
             ",
             "https://www.dropbox.com/s/nn5iverw5i7uabv/Email%203.html?dl=1" =>
@@ -197,7 +189,6 @@ class Banners
             <p>Virtually indestructible.</p>
             <p>And it can light up a room for 8 hours.</p>
             <figure><img src='image/solarairlantern/solarAirLantern_email_1.jpg' alt='Solar Air Lantern Email 2'>
-            <figcaption>Solar Air Lantern</figcaption>
             </figure>
             <p><a href='YOUR_LINK'>Solar Air Lantern</a></p>
             <ul>
@@ -231,11 +222,7 @@ class Banners
             </p>
             <p><a href='YOUR_LINK'>Solar Air Lantern</a></p>
              <section class='paragraph'>
-            Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+            SIGNATURE
             </section>
             <p>
                 PS: This lantern is only 1\" tall when deflated, so it's easy to store in your go-bag.
@@ -258,11 +245,7 @@ class Banners
             <p>Go here to see <a href='YOUR_LINK'>what's inside the grenade.</a></p>
             <p>For the next few days, you can get a free sample. But only while supplies last.</p>
             <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
+            SIGNATURE
             </p>
             ",
             "https://www.dropbox.com/s/jrceqoii2o443ji/Email%202.html?dl=1" =>
@@ -304,11 +287,7 @@ class Banners
             <P>For the next few days, my friend Damian is giving the grenade away, just pick up the shipping.</P>
             <P>Every bug out bag needs one.</P>
             <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
+            SIGNATURE
             </p>
             <p>
                 PS: you can forward this email to a few friends, but don't over do it. When they are out of stock, they are gone.  Get yours today:
@@ -355,11 +334,7 @@ class Banners
             <p>All you have to do is cover shipping.</p>
             <p>But you’ll want to act fast, quantity is limited.</p>
             <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
+            SIGNATURE
             </p>
             <p>P.S. Damian said this deal is taking off. Don’t sleep on this. <a href='YOUR_LINK'>Here’s the link.</a></p>
             ",
@@ -398,11 +373,7 @@ class Banners
             </p>
             <p>Hurry though, supplies are limited. <a href='YOUR_LINK'>Go here now.</a></p>
             <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
+            SIGNATURE
             </p>
             <p>P.S. You’ll never believe what else is inside this grenade. You’ve got to see it to believe it.
             Go here to see what’s inside and get yours Free (while they still last) <a href='YOUR_LINK'>link.</a></p>
@@ -423,11 +394,7 @@ class Banners
             <p>Just pay shipping.</p>
             <p>But hurry, once they are gone we'll start selling for full price.</p>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>
             <p>
                 PS: You can share this email with your friends, just don't over do it. Once we're out of stock, the free offer is gone.
@@ -451,11 +418,7 @@ class Banners
                 Just pay shipping.
             </p>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>
             <p>
                 PS: You can share this email with your friends, just don't over do it. Once we're out of stock, the free offer is gone.
@@ -523,11 +486,7 @@ class Banners
                 Go here to get it for 65% off.
             </p>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>
             <p>
                 <em>PS:</em>
@@ -585,11 +544,7 @@ class Banners
                 It’s a limited time deal. <a href='YOUR_LINK'>Go here to learn more about the Lifestraw and my special deal</a>.
             </p>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>
             <p>
                 <em>PS:</em>
@@ -627,11 +582,7 @@ class Banners
                 It’s a special offer that won’t last long. <a href='YOUR_LINK'>Go here to learn more about the Lifestraw and my offer</a>.
             </p>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>
             <p>
                 <em>PS:</em>
@@ -659,11 +610,7 @@ class Banners
                 Be sure to see our \"4 Steps in using LifeStraw\" on the next page. This deal won't last long, so go check it out while we're still including the Paracord Grenade.
             </p>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>
             <p>
                 <em>PS:</em>
@@ -700,18 +647,14 @@ class Banners
             </p>
             </section>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>"
         ),
         "playingCards" => array(
             "https://www.dropbox.com/s/y3udh9rwwkwg8l7/Email%201.html?dl=1" => "
             <h4>SUBJECT: Survival \"Poker Cards\" gift idea</h4>
             <p>* New Product Alert *</p>
-            <p>Our new Survival Playing Cards just arrived. The \"Would you survive if…\" playing cards are expected to sell out quickly.
+            <p>Survival Frog's new Survival Playing Cards just arrived. The \"Would you survive if…\" playing cards are expected to sell out quickly.
             </p>
             <figure>
                 <img src='image/playingcards/playingcards.jpg'>
@@ -738,20 +681,16 @@ class Banners
                 … or even stocking stuffers!
             </p>
             <p>
-                If you just want to get one deck of the Survival Playing Cards, then I'll send it to you for free. Just pick up the shipping.
+                If you just want to get one deck of the Survival Playing Cards, then they will send it to you for free. Just pick up the shipping.
             </p>
             <p>
-                But if you want to get a few more for gifts, then I'll hook you up with a sweet discount.
+                But if you want to get a few more for gifts, then they will hook you up with a sweet discount.
             </p>
             <p>Check out the Survival Playing Cards - 50% Off</p>
             <p>Our Version 1 from last year sold out almost immediately. This year, we ordered more, but the Version 2 should sell out fast.</p>
             <p>Get yours today.</p>
             <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
+            SIGNATURE
             </p>
             <p>
             <em>PS:</em> In one small pack, you'll have over 52 unique, creative and sometimes weird survival tips. They are really cool! Here's the link:
@@ -787,11 +726,7 @@ class Banners
                 You will pick up some great survival / prepping ideas along the way!
             </p>
             <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
+            SIGNATURE
             </p>
             <p>
             <em>PS:</em>
@@ -816,45 +751,10 @@ class Banners
             <p>The playing cards are a great conversation piece and should be in every car and go-bag.
             </p>
             <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
+            SIGNATURE
             </p>
             <p>
             <em>PS:</em>
-            <a href='YOUR_LINK'>Here’s the link:</a>
-            </p>
-            ",
-            "https://www.dropbox.com/s/koi60h64zrkonyo/Email%204.html?dl=1" =>
-            "
-            <h4>SUBJECT: Survival Playing Cards?</h4>
-            <p>They are back in stock. Finally.
-            </p>
-            <figure>
-                <img src='image/playingcards/playingcards.jpg'>
-            </figure>
-            <p>After selling thousands of Survival Playing Cards over the holidays, we've gotten our feet back on the ground and can start shipping new orders now.</p>
-            <p>
-            The survival playing cards have been crazy popular.
-            </p>
-            <p>Use this link and there isn't any shipping charge:
-            </p>
-            <p>
-                Survival Playing Cards
-            </p>
-            <p>The playing cards are a great conversation piece and should be in every car and go-bag.
-            </p>
-            <p>
-            Prepare Now,
-            <br>
-            Survive Later!
-            <br>
-            ~Damian Campbell
-            </p>
-            <p>
-            <em>PS:</em> The high demand means we will sell out soon. I'm not sure when the playing cards will be offered again, so get your pack today.
             <a href='YOUR_LINK'>Here’s the link:</a>
             </p>
             "
@@ -899,11 +799,7 @@ class Banners
             </p>
             </section>
             <p>
-                Prepare Now,
-                <br>
-                Survive Later!
-                <br>
-                ~Damian Campbell
+                SIGNATURE
             </p>
             <p>
             <em>PS:</em> I'd prefer if you didn't share this link with anyone. Once we're out of stock, the free offer is gone.  Here's the link again:
@@ -1033,7 +929,7 @@ include_once("includes/header.php");
         <!-- Tab panels -->
         <section class="tab-content right-tab-content" id="clickBankTabContent">
             <!-- Description of Affiliate Contest -->
-            <article role="tabpanel" class="tab-pane fade in active" id="cbAbout">
+            <article role="tabpanel" class="tab-pane fade in active hidden" id="cbAbout">
                 <dl class="description">
                     <h1 class="center">
                         Affiliate Contest March 1 - 22nd, 2015

@@ -301,7 +301,8 @@ $(document).ready(function() {
                         && id !== undefined){
                         GenerateLinkObject.clearAlert(document.getElementById('cbid'), ["alert", "alert-danger", "my-alert"]);
                         GenerateLinkObject.clearGeneratLinkForm();
-                        GenerateLinkObject.appearGenerateLink("#" + id + "GenerateLink", index - 1);
+                        // GenerateLinkObject.appearGenerateLink("#" + id + "GenerateLink", index - 1);
+                        GenerateLinkObject.appearGenerateLink("#" + id + "GenerateLink", index);
                     }
                 });
             });

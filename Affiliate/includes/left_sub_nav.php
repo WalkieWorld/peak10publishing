@@ -11,7 +11,11 @@
 class SubNavigation
 {
     public $navTabs = array(
-        "cbAbout" => "Details",
+        /**
+         * Hide those left navigation tab by Hao Zhang 05/06/2015
+         */
+        /*"cbAbout" => "Details"
+        ,*/
         "solarAirLantern" => "Solar Air Lantern",
         "grenade" => "Grenade Paracord",
         "patrioticParacord" => "Patriotic Paracord",
@@ -19,18 +23,19 @@ class SubNavigation
         "lifestraw" => "LifeStraw",
         "playingCards" => "Playing Cards",
         "emergencySurvivalBlanket" => "Emergency Survival Blanket"
-    );
 
+    );
     public function renderNavTabs($tabs)
     {
         $linkHeader = $this->getSubNavLink();
         $cnt = 0;
         $isActiveClass = "class='active'";
+        $flagActiveClass = 0;
         echo "<ul class='nav nav-tabs left-tabs' role='tablist' id='clickBankTab'>";
         foreach($tabs as $key => $value)
         {
             $cnt++;
-            if($cnt > 1){
+            if($cnt > $flagActiveClass){
                 $isActiveClass = "";
             }
             echo "<li role='presentation' $isActiveClass>";

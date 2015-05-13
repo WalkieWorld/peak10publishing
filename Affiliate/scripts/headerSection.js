@@ -22,7 +22,7 @@ var RestyleDOM = {
             }
         };
         menuArray.forEach(function(curVal, index, arr){
-            if(url.toLowerCase() === "http://affiliate.survivalfrog.com/" ||url.indexOf("index.php") !== -1 ){
+            if(url.toLowerCase() === "http://affiliate.survivalfrog.com/" || url.indexOf("index.php") !== -1 ){
                 addAnchorClass(curVal, "index.php", "active");
             }
             else if(url.indexOf("affiliatecontest.php") !== -1){

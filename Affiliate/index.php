@@ -14,7 +14,8 @@ include_once("includes/head.php");
 ?>
 <body>
 <?php
-$isSignupShow = false;
+// $isSignupShow is for the index.php page's navigation, which is the switch of showing "Affiliate Signup" button.
+$isSignupShow = true;
 include_once("includes/header.php");
 ?>
 <section class="container body survival-frog-article">
