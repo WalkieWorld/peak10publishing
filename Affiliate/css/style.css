@@ -377,7 +377,6 @@ em.red{
 	align-items: flex-start;
 }
 .product-albums figure{
-	height: 200px;
 	margin: 0px 20px 15px 0px;
 }
 .product-albums figure img{
@@ -548,7 +547,7 @@ body{
     padding: 0px;
 }
 figure#survivalfrog-website-img img {
-    width: auto;
+    width: 100%;
     border: 1px solid #dddddd;
 }
 a.fa-download{

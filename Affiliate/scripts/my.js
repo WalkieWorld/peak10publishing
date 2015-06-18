@@ -356,24 +356,88 @@ $(document).ready(function() {
      * */
     (function(){
         "use strict"
-        var myAychr = new Promise(function(resolve, reject){
-            var urlParameter = window.location.hash.split("#");
-            if(urlParameter.length === 2){
-                try{
-                    resolve(urlParameter[1]);
+        var isIE = false;
+        try{
+            var myAychr = new Promise(function(resolve, reject){
+                var urlParameter = window.location.hash.split("#");
+                if(urlParameter.length === 2 || window.location.href === "http://affiliate.survivalfrog.com/affiliatecontest.php"){
+                    urlParameter = urlParameter.length === 1 ? firstTab : urlParameter[1];
+                    if(urlParameter.indexOf("?") !== -1){
+                        urlParameter = urlParameter.split("?")[0];
+                    }
+                    try{
+                        resolve(urlParameter);
+                    }
+                    catch (ex){
+                        reject(ex.message);
+                    }
                 }
-                catch (ex){
-                    reject(ex.message);
+            });
+            myAychr.then(function(id){
+                var myClick = document.querySelector("[aria-controls='" + id + "']");
+                if(myClick){
+                    myClick.click();
+                }
+            }, function(err){
+                alert(err);
+            });
+        }
+        catch(e){
+            isIE = true;
+        }
+        finally{
+            if(isIE){
+                var urlParameter = window.location.hash.split("#");
+                if(urlParameter.length === 2 || window.location.href === "http://affiliate.survivalfrog.com/affiliatecontest.php"){
+                    urlParameter = urlParameter.length === 1 ? firstTab : urlParameter[1];
+                    if(urlParameter.indexOf("?") !== -1){
+                        urlParameter = urlParameter.split("?")[0];
+                    }
+                }
+                var myClick = document.querySelector("[aria-controls='" + urlParameter + "']");
+                if(myClick){
+                    myClick.click();
                 }
             }
-        });
-        myAychr.then(function(id){
-            var myClick = document.querySelector("[aria-controls='" + id + "']");
-            if(myClick){
-                myClick.click();
-            }
-        }, function(err){
-            alert(err);
-        });
+        }
     })();
+
+    //========================================= Adjust the product albums ==================================================//
+
+    var productAlbum = {
+        imageCollection: undefined,
+        trigger: false,
+        get doRunAgain(){
+            return this.trigger;
+        },
+        reAssignPictureWidth: function(myInterval){
+            this.imageCollection = document.getElementsByClassName("product-albums");
+            for(var i = 0; i < this.imageCollection.length; i++){
+                var figure = this.imageCollection[i].querySelectorAll('figure');
+
+                for(var j = 0; j < figure.length; j++){
+                    var img = figure[j].querySelector('img');
+                    if(img.width === 0){
+                        this.trigger = true;
+                        break;
+                    }else{
+                        figure[j].setAttribute("style", "width: " + img.width + "px");
+                        clearInterval(myInterval);
+                    }
+                }
+
+                if(this.trigger){
+                    break;
+                }
+            }
+        }
+    };
+
+    (function(){
+        var myInterval = setInterval(function(){
+            productAlbum.reAssignPictureWidth(myInterval);
+        }, 2000);
+    })();
+
+    //========================================= End Adjust the product albums ==================================================//
 });

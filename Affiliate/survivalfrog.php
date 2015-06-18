@@ -42,7 +42,7 @@ include_once("includes/header.php");
                     Hundreds of top selling survival gear: <a href="http://survivalfrog.com/">SurvivalFrog.com</a>.
                 </p>
                 <figure id="survivalfrog-website-img">
-                    <img src="image/survivalfrog-officalsite.jpg" alt="Survival Frog Official Website">
+                    <img src="image/survivalfrog-officialsite.jpg" alt="Survival Frog Official Website">
                 </figure>
             </article>
         </section>

@@ -8,6 +8,8 @@
 class myFooter
 {
     public $productSelection = array(
+        "fsl" => "Fire Laces",
+        "rfid" => "RFID Blocker",
         "salf" => "Solar Air Lantern",
         "apgf" => "Grenade",
         "ppfree" => "Patriotic Paracord",

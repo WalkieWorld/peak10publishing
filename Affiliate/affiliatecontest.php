@@ -11,7 +11,7 @@ class Banners
 {
     /**
      * Declare: Banner images' format must be like this: productName_widthxheight_number.jpg/png
-    */
+     */
     public
         $salBanners = array(
         "solarAirLantern_300x250_01.jpg" =>
@@ -61,7 +61,7 @@ class Banners
         $playingCardsBanners = array(),
         $emergencySurvivalBlanketBanners = array(
         "ESB_300x250_1.jpg" =>
-        "&lt;img src='http://affiliate.survivalfrog.com/image/emergencysurvivalblanket/ESB_300x250_1.jpg' style='width: 300px; height: 250px;'&gt;",
+            "&lt;img src='http://affiliate.survivalfrog.com/image/emergencysurvivalblanket/ESB_300x250_1.jpg' style='width: 300px; height: 250px;'&gt;",
         "ESB_300x250_2.jpg" =>
             "&lt;img src='http://affiliate.survivalfrog.com/image/emergencysurvivalblanket/ESB_300x250_2.jpg' style='width: 300px; height: 250px;'&gt;",
         "ESB_300x250_3.jpg" =>
@@ -69,7 +69,63 @@ class Banners
         "ESB_600x500_1.jpg" =>
             "&lt;img src='http://affiliate.survivalfrog.com/image/emergencysurvivalblanket/ESB_600x500_1.jpg' style='width: 600px; height: 500px;'&gt;"
     ),
+        $rfidBlockBanners = array(
+        "RFID_300x250_1.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/rfidblocker/RFID_300x250_1.jpg' style='width: 300px; height: 250px;'&gt;",
+        "RFID_300x250_2.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/rfidblocker/RFID_300x250_2.jpg' style='width: 300px; height: 250px;'&gt;",
+        "RFID_728x90_3.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/rfidblocker/RFID_728x90_3.jpg' style='width: 728px; height: 90px;'&gt;",
+        "RFID_728x90_4.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/rfidblocker/RFID_728x90_4.jpg' style='width: 728px; height: 90px;'&gt;"
+    ),
+        $lifestrawBanners = array(
+        "300x250_LifeStraw_1.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/300x250_LifeStraw_1.gif' style='width: 300px; height: 250px;'&gt;",
+        "300x250_LifeStraw_2.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/300x250_LifeStraw_2.gif' style='width: 300px; height: 250px;'&gt;",
+        "728x90_LifeStraw_3.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/728x90_LifeStraw_3.gif' style='width: 728px; height: 90px;'&gt;",
+        "728x90_LifeStraw_4.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/728x90_LifeStraw_4.gif' style='width: 728px; height: 90px;'&gt;",
+        "LifeStraw-250x211-A.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/LifeStraw-250x211-A.jpg' style='width: 250px; height: 211px;'&gt;",
+        "LifeStraw-250x211-B.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/LifeStraw-250x211-B.jpg' style='width: 250px; height: 211px;'&gt;",
+        "LifeStraw-250x211-C.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/LifeStraw-250x211-C.jpg' style='width: 250px; height: 211px;'&gt;",
+        "LifeStraw-250x211-D.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/LifeStraw-250x211-D.jpg' style='width: 250px; height: 211px;'&gt;",
+        "LifeStraw-Go-250x211-A.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/LifeStraw-Go-250x211-A.jpg' style='width: 250px; height: 211px;'&gt;",
+        "LifeStraw-Go-250x211-B.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/LifeStraw-Go-250x211-B.jpg' style='width: 250px; height: 211px;'&gt;",
+        "LifeStraw-Go-250x211-C.jpg" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/lifestraw/LifeStraw-Go-250x211-C.jpg' style='width: 250px; height: 211px;'&gt;"
+    ),
+        $firelacesBanners = array(
+        "Fire-Laces_300x250_1.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/firelaces/Fire-Laces_300x250_1.gif' style='width: 300px; height: 250px;'&gt;",
+        "Fire-Laces_728x90_2.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/firelaces/Fire-Laces_728x90_2.gif' style='width: 728px; height: 90px;'&gt;",
+        "Fire-Laces_300x250_3.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/firelaces/Fire-Laces_300x250_3.gif' style='width: 300px; height: 250px;'&gt;",
+        "Fire-Laces_728x90_4.gif" =>
+            "&lt;img src='http://affiliate.survivalfrog.com/image/firelaces/Fire-Laces_728x90_4.gif' style='width: 728px; height: 90px;'&gt;"
+    ),
         $subTabs = array(
+        "firelacesTab" => array(
+            "firelacesDescription" => "Details",
+            "firelacesBanners" => "Banners",
+            "firelacesEmail" => "Email",
+            "firelacesGenerateLink" => "Generate Link"
+        ),
+        "rfidBlockerTab" => array(
+            "rfidBlockerDescription" => "Details",
+            "rfidBlockerBanners" => "Banners",
+            "rfidBlockerEmail" => "Email",
+            "rfidBlockerGenerateLink" => "Generate Link"
+        ),
         "solarAirLanternTab" => array(
             "solarAirLanternDescription" => "Details",
             "solarAirLanternBanners" => "Banners",
@@ -96,7 +152,7 @@ class Banners
         ),
         "lifestrawTab" => array(
             "lifestrawDescription" => "Details",
-//            "lifestrawBanners" => "Banners",
+            "lifestrawBanners" => "Banners",
             "lifestrawEmail" => "Email",
             "lifestrawGenerateLink" => "Generate Link"
         ),
@@ -114,6 +170,27 @@ class Banners
         )
     ),
         $productAlbums = array(
+        "firelaces" => array(
+            "firelaces-startin.jpg",
+            "firelaceshero.jpg"
+        ),
+        "firelacesContent" => array(
+            "No matter where you end up, always have these fire starting tools with you.
+FREE today!",
+            "Strike the mini blade knife against the flint rod to make sparks instantly!"
+        ),
+        "rfidBlocker" => array(
+            "safewallet-hero.jpg",
+            "rfid1.jpg"
+        ),
+        "rfidBlockerContent" => array(
+            "Identity theft is at an all-time high.
+Secure your personal info with the
+Safe Wallet Shield.",
+            "The Safe Wallet Shield blocks unwanted
+RFID waves to keep your personal and
+financial information secure."
+        ),
         "solarAirLantern" => array(
             "SolarAirLantern.png",
             "SolarAirLanternUses.png"
@@ -146,9 +223,109 @@ class Banners
         )
     ),
         $emailList = array(
+        "firelaces" => array(
+            "https://www.dropbox.com/s/x1nssy0ctea58mq/Email%201.html?dl=1" =>
+                "<h4>SL: Weird Shoelaces Pack a Fiery Surprise</h4>
+            <p>Have you seen the Paracord Shoelace Fire Starters yet?</p>
+            <p>These bombproof and lightweight shoelaces actually double as powerful firestarter.</p>
+            <p>Want to see how they work? <a href='YOUR_LINK'>Go here</a></p>
+            <figure><img src='image/firelaces/firelaces_email_1.png' alt='Fire Laces Email 1'>
+            <figcaption></figcaption>
+            </figure>
+            <p>Made of durable 550 pound Paracord, they’re a powerful and discreet survival tool.</p>
+            <p>100% TSA legal, you can take them anywhere so you’re always prepared.</p>
+            <p>And for a limited time you can get a FREE pair. </p>
+            <p>All you’ve got to do is pick up shipping.</p>
+            <p>That’s it.</p>
+            <p>But you won’t want to wait. This deal won’t last long and supplies are limited.</p>
+            <p><a href='YOUR_LINK'> Go here now</a> to learn how they work and get your Free pair.</p>
+            <section class='paragraph'>
+            SIGNATURE
+            </section>
+            <p>P.S. Feel free to share this link with friend and family. Just make sure to get your Free pair first. Here’s the link again.</p>
+            <p><a href='YOUR LINK' target='_blank'>LINK</a></p>",
+            "https://www.dropbox.com/s/clutel4ftkyhrwz/Email%202.html?dl=1" =>
+                "<h4>SL: Legally Sneak This Survival Tool Past TSA</h4>
+            <p>TSA has some pretty strict regulations.</p>
+            <p>The good news is there’s an incredibly useful survival tool you can walk right past them...and they can’t say a word.</p>
+            <p>They’re called the Paracord Shoelace Fire Starters.</p>
+            <p><a href='YOUR_LINK'>Go here to see</a> how these shoelaces make a roaring fire.</p>
+            <figure><img src='image/firelaces/firelaces_email_2.png' alt='Fire Laces Email 1'>
+                <figcaption></figcaption>
+            </figure>
+            <p>These things are tough.</p>
+            <p>Made of 10 feet (70 feet with inner strands) of bombproof 550 lb. Paracord, they’ll keep your shoes snug on your foot while looking great.</p>
+            <p>But tucked inside is a hidden survival tool that will give you fire whenever you need.</p>
+            <p>The best part?</p>
+            <p>You can get your own pair for FREE. All you do is cover shipping.</p>
+            <p>You’ll want to hurry up and get your free pair...</p>
+            <p>There aren’t many left.</p>
+            <a href='YOUR_LINK'>Go here to get your FREE pair now!</a>
+            <section class='paragraph'>
+                SIGNATURE
+            </section>
+            <p>P.S.  Supplies are going quick. Follow this link to get yours before they’re gone.
+            </p>
+            <p><a href='YOUR LINK' target='_blank'>LINK</a></p>"
+        ),
+        "rfidBlocker" => array(
+            "https://www.dropbox.com/s/ws77l4evclvydb7/Email%201.html?dl=1" =>
+                "<h4>Subject: Fraud Alert: Please Read!</h4>
+            <p>Do you want the good news or the bad news first?</p>
+            <p>Might as well start with the bad. </p>
+            <p>Apparently thieves can steal your credit card info just by placing a computer near your card.</p>
+            <p><a href='YOUR_LINK'>Go here </a>to learn the #1 way to protect yourself from this kind of fraud.</p>
+            <p>Doesn’t matter if your card’s in your wallet, or purse, they can still get your info.</p>
+            <p>How? </p>
+            <p>All they have to do is bump their computer against your wallet or purse and BAM, your identity is stolen.</p>
+            <p>Worse yet is this is happening to thousands of Americans.</p>
+            <p>And it could happen to you.</p>
+            <p>Imagine what you would do if someone got your info.</p>
+            <p>They could rob you of everything you’ve worked so hard for in seconds.</p>
+            <figure><img src='image/rfidblocker/safewallet-hero.jpg' alt='RFID Email 1'>
+            <figcaption></figcaption>
+            </figure>
+            <p>The good news is it’s easy to protect your information.</p>
+            <p>The brand Inew Safe Wallet Shield blocks thieves computers and keeps your personal information safe </p>
+            <p>And right now you’ve got a chance to get your very own Safe Wallet Shield for FREE (you just pick up the low cost of shipping). </p>
+            <p>To get yours and to see the all 7 of its unique features <a href='YOUR_LINK'>go here now.</a> </p>
+            <p>You need this if you want to hold on to what is rightfully yours.</p>
+            <section class='paragraph'>
+            SIGNATURE
+            </section>
+            <p>P.S There’s only a limited supply of Safe Wallet Shields. So make sure to get yours before they're gone. Here's the link again.</p><p><a href='YOUR LINK' target='_blank'>LINK</a></p>",
+            "https://www.dropbox.com/s/3r7hsm7z54uganf/Email%202.html?dl=1" =>
+                "<h4>SL: This $1,000 Survival Tool Can Be Yours For FREE</h4>
+            <p>Yes, you read that correctly.</p>
+            <p>This Free Survival Tool is worth a lot of money.</p>
+            <a href='YOUR_LINK'>Go here to get yours for Free.</a>
+            <p>It’s the Safe Wallet Shield.</p>
+            <figure><img src='image/rfidblocker/safewallet-hero.jpg' alt='RFID Email 1'>
+                <figcaption></figcaption>
+            </figure>
+            <p>The <a href='YOUR_LINK'>Safe Wallet Shield</a> protects against identify theft.</p>
+            <p>Because criminals just built a new device that can steal your personal identity when you walk close to them you’re at risk.</p>
+            <p>With this tool they can clear your bank account and cause $1,000,  $10,000, even $100,000 in damage.</p>
+            <p>Meaning the Safe Wallet Shield is worth as much as you have to steal.</p>
+            <p>The good news is the Safe Wallet Shield will keep your personal information safe.</p>
+            <p>Just place it around your bank card and credit cards and you’re set.</p>
+            <p>And right now you can your own for Free.</p>
+
+            <p>Just handle shipping costs and its yours.</p>
+            <p>You’ll want to act fast though. There aren’t many left.</p>
+            <p><a href='YOUR_LINK'>Go here</a> to get yours before supplies run out.</p>
+            <p>To get yours and to see the all 7 of its unique features <a href='YOUR_LINK'>go here now.</a> </p>
+            <p>You need this if you want to hold on to what is rightfully yours.</p>
+            <section class='paragraph'>
+                SIGNATURE
+            </section>
+            <p>P.S. Do you have a debit or credit card? Then you’re at risk. Ge this before it’s too late.
+            </p>
+            <p><a href='YOUR LINK' target='_blank'>LINK</a></p>"
+        ),
         "solarAirLantern" => array(
             "https://www.dropbox.com/s/04m9gy0nopzi1lh/Email%201.html?dl=1" =>
-            "<h4>SUBJECT: New Solar Air Lantern</h4>
+                "<h4>SUBJECT: New Solar Air Lantern</h4>
             <p>I can't decide if this is crazy or genius.</p>
             <figure><img src='image/solarairlantern/solarAirLantern_email_1.jpg' alt='Solar Air Lantern Email 1'>
             <figcaption>(new) Solar Air Lantern</figcaption>
@@ -167,9 +344,9 @@ class Banners
             SIGNATURE
             </section>
             <p>This is a must-have light source! Click the link below to see how it works.</p><p><a href='YOUR LINK' target='_blank'>FULL LINK</a></p>"
-            ,
+        ,
             "https://www.dropbox.com/s/cjfkt50fh338fbz/Email%202.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: #1 Top Selling Survival Gadget of the year</h4>
             <p>Have you seen the <a href='YOUR_LINK'>\"Top Selling Survival Gadget\"</a> of the year yet?</p>
             <p>Here is a hint…</p>
@@ -183,7 +360,7 @@ class Banners
             </section>
             ",
             "https://www.dropbox.com/s/nn5iverw5i7uabv/Email%203.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: Coolest Survival Gadget</h4>
             <p>This is one of the coolest survival gadgets I've seen.</p>
             <p>Virtually indestructible.</p>
@@ -234,7 +411,7 @@ class Banners
         ),
         "grenade" => array(
             "https://www.dropbox.com/s/fgl7bqu2sgw6fvu/Email%201.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: (new) Paracord \"Grenade\" tool</h4>
             <p>(new survival tool)</p>
             <p>Introducing the new <a href='YOUR_LINK'>\"Paracord Grenade\"</a> survival tool.</p>
@@ -249,7 +426,7 @@ class Banners
             </p>
             ",
             "https://www.dropbox.com/s/jrceqoii2o443ji/Email%202.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: What's inside this \"Grenade\"</h4>
             <p>Have you seen the Paracord \"Grenade\" survival tool yet?</p>
             <figure>
@@ -381,7 +558,7 @@ class Banners
         ),
         "patrioticParacord" => array(
             "https://www.dropbox.com/s/1crqw8df2eqsx8h/Email%201.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: (new survival tool) Introducing the new 'Patriotic Paracord' survival tool</h4>
             <p>Dear Patriot,</p>
             <p>
@@ -402,7 +579,7 @@ class Banners
             </p>
             ",
             "https://www.dropbox.com/s/fsw61opunanz51h/Email%202.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: (new survival tool) Introducing the new 'Patriotic Paracord' survival tool</h4>
             <p>Dear Patriot,</p>
             <p>
@@ -497,7 +674,7 @@ class Banners
         ),
         "lifestraw" => array(
             "https://www.dropbox.com/s/2exvq9gxeflfs1i/Email%201.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: #1 Pic:  No Other Water Filter Can Do This</h4>
             <p>There’s something different about our #1, top selling water filtration device.</p>
             <p>
@@ -552,7 +729,7 @@ class Banners
             </p>
             ",
             "https://www.dropbox.com/s/2i0xkacqxh8x6w7/Email%202.html?dl=1" =>
-            "
+                "
             <h4>SUBJECT: This Weird Filter Lets You Drink From a Toilet</h4>
             <p>Time Magazine was really impressed with this filter.</p>
             <p>
@@ -619,7 +796,7 @@ class Banners
             ",
             "https://www.dropbox.com/s/lywk60plcrkke67/Email%204.html?dl=1"
             =>
-            "<h4>SUBJECT: [20% Off Today] Top-Selling Water Filter of 2014</h4>
+                "<h4>SUBJECT: [20% Off Today] Top-Selling Water Filter of 2014</h4>
             <p>Hard to believe 2014 has been over… </p>
             <p>
                 It's one of our top sellers right now.
@@ -699,7 +876,7 @@ class Banners
             ",
             "https://www.dropbox.com/s/qoh32g9t2d4od49/Email%202.html?dl=1"
             =>
-            "
+                "
             <h4>SUBJECT: Playing Card that can save your life</h4>
             <figure>
                 <img src='image/playingcards/playingcards.jpg'>
@@ -734,7 +911,7 @@ class Banners
             </p>
             ",
             "https://www.dropbox.com/s/0nnu9jp5jimdptf/Email%203.html?dl=1" =>
-            "<h4>SUBJECT: Your go bag is missing this 1 thing</h4>
+                "<h4>SUBJECT: Your go bag is missing this 1 thing</h4>
             <figure>
                 <img src='image/playingcards/playingcards.jpg'>
             </figure>
@@ -813,8 +990,8 @@ class Banners
     {
         $i = 0;
         foreach ($bannerImageArray as $key => $value) {
-            foreach(explode('_', $key) as $e){
-                if(strpos($e, 'x') !== false){
+            foreach (explode('_', $key) as $e) {
+                if (strpos($e, 'x') !== false) {
                     $bannerImgSize = explode('x', $e);
                 }
             }
@@ -839,10 +1016,9 @@ END;
         $cnt = 0;
         $isActiveClass = "class='active'";
         echo "<ul class='nav nav-tabs' role='tablist' id='" . $tabId . "'>";
-        foreach($sTabs as $key => $value)
-        {
+        foreach ($sTabs as $key => $value) {
             $cnt++;
-            if($cnt > 1){
+            if ($cnt > 1) {
                 $isActiveClass = "";
             }
             echo "<li role='presentation' $isActiveClass><a href='#$key' aria-controls='$key' role='tab' data-toggle='tab'>$value</a></li>";
@@ -850,28 +1026,32 @@ END;
         echo "</ul>";
     }
 
-    public function renderProductAlbums($productName, $productAlbum, $imagePath){
+    public function renderProductAlbums($productName, $productAlbum, $imagePath, $imageContent)
+    {
         $i = 0;
-        foreach($productAlbum as $p){
+        foreach ($productAlbum as $p) {
             $i++;
+            $content = is_null($imageContent) != true ? $imageContent[$i - 1] : "";
             echo <<<END
             <figure>
                 <img src="$imagePath/$p" alt="$productName $i">
+                <figcaption>$content</figcaption>
             </figure>
 END;
         }
     }
 
-    public function renderEmail($emailContentList, $id){
+    public function renderEmail($emailContentList, $id)
+    {
         $index = 0;
         $in = "in";
         $isExpanded = "true";
         $headingId = $id . "Heading";
         $collapseId = $id . "Collapse";
         $parentId = $id . "EmailOne";
-        foreach($emailContentList as $k => $e){
+        foreach ($emailContentList as $k => $e) {
             $index++;
-            if($index > 1){
+            if ($index > 1) {
                 $in = "";
                 $isExpanded = "false";
             }
@@ -909,13 +1089,16 @@ echo $myDBConnector->get_db_server();*/
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$title = "Survival Frog Affiliate: Affiliate Contest";
+$title = "Survival Frog Affiliate";
 include_once("includes/head.php");
 ?>
 <body>
 <?php
 include_once("includes/header.php");
 ?>
+<script>
+    var firstTab = "rfidBlocker";
+</script>
 <section class="container body">
     <!--<section class="page-header">
         <h3>CLICKBANK</h3>
@@ -935,7 +1118,8 @@ include_once("includes/header.php");
                         Affiliate Contest March 1 - 22nd, 2015
                     </h1>
                     <dd>
-                        You have 7 different survival offers to choose from - all of which are physical survival gear. Your buyers
+                        You have 7 different survival offers to choose from - all of which are physical survival gear.
+                        Your buyers
                         will love the low cost survival gear we have, or you can send to our
                         e-commerce store and have 100's of survival gear options. Each buyer counts towards
                         the contest prizes.
@@ -945,7 +1129,8 @@ include_once("includes/header.php");
                         and it adds value to your list.
                     </dd>
                     <dd>
-                        The commission structure for each product is explained in the product area. And while you won't see $5 EPC on
+                        The commission structure for each product is explained in the product area. And while you won't
+                        see $5 EPC on
                         our physical offers, you will see a lot of clicks and for most lists $1 EPC.
 
                     </dd>
@@ -954,16 +1139,22 @@ include_once("includes/header.php");
                             COMMISSIONS:
                         </strong>
                     </dd>
-                    <dd>Most offers are paid on CPA (Cost per aquisition) basis, and we have raised the CPA from $6 to $7 on the free+ship offers, but only during the contest period.
+                    <dd>Most offers are paid on CPA (Cost per aquisition) basis, and we have raised the CPA from $6 to
+                        $7 on the free+ship offers, but only during the contest period.
                         Commissions vary per product, see product areas for specific commission details.
                     </dd>
                     <dd>
                         Plus:<br>
-                        We will have random drawings twice per week. For each customer that buys, you will be entered once.  So if you have 50 sales for that week, your name will be in the drawing "hat" 50 times.  We are giving away some really cool survival gear to the winners, watch the emails to see what was awarded and if you won.
+                        We will have random drawings twice per week. For each customer that buys, you will be entered
+                        once. So if you have 50 sales for that week, your name will be in the drawing "hat" 50 times. We
+                        are giving away some really cool survival gear to the winners, watch the emails to see what was
+                        awarded and if you won.
                     </dd>
                     <dd>
                         Plus:<br>
-                        Grab some quick cash by ranking in the top 3 spots.  Based on the total amount of buyers during the March 1 - 22nd time period.  Top dog gets $2,500 (as long as there are over 150 buyers). No minimums for the 2nd prize at $1,000 or 3rd at $500.
+                        Grab some quick cash by ranking in the top 3 spots. Based on the total amount of buyers during
+                        the March 1 - 22nd time period. Top dog gets $2,500 (as long as there are over 150 buyers). No
+                        minimums for the 2nd prize at $1,000 or 3rd at $500.
                     </dd>
                     <dd>
                         <strong>
@@ -971,9 +1162,11 @@ include_once("includes/header.php");
                         </strong>
                     </dd>
                     <dd>
-                        We are paying immediately after the contest, then again in 2 weeks for any residual sales. ** You must have a
-                        <a href="https://peak10.fogbugz.com/default.asp?ixAttachment=30726&pg=pgDownload&pgType=pgFile&sFilename=W9_Form_Blank.pdf">W9</a> form
-                        on file with us to get paid.  Download it here, fill it out and email it to
+                        We are paying immediately after the contest, then again in 2 weeks for any residual sales. **
+                        You must have a
+                        <a href="https://peak10.fogbugz.com/default.asp?ixAttachment=30726&pg=pgDownload&pgType=pgFile&sFilename=W9_Form_Blank.pdf">W9</a>
+                        form
+                        on file with us to get paid. Download it here, fill it out and email it to
                         <a href="mailto:accounting@peak10publishing.com">
                             accounting@peak10publishing.com
                         </a> **
@@ -987,6 +1180,124 @@ include_once("includes/header.php");
                         If you need any assistance, contact Lyle at <a href="mailto:Affiliate@SurvivalFrog.com">Affiliate@SurvivalFrog.com</a>
                     </dd>
                 </dl>
+            </article>
+            <!--  Fire Laces-->
+            <article role="tabpanel" class="tab-pane fade" id="firelaces">
+                <dl class="description">
+                    <dt>Fire Laces</dt>
+                </dl>
+                <section role="tabpanel">
+                    <!-- tabs inside panel of Solar Air Lantern -->
+                    <?php
+                    $myBanners->renderSubNavTabs($myBanners->subTabs["firelacesTab"], "firelacesTab");
+                    ?>
+                    <section class="tab-content">
+                        <!-- Details -->
+                        <article role="tabpanel" class="tab-pane fade in active" id="firelacesDescription">
+                            <dl class="description">
+                                <aside class="product-albums">
+                                    <?php
+                                    $myBanners->renderProductAlbums("Fire Laces", $myBanners->productAlbums["firelaces"], "image/firelaces", $myBanners->productAlbums["firelacesContent"]);
+                                    ?>
+                                </aside>
+                                <dd>
+                                    Free plus ship offer, the Fire Laces is a huge hit with our list and it will be a hit for your list as well.
+                                </dd>
+                                <!--<dd><em>Offer: </em>
+
+                                </dd>-->
+                                <dd>
+                                    <em>Commissions: </em>
+                                    Cost Per Action (CPA) $12 net on the entire sales funnel, including trial offers. No rebills.
+                                </dd>
+                                <dd>
+                                    <em>
+                                        Sales Page:
+                                    </em>
+                                    <a href="http://deals.survivalfrog.com/free-fire-laces.php" target="_blank">http://deals.survivalfrog.com/free-fire-laces.php</a>
+                                </dd>
+                            </dl>
+                        </article>
+                        <!-- Banners -->
+                        <article role="tabpanel" class="tab-pane fade" id="firelacesBanners">
+                            <?php
+                            $myBanners->renderBanners("Fire Laces", $myBanners->firelacesBanners, "image/firelaces", "");
+                            ?>
+                        </article>
+                        <!-- Email -->
+                        <article role="tabpanel" class="tab-pane fade" id="firelacesEmail">
+                            <section class="panel-group" id="firelacesEmailOne" role="tablist"
+                                     aria-multiselectable="true">
+                                <?php
+                                $myBanners->renderEmail($myBanners->emailList["firelaces"], "firelaces");
+                                ?>
+                            </section>
+                        </article>
+                        <!-- Generate Link -->
+                        <article role="tabpanel" class="tab-pane fade in" id="firelacesGenerateLink">
+                        </article>
+                    </section>
+                </section>
+            </article>
+            <!-- RFID Blocker -->
+            <article role="tabpanel" class="tab-pane fade" id="rfidBlocker">
+                <dl class="description">
+                    <dt>RFID Blocker -- Safe Wallet Sheild</dt>
+                </dl>
+                <section role="tabpanel">
+                    <!-- tabs inside panel of Solar Air Lantern -->
+                    <?php
+                    $myBanners->renderSubNavTabs($myBanners->subTabs["rfidBlockerTab"], "rfidBlockerTab");
+                    ?>
+                    <section class="tab-content">
+                        <!-- Details -->
+                        <article role="tabpanel" class="tab-pane fade in active" id="rfidBlockerDescription">
+                            <dl class="description">
+                                <aside class="product-albums">
+                                    <?php
+                                    $myBanners->renderProductAlbums("RFID Blocker", $myBanners->productAlbums["rfidBlocker"], "image/rfidblocker", $myBanners->productAlbums["rfidBlockerContent"]);
+                                    ?>
+                                </aside>
+                                <dd>
+                                    Free plus ship offer, the RFID Blocker is a huge hit with our list and it will be a
+                                    hit for your list as well.
+                                </dd>
+                                <!--<dd><em>Offer: </em>
+
+                                </dd>-->
+                                <dd>
+                                    <em>Commissions: </em>
+                                    Cost Per Action (CPA) $12 net on the entire sales funnel, including trial offers. No
+                                    rebills. This is a promotional CPA for the first 30 days.
+                                </dd>
+                                <dd>
+                                    <em>
+                                        Sales Page:
+                                    </em>
+                                    <a href="http://deals.survivalfrog.com/free-rfid-wallet.php" target="_blank">http://deals.survivalfrog.com/free-rfid-wallet.php</a>
+                                </dd>
+                            </dl>
+                        </article>
+                        <!-- Banners -->
+                        <article role="tabpanel" class="tab-pane fade" id="rfidBlockerBanners">
+                            <?php
+                            $myBanners->renderBanners("RFID Blocker", $myBanners->rfidBlockBanners, "image/rfidblocker", "");
+                            ?>
+                        </article>
+                        <!-- Email -->
+                        <article role="tabpanel" class="tab-pane fade" id="rfidBlockerEmail">
+                            <section class="panel-group" id="rfidBlockerEmailOne" role="tablist"
+                                     aria-multiselectable="true">
+                                <?php
+                                $myBanners->renderEmail($myBanners->emailList["rfidBlocker"], "rfidBlocker");
+                                ?>
+                            </section>
+                        </article>
+                        <!-- Generate Link -->
+                        <article role="tabpanel" class="tab-pane fade in" id="rfidBlockerGenerateLink">
+                        </article>
+                    </section>
+                </section>
             </article>
             <!-- Solar Air Lantern panel -->
             <article role="tabpanel" class="tab-pane fade" id="solarAirLantern">
@@ -1004,24 +1315,28 @@ include_once("includes/header.php");
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
-                                    $myBanners->renderProductAlbums("Solar Air Lantern", $myBanners->productAlbums["solarAirLantern"], "image/solarairlantern");
+                                    $myBanners->renderProductAlbums("Solar Air Lantern", $myBanners->productAlbums["solarAirLantern"], "image/solarairlantern", null);
                                     ?>
                                 </aside>
                                 <dd>
-                                    Survival Frog’s top selling product of 2014, Solar Air Lantern. Offered with multi-quantity and the Paracord Grenade as a bonus to purchasing multi-quantity.
+                                    Survival Frog’s top selling product of 2014, Solar Air Lantern. Offered with
+                                    multi-quantity and the Paracord Grenade as a bonus to purchasing multi-quantity.
                                 </dd>
                                 <dd><em>Offer: </em>
-                                    $19.97 for 1 Solar Air Lantern, or $29.97 for 2 lanterns plus a free Paracord Grenade. Plus 1-click upsell funnel. Exit pops available.
+                                    $19.97 for 1 Solar Air Lantern, or $29.97 for 2 lanterns plus a free Paracord
+                                    Grenade. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
                                     <em>Commissions: </em>
-                                    Cost Per Action (CPA) $18 net on the entire sales funnel, including trial offers. No rebills.
+                                    Cost Per Action (CPA) $18 net on the entire sales funnel, including trial offers. No
+                                    rebills.
                                 </dd>
                                 <dd>
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="http://secure.peak10publishing.com/emergency-survival-lantern-2s.php" target="_blank">http://secure.peak10publishing.com/emergency-survival-lantern-2s.php</a>
+                                    <a href="http://secure.peak10publishing.com/emergency-survival-lantern-2s.php"
+                                       target="_blank">http://secure.peak10publishing.com/emergency-survival-lantern-2s.php</a>
                                 </dd>
                             </dl>
                         </article>
@@ -1036,7 +1351,7 @@ include_once("includes/header.php");
                             <section class="panel-group" id="solarAirLanternEmailOne" role="tablist"
                                      aria-multiselectable="true">
                                 <?php
-                                $myBanners->renderEmail($myBanners->emailList["solarAirLantern"],"solarAirLantern");
+                                $myBanners->renderEmail($myBanners->emailList["solarAirLantern"], "solarAirLantern");
                                 ?>
                             </section>
                         </article>
@@ -1061,23 +1376,29 @@ include_once("includes/header.php");
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
-                                    $myBanners->renderProductAlbums("Paracord Grenade", $myBanners->productAlbums["grenade"], "image/grenade");
+                                    $myBanners->renderProductAlbums("Paracord Grenade", $myBanners->productAlbums["grenade"], "image/grenade", null);
                                     ?>
                                 </aside>
                                 <dd>
-                                    Free plus ship offer, the Paracord Grenade is one of our top selling products. An exclusive product only offered from Survival Frog, the grenade has 10 survival items wrapped up in 9 feet of 550 pound paracord and includes a card explaining the contents.
+                                    Free plus ship offer, the Paracord Grenade is one of our top selling products. An
+                                    exclusive product only offered from Survival Frog, the grenade has 10 survival items
+                                    wrapped up in 9 feet of 550 pound paracord and includes a card explaining the
+                                    contents.
                                 </dd>
                                 <dd>
-                                    <em>Offer: </em>Free plus shipping on the first grenade, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
+                                    <em>Offer: </em>Free plus shipping on the first grenade, plus multiple quantity
+                                    purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel,
+                                    including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="https://secure.peak10publishing.com/free-paracord-grenade.php" target="_blank">https://secure.peak10publishing.com/free-paracord-grenade.php</a>
+                                    <a href="https://secure.peak10publishing.com/free-paracord-grenade.php"
+                                       target="_blank">https://secure.peak10publishing.com/free-paracord-grenade.php</a>
                                 </dd>
                             </dl>
                         </article>
@@ -1092,7 +1413,7 @@ include_once("includes/header.php");
                             <section class="panel-group" id="grenadeEmailOne" role="tablist"
                                      aria-multiselectable="true">
                                 <?php
-                                $myBanners->renderEmail($myBanners->emailList["grenade"],"grenade");
+                                $myBanners->renderEmail($myBanners->emailList["grenade"], "grenade");
                                 ?>
                             </section>
                         </article>
@@ -1117,23 +1438,28 @@ include_once("includes/header.php");
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
-                                    $myBanners->renderProductAlbums("Patriotic Paracord", $myBanners->productAlbums["patrioticParacord"], "image/patrioticparacord")
+                                    $myBanners->renderProductAlbums("Patriotic Paracord", $myBanners->productAlbums["patrioticParacord"], "image/patrioticparacord", null)
                                     ?>
                                 </aside>
                                 <dd>
-                                    Free plus ship offer, the Patriotic Paracord is one of our top selling products. An exclusive product only offered from Survival Frog, the Patriotic Paracord bracelet has over 10 feet of 550 pound paracord and emergency whistle.
+                                    Free plus ship offer, the Patriotic Paracord is one of our top selling products. An
+                                    exclusive product only offered from Survival Frog, the Patriotic Paracord bracelet
+                                    has over 10 feet of 550 pound paracord and emergency whistle.
                                 </dd>
                                 <dd>
-                                    <em>Offer: </em>Free plus shipping on the first Patriotic Paracord, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
+                                    <em>Offer: </em>Free plus shipping on the first Patriotic Paracord, plus multiple
+                                    quantity purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel,
+                                    including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="https://secure.peak10publishing.com/free-patriot-paracord.php" target="_blank">https://secure.peak10publishing.com/free-patriot-paracord.php</a>
+                                    <a href="https://secure.peak10publishing.com/free-patriot-paracord.php"
+                                       target="_blank">https://secure.peak10publishing.com/free-patriot-paracord.php</a>
                                 </dd>
                             </dl>
                         </article>
@@ -1148,7 +1474,7 @@ include_once("includes/header.php");
                             <section class="panel-group" id="patrioticParacordEmailOne" role="tablist"
                                      aria-multiselectable="true">
                                 <?php
-                                $myBanners->renderEmail($myBanners->emailList["patrioticParacord"],"patrioticParacord");
+                                $myBanners->renderEmail($myBanners->emailList["patrioticParacord"], "patrioticParacord");
                                 ?>
                             </section>
                         </article>
@@ -1173,30 +1499,35 @@ include_once("includes/header.php");
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
-                                    $myBanners->renderProductAlbums("Cobra Belt", $myBanners->productAlbums["cobraBelt"], "image/cobrabelt");
+                                    $myBanners->renderProductAlbums("Cobra Belt", $myBanners->productAlbums["cobraBelt"], "image/cobrabelt", null);
                                     ?>
                                 </aside>
                                 <dd>
-                                    The Cobra Belt has over 128 feet of 550 pound paracord and has hundreds of survival uses.  When someone buys multiple belts, they receive a Survival Survival Card set as a bonus.
+                                    The Cobra Belt has over 128 feet of 550 pound paracord and has hundreds of survival
+                                    uses. When someone buys multiple belts, they receive a Survival Survival Card set as
+                                    a bonus.
                                 </dd>
                                 <dd>
-                                    <em>Offer: </em>$19.97 for 1 Cobra Belt, or $29.97 for 2 belts plus a free Survival Playing Cards. Plus 1-click upsell funnel. Exit pops available.
+                                    <em>Offer: </em>$19.97 for 1 Cobra Belt, or $29.97 for 2 belts plus a free Survival
+                                    Playing Cards. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel,
+                                    including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="https://secure.peak10publishing.com/cobra-paracord-belt.php" target="_blank">https://secure.peak10publishing.com/cobra-paracord-belt.php</a>
+                                    <a href="https://secure.peak10publishing.com/cobra-paracord-belt.php"
+                                       target="_blank">https://secure.peak10publishing.com/cobra-paracord-belt.php</a>
                                 </dd>
                             </dl>
                         </article>
                         <!-- Banners-->
                         <article role="tabpanel" class="tab-pane fade" id="cobraBeltBanners">
                             <?php
-//                            $myBanners->renderBanners("Grenade", $myBanners->grenadeBanners, "image/grenade", "sal-img-size-300-250");
+                            //                            $myBanners->renderBanners("Grenade", $myBanners->grenadeBanners, "image/grenade", "sal-img-size-300-250");
                             ?>
                         </article>
                         <!-- Email -->
@@ -1204,7 +1535,7 @@ include_once("includes/header.php");
                             <section class="panel-group" id="cobraBeltEmailOne" role="tablist"
                                      aria-multiselectable="true">
                                 <?php
-                                $myBanners->renderEmail($myBanners->emailList["cobraBelt"],"cobraBelt");
+                                $myBanners->renderEmail($myBanners->emailList["cobraBelt"], "cobraBelt");
                                 ?>
                             </section>
                         </article>
@@ -1229,17 +1560,21 @@ include_once("includes/header.php");
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
-                                    $myBanners->renderProductAlbums("Lifestraw", $myBanners->productAlbums["lifestraw"], "image/lifestraw")
+                                    $myBanners->renderProductAlbums("Lifestraw", $myBanners->productAlbums["lifestraw"], "image/lifestraw", null)
                                     ?>
                                 </aside>
                                 <dd>
-                                    The LifeStraw is one of the best selling survival products of all time.  Combined with a free Paracord Grenade from Survival Frog ($17 value), this offer is hard to resist for the survivalist.
+                                    The LifeStraw is one of the best selling survival products of all time. Combined
+                                    with a free Paracord Grenade from Survival Frog ($17 value), this offer is hard to
+                                    resist for the survivalist.
                                 </dd>
                                 <dd>
-                                    <em>Offer: </em>$19.97 for 1 LifeStraw, or $39.97 for 2 LifeStraws plus a free Paracord Grenade. Plus 1-click upsell funnel. Exit pops available.
+                                    <em>Offer: </em>$19.97 for 1 LifeStraw, or $39.97 for 2 LifeStraws plus a free
+                                    Paracord Grenade. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>Cost Per Action (CPA) $18 net on the entire sales funnel, including trial offers. No rebills.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $18 net on the entire sales funnel,
+                                    including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
@@ -1252,7 +1587,7 @@ include_once("includes/header.php");
                         <!-- Banners-->
                         <article role="tabpanel" class="tab-pane fade" id="lifestrawBanners">
                             <?php
-                            //$myBanners->renderBanners("Grenade", $myBanners->grenadeBanners, "image/grenade", "sal-img-size-300-250");
+                            $myBanners->renderBanners("LifeStraw", $myBanners->lifestrawBanners, "image/lifestraw", "");
                             ?>
                         </article>
                         <!-- Email -->
@@ -1260,7 +1595,7 @@ include_once("includes/header.php");
                             <section class="panel-group" id="lifestrawEmailOne" role="tablist"
                                      aria-multiselectable="true">
                                 <?php
-                                $myBanners->renderEmail($myBanners->emailList["lifestraw"],"lifestraw");
+                                $myBanners->renderEmail($myBanners->emailList["lifestraw"], "lifestraw");
                                 ?>
                             </section>
                         </article>
@@ -1285,17 +1620,21 @@ include_once("includes/header.php");
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
-                                    $myBanners->renderProductAlbums("Playing Cards", $myBanners->productAlbums["playingCards"], "image/playingcards")
+                                    $myBanners->renderProductAlbums("Playing Cards", $myBanners->productAlbums["playingCards"], "image/playingcards", null)
                                     ?>
                                 </aside>
                                 <dd>
-                                    Free plus ship offer, the Survival Playing Cards make for a great gift. An exclusive product only offered from Survival Frog, the Survival Playing Cards offer 52 disaster scenarios and survival tips.
+                                    Free plus ship offer, the Survival Playing Cards make for a great gift. An exclusive
+                                    product only offered from Survival Frog, the Survival Playing Cards offer 52
+                                    disaster scenarios and survival tips.
                                 </dd>
                                 <dd>
-                                    <em>Offer: </em>Free plus shipping on the first set of playing cards, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
+                                    <em>Offer: </em>Free plus shipping on the first set of playing cards, plus multiple
+                                    quantity purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel,
+                                    including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
@@ -1316,7 +1655,7 @@ include_once("includes/header.php");
                             <section class="panel-group" id="playingCardsEmailOne" role="tablist"
                                      aria-multiselectable="true">
                                 <?php
-                                $myBanners->renderEmail($myBanners->emailList["playingCards"],"playingCards");
+                                $myBanners->renderEmail($myBanners->emailList["playingCards"], "playingCards");
                                 ?>
                             </section>
                         </article>
@@ -1337,27 +1676,32 @@ include_once("includes/header.php");
                     ?>
                     <section class="tab-content">
                         <!-- Details -->
-                        <article role="tabpanel" class="tab-pane fade in active" id="emergencySurvivalBlanketDescription">
+                        <article role="tabpanel" class="tab-pane fade in active"
+                                 id="emergencySurvivalBlanketDescription">
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
-                                    $myBanners->renderProductAlbums("Emergency Survival Blanket", $myBanners->productAlbums["emergencySurvivalBlanket"], "image/emergencysurvivalblanket")
+                                    $myBanners->renderProductAlbums("Emergency Survival Blanket", $myBanners->productAlbums["emergencySurvivalBlanket"], "image/emergencysurvivalblanket", null)
                                     ?>
                                 </aside>
                                 <dd>
-                                    Free plus ship offer, the Emergency Survival Blanket is something every survivalist needs in their go bag.
+                                    Free plus ship offer, the Emergency Survival Blanket is something every survivalist
+                                    needs in their go bag.
                                 </dd>
                                 <dd>
-                                    <em>Offer: </em>Free plus shipping on the first blanket, plus multiple quantity purchases. Plus 1-click upsell funnel. Exit pops available.
+                                    <em>Offer: </em>Free plus shipping on the first blanket, plus multiple quantity
+                                    purchases. Plus 1-click upsell funnel. Exit pops available.
                                 </dd>
                                 <dd>
-                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel, including trial offers. No rebills.
+                                    <em>Commissions: </em>Cost Per Action (CPA) $6 net on the entire sales funnel,
+                                    including trial offers. No rebills.
                                 </dd>
                                 <dd>
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="https://secure.peak10publishing.com/emergency-suvival-blanket-free-v2.php" target="_blank">https://secure.peak10publishing.com/emergency-suvival-blanket-free-v2.php</a>
+                                    <a href="https://secure.peak10publishing.com/emergency-suvival-blanket-free-v2.php"
+                                       target="_blank">https://secure.peak10publishing.com/emergency-suvival-blanket-free-v2.php</a>
                                 </dd>
                             </dl>
                         </article>
@@ -1372,7 +1716,7 @@ include_once("includes/header.php");
                             <section class="panel-group" id="emergencySurvivalBlanketEmailOne" role="tablist"
                                      aria-multiselectable="true">
                                 <?php
-                                $myBanners->renderEmail($myBanners->emailList["emergencySurvivalBlanket"],"emergencySurvivalBlanket");
+                                $myBanners->renderEmail($myBanners->emailList["emergencySurvivalBlanket"], "emergencySurvivalBlanket");
                                 ?>
                             </section>
                         </article>

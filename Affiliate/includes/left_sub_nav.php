@@ -16,6 +16,8 @@ class SubNavigation
          */
         /*"cbAbout" => "Details"
         ,*/
+       // "firelaces" => "Fire Laces",
+        "rfidBlocker" => "RFID Blocker",
         "solarAirLantern" => "Solar Air Lantern",
         "grenade" => "Grenade Paracord",
         "patrioticParacord" => "Patriotic Paracord",
