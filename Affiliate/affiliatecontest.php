@@ -1181,13 +1181,13 @@ include_once("includes/header.php");
                     </dd>
                 </dl>
             </article>
-            <!--  Fire Laces-->
+            <!-- Fire Laces-->
             <article role="tabpanel" class="tab-pane fade" id="firelaces">
                 <dl class="description">
                     <dt>Fire Laces</dt>
                 </dl>
                 <section role="tabpanel">
-                    <!-- tabs inside panel of Solar Air Lantern -->
+                    <!-- tabs inside panel of Fire Laces -->
                     <?php
                     $myBanners->renderSubNavTabs($myBanners->subTabs["firelacesTab"], "firelacesTab");
                     ?>
@@ -1201,20 +1201,35 @@ include_once("includes/header.php");
                                     ?>
                                 </aside>
                                 <dd>
-                                    Free plus ship offer, the Fire Laces is a huge hit with our list and it will be a hit for your list as well.
+                                    Free plus ship offer, the Fire Laces is a huge hit with our list and it will be a
+                                    hit for your list as well.
                                 </dd>
                                 <!--<dd><em>Offer: </em>
 
                                 </dd>-->
                                 <dd>
                                     <em>Commissions: </em>
-                                    Cost Per Action (CPA) $12 net on the entire sales funnel, including trial offers. No rebills.
+                                    Cost Per Action (CPA) $12 net on the entire sales funnel, including trial offers. No
+                                    rebills.
                                 </dd>
                                 <dd>
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="http://deals.survivalfrog.com/free-fire-laces.php" target="_blank">http://deals.survivalfrog.com/free-fire-laces.php</a>
+                                    <a href="http://deals.survivalfrog.com/free-fire-laces.php" target="_blank">
+                                        http://deals.survivalfrog.com/free-fire-laces.php
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
                                 </dd>
                             </dl>
                         </article>
@@ -1245,7 +1260,7 @@ include_once("includes/header.php");
                     <dt>RFID Blocker -- Safe Wallet Sheild</dt>
                 </dl>
                 <section role="tabpanel">
-                    <!-- tabs inside panel of Solar Air Lantern -->
+                    <!-- tabs inside panel of RFID Blocker -->
                     <?php
                     $myBanners->renderSubNavTabs($myBanners->subTabs["rfidBlockerTab"], "rfidBlockerTab");
                     ?>
@@ -1274,7 +1289,19 @@ include_once("includes/header.php");
                                     <em>
                                         Sales Page:
                                     </em>
-                                    <a href="http://deals.survivalfrog.com/free-rfid-wallet.php" target="_blank">http://deals.survivalfrog.com/free-rfid-wallet.php</a>
+                                    <a href="http://deals.survivalfrog.com/free-rfid-wallet.php" target="_blank">
+                                        http://deals.survivalfrog.com/free-rfid-wallet.php</a>
+                                </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
                                 </dd>
                             </dl>
                         </article>
@@ -1338,6 +1365,17 @@ include_once("includes/header.php");
                                     <a href="http://secure.peak10publishing.com/emergency-survival-lantern-2s.php"
                                        target="_blank">http://secure.peak10publishing.com/emergency-survival-lantern-2s.php</a>
                                 </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
+                                </dd>
                             </dl>
                         </article>
                         <!-- Banners -->
@@ -1400,6 +1438,17 @@ include_once("includes/header.php");
                                     <a href="https://secure.peak10publishing.com/free-paracord-grenade.php"
                                        target="_blank">https://secure.peak10publishing.com/free-paracord-grenade.php</a>
                                 </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
+                                </dd>
                             </dl>
                         </article>
                         <!-- Banners-->
@@ -1460,6 +1509,17 @@ include_once("includes/header.php");
                                     </em>
                                     <a href="https://secure.peak10publishing.com/free-patriot-paracord.php"
                                        target="_blank">https://secure.peak10publishing.com/free-patriot-paracord.php</a>
+                                </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
                                 </dd>
                             </dl>
                         </article>
@@ -1522,6 +1582,17 @@ include_once("includes/header.php");
                                     <a href="https://secure.peak10publishing.com/cobra-paracord-belt.php"
                                        target="_blank">https://secure.peak10publishing.com/cobra-paracord-belt.php</a>
                                 </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
+                                </dd>
                             </dl>
                         </article>
                         <!-- Banners-->
@@ -1581,6 +1652,17 @@ include_once("includes/header.php");
                                         Sales Page:
                                     </em>
                                     <a href="https://ts970.infusionsoft.com/go/lswf/aaffiliateID/TID" target="_blank">https://ts970.infusionsoft.com/go/lswf/aaffiliateID/TID</a>
+                                </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
                                 </dd>
                             </dl>
                         </article>
@@ -1642,6 +1724,17 @@ include_once("includes/header.php");
                                     </em>
                                     <a href="http://freesurvivalplayingcards.com/" target="_blank">http://freesurvivalplayingcards.com/</a>
                                 </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
+                                </dd>
                             </dl>
                         </article>
                         <!-- Banners-->
@@ -1702,6 +1795,17 @@ include_once("includes/header.php");
                                     </em>
                                     <a href="https://secure.peak10publishing.com/emergency-suvival-blanket-free-v2.php"
                                        target="_blank">https://secure.peak10publishing.com/emergency-suvival-blanket-free-v2.php</a>
+                                </dd>
+                                <dd>
+                                    <em>
+                                        Promote:
+                                    </em>
+                                    To promote, generate your Infusionsoft affiliate link by clicking on the “Generate
+                                    Link” tab above. If you need to signup for an Infusionsoft account, click the
+                                    Affiliate Signup button on the top right of the page. Once you have an account, you
+                                    can access it here: <a href="https://ts970.infusionsoft.com/app/authentication/login" target="_blank">
+                                        https://ts970.infusionsoft.com/app/authentication/login
+                                    </a>
                                 </dd>
                             </dl>
                         </article>

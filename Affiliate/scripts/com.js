@@ -102,6 +102,14 @@ $(document).ready(function () {
             this.addEvent(this.lastName, "keydown", function (e) {
                 SignupModel.generateUserName(e, this);
             });
+            this.addEvent(this.firstName, "change", function(e){
+                this.reset('af');
+                document.getElementById("inf_other_Username").value = SignupModel.userName;
+            }.bind(this));
+            this.addEvent(this.lastName, "change", function(e){
+                this.reset('af');
+                document.getElementById("inf_other_Username").value = SignupModel.userName;
+            }.bind(this));
         },
         addEvent: function (handler, event, fun) {
             handler.addEventListener(event, fun);
@@ -130,7 +138,6 @@ $(document).ready(function () {
                     }
                     break;
                 case "password":
-
                     if (tagVal[0].value !== tagVal[1].value) {
                         for (var i = 0; i < tagVal.length; i++) {
                             tagVal[i].classList.add("text-danger");
