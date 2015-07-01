@@ -225,7 +225,7 @@ financial information secure."
         $emailList = array(
         "firelaces" => array(
             "https://www.dropbox.com/s/x1nssy0ctea58mq/Email%201.html?dl=1" =>
-                "<h4>SL: Weird Shoelaces Pack a Fiery Surprise</h4>
+                "<h4>Subject: Weird Shoelaces Pack a Fiery Surprise</h4>
             <p>Have you seen the Paracord Shoelace Fire Starters yet?</p>
             <p>These bombproof and lightweight shoelaces actually double as powerful firestarter.</p>
             <p>Want to see how they work? <a href='YOUR_LINK'>Go here</a></p>
@@ -240,12 +240,12 @@ financial information secure."
             <p>But you won’t want to wait. This deal won’t last long and supplies are limited.</p>
             <p><a href='YOUR_LINK'> Go here now</a> to learn how they work and get your Free pair.</p>
             <section class='paragraph'>
-            SIGNATURE
+                AFFILIATE SIGNATURE
             </section>
             <p>P.S. Feel free to share this link with friend and family. Just make sure to get your Free pair first. Here’s the link again.</p>
             <p><a href='YOUR LINK' target='_blank'>LINK</a></p>",
             "https://www.dropbox.com/s/clutel4ftkyhrwz/Email%202.html?dl=1" =>
-                "<h4>SL: Legally Sneak This Survival Tool Past TSA</h4>
+                "<h4>Subject: Legally Sneak This Survival Tool Past TSA</h4>
             <p>TSA has some pretty strict regulations.</p>
             <p>The good news is there’s an incredibly useful survival tool you can walk right past them...and they can’t say a word.</p>
             <p>They’re called the Paracord Shoelace Fire Starters.</p>
@@ -262,7 +262,7 @@ financial information secure."
             <p>There aren’t many left.</p>
             <a href='YOUR_LINK'>Go here to get your FREE pair now!</a>
             <section class='paragraph'>
-                SIGNATURE
+                AFFILIATE SIGNATURE
             </section>
             <p>P.S.  Supplies are going quick. Follow this link to get yours before they’re gone.
             </p>
@@ -286,16 +286,18 @@ financial information secure."
             <figcaption></figcaption>
             </figure>
             <p>The good news is it’s easy to protect your information.</p>
-            <p>The brand Inew Safe Wallet Shield blocks thieves computers and keeps your personal information safe </p>
+            <p>The Brand New Safe Wallet Shield will protect you from fraud.</p>
+            <p>The Safe Wallet Shield blocks thieves’ computers and keeps your personal information safe.</p>
             <p>And right now you’ve got a chance to get your very own Safe Wallet Shield for FREE (you just pick up the low cost of shipping). </p>
             <p>To get yours and to see the all 7 of its unique features <a href='YOUR_LINK'>go here now.</a> </p>
             <p>You need this if you want to hold on to what is rightfully yours.</p>
             <section class='paragraph'>
-            SIGNATURE
+                AFFILIATE SIGNATURE
             </section>
-            <p>P.S There’s only a limited supply of Safe Wallet Shields. So make sure to get yours before they're gone. Here's the link again.</p><p><a href='YOUR LINK' target='_blank'>LINK</a></p>",
+            <p>P.S There’s only a limited supply of Safe Wallet Shields. So make sure to get yours before they're gone. Here's the link again.</p>
+            <p><a href='YOUR LINK' target='_blank'>LINK</a></p>",
             "https://www.dropbox.com/s/3r7hsm7z54uganf/Email%202.html?dl=1" =>
-                "<h4>SL: This $1,000 Survival Tool Can Be Yours For FREE</h4>
+                "<h4>Subject: This $1,000 Survival Tool Can Be Yours For FREE</h4>
             <p>Yes, you read that correctly.</p>
             <p>This Free Survival Tool is worth a lot of money.</p>
             <a href='YOUR_LINK'>Go here to get yours for Free.</a>
@@ -304,20 +306,17 @@ financial information secure."
                 <figcaption></figcaption>
             </figure>
             <p>The <a href='YOUR_LINK'>Safe Wallet Shield</a> protects against identify theft.</p>
-            <p>Because criminals just built a new device that can steal your personal identity when you walk close to them you’re at risk.</p>
+            <p>Because criminals just built a new device that can steal your personal identity when you walk close to them... you’re at risk.</p>
             <p>With this tool they can clear your bank account and cause $1,000,  $10,000, even $100,000 in damage.</p>
             <p>Meaning the Safe Wallet Shield is worth as much as you have to steal.</p>
             <p>The good news is the Safe Wallet Shield will keep your personal information safe.</p>
             <p>Just place it around your bank card and credit cards and you’re set.</p>
             <p>And right now you can your own for Free.</p>
-
             <p>Just handle shipping costs and its yours.</p>
             <p>You’ll want to act fast though. There aren’t many left.</p>
             <p><a href='YOUR_LINK'>Go here</a> to get yours before supplies run out.</p>
-            <p>To get yours and to see the all 7 of its unique features <a href='YOUR_LINK'>go here now.</a> </p>
-            <p>You need this if you want to hold on to what is rightfully yours.</p>
             <section class='paragraph'>
-                SIGNATURE
+                AFFILIATE SIGNATURE
             </section>
             <p>P.S. Do you have a debit or credit card? Then you’re at risk. Ge this before it’s too late.
             </p>
@@ -1339,6 +1338,7 @@ include_once("includes/header.php");
                     <section class="tab-content">
                         <!-- Details -->
                         <article role="tabpanel" class="tab-pane fade in active" id="solarAirLanternDescription">
+                            <h1 class="sold-out alert alert-danger">Sold Out</h1>
                             <dl class="description">
                                 <aside class="product-albums">
                                     <?php
